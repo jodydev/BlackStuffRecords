@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Josefin+Sans:wght@400;600&family=Nunito:wght@400;600&display=swap");
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1920px) {
+  .nav-logo {
+    width: 50px !important;
+  }
+  .navbar-brand {
+    font-size: 20px !important;
+  }
+  .carousel-title {
+    font-size: 80px !important;
+    margin-bottom: 50px !important;
+  }
+  .carousel-intestation {
+    font-size: 18px !important;
+  }
+  .container-music {
+    top: 91% !important;
+  }
+}
+
+/* (PORTATILI) */
+@media screen and (max-width: 992px) {
+}
+
+/* (MOBILE) = 480px */
+
+@media only screen and (max-width: 767px) {
+  .navbar {
+    background-color: white !important;
+    background: #fff !important;
+  }
+  .navbar-title {
+    font-size: 24px !important;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none !important;
+  }
+
+  .navbar-collapse {
+    padding: 0px !important;
+    border-radius: 10px !important;
+  }
+
+  #nav {
+    background-color: rgb(0, 0, 0) !important;
+  }
+
+  .nav-link {
+    letter-spacing: 1px !important;
+  }
+
+  .carousel-title {
+    font-size: 50px !important;
+    margin-bottom: 30px !important;
+  }
+  .carousel-intestation {
+    font-size: 16px !important;
+  }
+  .carousel-text-container {
+    top: 30% !important;
+    left: 5% !important;
+    width: 90% !important;
+  }
+  .container-music {
+    top: 90% !important;
+    left: 0% !important;
+  }
+  .carousel-item {
+    height: 100vh !important;
+  }
+  .music-author {
+    font-size: 10px !important;
+  }
+  .music-title {
+    font-size: 18px !important;
+  }
+
+  .music-cover {
+    width: 100% !important;
+  }
+
+  .cover-album {
+    width: 80% !important;
+  }
+  .container-album {
+    width: 100% !important;
+  }
+
+  td {
+    padding: 150px !important;
+  }
+
+  .container-countdown {
+    top: 10% !important;
+  }
+  .number {
+    font-size: 50px !important;
+    border-right: none !important;
+  }
+
+  .last-number {
+    font-size: 50px !important;
+  }
+
+  .label {
+    font-size: 20px !important;
+  }
+
+  /* cambio file immagine in vista mobile */
+
+  .carousel-item:nth-child(1) img {
+    content: url(https://e1.pxfuel.com/desktop-wallpaper/1007/490/desktop-wallpaper-70-music-iphone-for-music-manias-music-iphone.jpg) !important;
+  }
+}
+
+body {
+  background-color: #fffffff3 !important;
+  font-family: "Exo 2", sans-serif !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden !important;
+}
+
+/* Navbar */
+
+.navbar {
+  background: transparent !important;
+  background-color: rgba(0, 0, 0, 0.697) !important;
+  padding: 15px 25% 15px 25%;
+}
+
+.nav-logo {
+  width: 70px;
+}
+
+.navbar-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-size: 18px !important;
+  font-weight: 600;
+}
+
+.fa-bars {
+  color: #fff !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+}
+
+/* Carousel */
+
+.carousel {
+  background-color: black !important;
+}
+
+.carousel-text-container {
+  top: 30%;
+  left: 23%;
+}
+.carousel-title {
+  font-size: 120px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.carousel-intestation {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.carousel-img {
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+  box-shadow: 0 0 0 transparent;
+  filter: blur(5px) brightness(0.5) contrast(1.2) saturate(1.2);
+}
+.music-author {
+  font-size: 18px;
+}
+.music-title {
+  font-size: 24px;
+}
+
+/* Music Player */
+.container-music {
+  top: 94%;
+  left: 25%;
+}
+
+.vertical-hr {
+  border-right: 1px solid #ffffff;
+  height: 90px;
+}
+
+.control-player-icon {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.music-cover {
+  width: 100%;
+}
+
+/* Album Info Section */
+
+.container-album {
+  position: relative !important;
+  overflow: hidden;
+}
+
+.container-album::before {
+  content: "";
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: url("https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(15px) brightness(0.5) saturate(1.2); /* Puoi regolare il valore di blur a tuo piacimento */
+  transform: scale(1.1); /* Puoi regolare il valore di scale a tuo piacimento */
+}
+
+li {
+  list-style: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid #fff !important;
+  margin-bottom: 20px;
+}
+
+td {
+  background-color: transparent !important;
+  color: #fff !important;
+  padding: 2% !important;
+  font-size: 18px;
+}
+
+#sec {
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.cover-album {
+  width: 60%;
+  margin-top: 10%;
+}
+
+/* Playlist.css */
+.jp-seek-bar {
+  background: rgba(255, 255, 255, 0.2) 0 -202px repeat-x;
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+}
+
+.jp-seek-bar .jp-play-bar {
+  background-color: transparent; /* Colore trasparente quando non in riproduzione */
+  height: 3px;
+}
+
+.jp-seek-bar.playing .jp-play-bar {
+  background-color: white; /* Colore verde (success) durante la riproduzione */
+  height: 3px;
+  width: 0%;
+}
+
+/* Events */
+
+#events h2 {
+  color: #fff !important;
+  font-size: 60px !important;
+  font-weight: 600 !important;
+}
+
+.video-background {
+  width: 100%;
+  height: 900px;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Posiziona il video dietro altri elementi se presenti */
+}
+
+.video-event {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-item {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* COUNTDOWN */
+.container-countdown {
+  top: 30%;
+}
+
+.number {
+  font-size: 100px;
+  font-family: "Josefin Sans", sans-serif;
+  border-right: 1px solid #adafb2;
+  color: #ffffff;
+}
+
+.last-number {
+  font-size: 100px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffffff;
+  border-right: none !important;
+}
+
+.label {
+  color: #ffffff;
+  font-size: 20px; /* Use the viewport width for responsive font size */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+/* CARD -- DA VALUTARE */
+
+.card {
+  /* border: 6px solid black !important;
+  border-radius: 15px !important; */
+  border: none !important;
+}
+
+.card-title {
+  font-size: 26px !important;
+  font-weight: 600 !important;
+}
+
+.card-text {
+  font-size: 15px !important;
+  font-weight: 100 !important;
+}
+
+.card-body {
+  padding-bottom: 0px !important;
+}
+
+.video-logo {
+  max-width: 150px !important;
+}
+
