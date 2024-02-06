@@ -2,14 +2,7 @@ import { useState, useRef, useEffect } from "react";
 
 const MusicPlayer = () => {
   const [currentTrack, setCurrentTrack] = useState([
-    {
-      title: "Mafia",
-      artist: "Club Dogo",
-      mp3: "http://127.0.0.1:5173/public/audio/dogo.mp3",
-      oga: "../assets/audio/club-dogo.ogg",
-      poster:
-        "https://shop.universalmusic.it/cdn/shop/files/COVER_CD_801d74fb-e879-4f30-9082-e816454ad873.jpg?v=1702377944&width=1024",
-    },
+    
     {
       title: "Cro Magnon Man",
       artist: "The Stark Palace",
