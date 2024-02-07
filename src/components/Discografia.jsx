@@ -1,4 +1,6 @@
-export default function Discografia() {
+import albumsData from "../data/discografia";
+
+export default function Discografia () {
   return (
     <section id="discografia">
       <div className="container py-5">
@@ -7,29 +9,21 @@ export default function Discografia() {
           <p className="my-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam illo fugit blanditiis voluptas perferendis magni quod nam unde cumque.
           </p>
-          <div className="col-12 col-lg-4 mt-3 my-3 my-lg-5 px-5 p-lg-3">
-            <img
-              src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-7.jpg"
-              alt=""
-              className="img-fluid"
-            />
-          </div>
-          <div className="col-12 col-lg-4 my-3 my-lg-5 px-5 p-lg-3">
-            <img
-              src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-17.jpg"
-              alt=""
-              className="img-fluid"
-            />
-          </div>
-          <div className="col-12 col-lg-4 my-3 my-lg-5 px-5 p-lg-3">
-            <img
-              src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg"
-              alt=""
-              className="img-fluid"
-            />
-          </div>
+          {/* Ciclo sugli album */}
+          {albumsData.map(album => (
+            <div className="col-12 col-lg-4 mt-3 my-3 my-lg-5 px-5 p-lg-3" key={album.id}>
+              <div className="card-discografia">
+                <img src={album.imageUrl} alt="Album Cover" />
+                <figcaption>
+                  <h3>{album.songName}</h3>
+                  <h4 className="my-1">{album.artist}</h4>
+                </figcaption>
+                <a href="#"></a>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
-}
+};

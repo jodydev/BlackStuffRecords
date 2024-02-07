@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg fixed-top bg-black">
+    <nav className="navbar navbar-expand-lg fixed-top bg-black p-0">
       <div id="nav" className="container py-3 py-lg-0">
         <div className="row">
           <div className="col-2 d-flex justify-content-center align-items-center">
@@ -9,7 +9,7 @@ export default function Navbar() {
               className=" me-lg-4 nav-logo"
             /> */}
 
-            <video className="w-100 rounded-2 video-logo" autoPlay loop muted>
+            <video className="w-75 rounded-2 video-logo" autoPlay loop muted>
               <source src="/public/img/logo/black-stuff.mp4" type="video/mp4" />
               Il tuo browser non supporta il tag video.
             </video>

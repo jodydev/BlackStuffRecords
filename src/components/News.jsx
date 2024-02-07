@@ -1,3 +1,6 @@
+import newsData from "../data/news";
+
+// Componente News
 export default function News() {
   return (
     <section id="news" className="py-5">
@@ -11,110 +14,45 @@ export default function News() {
             quisquam asperiores ipsam maiores atque!
           </p>
 
-          <section id="focus" class="focus-section">
-            <div class="container-lg py-0 py-lg-5 my-0 my-lg-5">
-              <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class=" col mt-5 px-5">
-                  <div class="card shadow-lg mt-5">
-                    <div class="card-image">
-                      <div class="hover-text">
-                        <img
-                          src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-7.jpg"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="image-overlay"></div>
-                    </div>
-                    <div class="card-body py-4">
-                      <h3 class="card-title fw-bold">Lorem ipsum, dolor</h3>
-
-                      <p class="card-text fw-light mt-3">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer. This is a longer card with supporting
-                        text below as a natural lead-in to additional content.
-                        This content is a little bit longer.
-                      </p>
-                    </div>
-
-                    <div class="card-footer bg-dark  text-end py-3">
-                      <div class="card-footer__info  text-light">
-                        <span>
-                          <i class="far fa-calendar-alt"></i> 01/04/2021
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col px-5 py-5 mt-5 mt-lg-0 py-lg-0">
-                  <div class="card shadow-lg">
-                    <div class="card-image">
-                      <div class="hover-text">
-                        <img
-                          src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-17.jpg"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="image-overlay"></div>
-                    </div>
-                    <div class="card-body py-4">
-                      <h3 class="card-title fw-bold">Lorem ipsum, dolor</h3>
-
-                      <p class="card-text fw-light my-3">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer. This is a longer card with supporting
-                        text below as a natural lead-in to additional content.
-                        This content is a little bit longer.
-                      </p>
-                    </div>
-
-                    <div class="card-footer text-end py-3 bg-dark">
-                      <div class="card-footer__info  text-light">
-                        <span>
-                          <i class="far fa-calendar-alt"></i> 01/04/2021
-                        </span>
-                      </div>
+          <section id="focus" className="focus-section">
+            <div className="container-lg py-0 py-lg-5 my-0 my-lg-5">
+              <div className="row row-cols-1 row-cols-md-3 g-4">
+                {newsData.map((newsItem) => (
+                  <div className="col mt-5 px-5" key={newsItem.id}>
+                    <div>
+                      <article className="card shadow-lg">
+                        <header className="card__thumb">
+                          <a href="#">
+                            <img src={newsItem.imageUrl} alt="News" />
+                          </a>
+                        </header>
+                        <date className="card__date">
+                          <span className="card__date__day">
+                            {newsItem.date.day}
+                          </span>
+                          <br />
+                          <span className="card__date__month">
+                            {newsItem.date.month}
+                          </span>
+                        </date>
+                        <div className="card__body">
+                          <div className="card__category">
+                            <a href="#">{newsItem.category}</a>
+                          </div>
+                          <h2 className="card__title">
+                            <a href="#">{newsItem.title}</a>
+                          </h2>
+                          <div className="card__subtitle">
+                            {newsItem.subtitle}
+                          </div>
+                          <p className="card__description">
+                            {newsItem.description}
+                          </p>
+                        </div>
+                      </article>
                     </div>
                   </div>
-                </div>
-
-                <div class="col mt-0 mt-lg-5 px-5">
-                  <div class="card shadow-lg mt-0 mt-lg-5">
-                    <div class="card-image">
-                      <div class="hover-text">
-                        <img
-                          src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg"
-                          class="card-img-top"
-                          alt="..."
-                        />
-                      </div>
-                      <div class="image-overlay"></div>
-                    </div>
-                    <div class="card-body py-4">
-                      <h3 class="card-title fw-bold">Lorem ipsum, dolor</h3>
-
-                      <p class="card-text fw-light my-3">
-                        This is a longer card with supporting text below as a
-                        natural lead-in to additional content. This content is a
-                        little bit longer. This is a longer card with supporting
-                        text below as a natural lead-in to additional content.
-                        This content is a little bit longer.
-                      </p>
-                    </div>
-
-                    <div class="card-footer text-end py-3 bg-dark">
-                      <div class="card-footer__info  text-light">
-                        <span>
-                          <i class="far fa-calendar-alt"></i> 01/04/2021
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </section>

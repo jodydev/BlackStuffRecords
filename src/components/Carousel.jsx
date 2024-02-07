@@ -32,7 +32,7 @@ export default function Carousel() {
           <div className="container position-absolute carousel-text-container">
             <div className="row">
               <div className="col-12 col-lg-8">
-                <h2 className="carousel-title">Scopri la nostra realtà</h2>
+                <h2 className="carousel-title">Quello che ci accomuna!</h2>
                 <h3 className="carousel-intestation  text-wrap">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
                   ratione earum, ex quam amet corrupti? Lorem ipsum dolor sit
