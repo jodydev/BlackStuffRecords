@@ -121,6 +121,10 @@
     font-size: 20px !important;
   }
 
+  #social img {
+    padding: 100px !important;
+  }
+
   /* cambio file immagine in vista mobile */
 
   .carousel-item:nth-child(1) img {
@@ -336,12 +340,14 @@ td {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: brightness(0.5) contrast(1.2) saturate(1.2);
 }
 
 .video-item {
   width: 100%;
   height: 100vh;
   object-fit: cover;
+  filter: blur(10px) brightness(0.5) contrast(1.2) saturate(1.2);
 }
 
 /* COUNTDOWN */
@@ -1044,4 +1050,22 @@ td {
 }
 .bg-semi-dark {
   background-color: #181818 !important;
+}
+
+#social .col-12:hover {
+
+  background-color: #000000 !important;
+
+}
+
+#social p {
+
+  display: none;
+
+}
+
+#social .col-12:hover p {
+
+  display: block;
+
 }

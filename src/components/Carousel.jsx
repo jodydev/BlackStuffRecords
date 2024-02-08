@@ -14,19 +14,19 @@ export default function Carousel() {
       <div className="carousel-inner vh-100">
         {/* <!-- Immagini del Carousel --> */}
         <div className="carousel-item active ">
-          <img
+          {/* <img
             src="../../public/img/carousel/1.jpg"
             className="d-block carousel-img"
             alt="Immagine 1"
-          />
+          /> */}
 
-          {/* <video className="video-item" autoPlay loop muted>
+         <video className="video-item" autoPlay loop muted>
             <source
-              src="/public/img/istockphoto-1408912847-640_adpp_is (online-video-cutter.com).mp4"
+              src="/public/video/1.mp4"
               type="video/mp4"
             />
             Il tuo browser non supporta il tag video.
-          </video> */}
+          </video> 
 
           <div className="container position-absolute carousel-text-container">
             <div className="row">
@@ -47,19 +47,19 @@ export default function Carousel() {
 
         {/* <!-- Immagini del Carousel --> */}
         <div className="carousel-item">
-          {/* <video className="video-item" autoPlay loop muted>
+           <video className="video-item" autoPlay loop muted>
             <source
-              src="/public/img/istockphoto-1408911081-640_adpp_is.mp4"
+              src="/public/video/2.mp4"
               type="video/mp4"
             />
             Il tuo browser non supporta il tag video.
-          </video> */}
+          </video> 
 
-          <img
+          {/* <img
             src="../../public/img/carousel/3.jpg"
             className="d-block carousel-img"
             alt="Immagine 1"
-          />
+          /> */}
 
           <div className="container position-absolute carousel-text-container">
             <div className="row">
@@ -80,25 +80,25 @@ export default function Carousel() {
 
         {/* <!-- Immagini del Carousel --> */}
         <div className="carousel-item">
-          <img
+          {/* <img
             src="../../public/img/carousel/3.jpg"
             className="d-block carousel-img"
             alt="Immagine 1"
-          />
+          /> */}
 
-          {/* <video className="video-item" autoPlay loop muted>
+           <video className="video-item" autoPlay loop muted>
             <source
-              src="/public/img/istockphoto-1408962045-640_adpp_is.mp4"
+              src="/public/video/3.mp4"
               type="video/mp4"
             />
             Il tuo browser non supporta il tag video.
-          </video> */}
+          </video>
 
           <div className="container position-absolute carousel-text-container">
             <div className="row">
               <div className="col-12 col-lg-8">
                 <h2 className="carousel-title">
-                  La nostra una musica da brivido!
+                Quello che ci accomuna!
                 </h2>
                 <h3 className="carousel-intestation text-wrap">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta

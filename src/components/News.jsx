@@ -26,15 +26,7 @@ export default function News() {
                             <img src={newsItem.imageUrl} alt="News" />
                           </a>
                         </header>
-                        <date className="card__date">
-                          <span className="card__date__day">
-                            {newsItem.date.day}
-                          </span>
-                          <br />
-                          <span className="card__date__month">
-                            {newsItem.date.month}
-                          </span>
-                        </date>
+                        
                         <div className="card__body">
                           <div className="card__category">
                             <a href="#">{newsItem.category}</a>

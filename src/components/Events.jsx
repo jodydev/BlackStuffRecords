@@ -5,7 +5,7 @@ const Events = () => {
     <section id="events" className="video-background position-relative">
       <video className="video-event" autoPlay loop muted>
         <source
-          src="/public/img/istockphoto-1408912847-640_adpp_is (online-video-cutter.com).mp4"
+          src="/public/video/2.mp4"
           type="video/mp4"
         />
         Il tuo browser non supporta il tag video.

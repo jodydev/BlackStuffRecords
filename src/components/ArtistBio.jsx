@@ -1,15 +1,15 @@
 export default function ArtistBio() {
   return (
-    <section id="artist-bio">
+    <section className="d-none d-lg-block" id="artist-bio">
       <div className="container-fluid bg-img-artist position-relative">
         <div className="row">
           <div className="col-12">
             <div
-              className="container position-absolute "
-              style={{ top: "25%", left: "50%" }}
+              className="container position-absolute container-artist-bio text-start p-5"
+              style={{ top: "50%", left: "80%", transform: "translate(-50%, -50%)" }}
             >
               <div className="row">
-                <div className="col-12 col-lg-6">
+                <div className="col-12 col-lg-6 ">
                   <h2 className="text-white fs-1">Biografia Artista</h2>
                   <p
                     className="text-white fs-4 my-3"

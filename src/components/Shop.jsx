@@ -47,7 +47,7 @@ export default function Shop() {
                               BandCamp
                             </span>{" "}
                             <i
-                              class="fa-solid fa-cart-shopping fa-xl mx-2"
+                              className="fa-solid fa-cart-shopping fa-xl mx-2"
                               style={{ color: "white" }}
                             ></i>
                           </span>
@@ -96,7 +96,7 @@ export default function Shop() {
                               BandCamp
                             </span>{" "}
                             <i
-                              class="fa-solid fa-cart-shopping fa-xl mx-2"
+                              className="fa-solid fa-cart-shopping fa-xl mx-2"
                               style={{ color: "white" }}
                             ></i>
                           </span>
