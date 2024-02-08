@@ -6,7 +6,7 @@ export default function News() {
     <section id="news" className="py-5">
       <div className="container-fluid py-5">
         <div className="row">
-          <h2 className="text-uppercase text-center my-3 fw-bold">
+          <h2 className="text-uppercase text-center fs-1 my-3 fw-bold">
             Ultime News
           </h2>
           <p className="text-center">
@@ -18,7 +18,7 @@ export default function News() {
             <div className="container-lg py-0 py-lg-5 my-0 my-lg-5">
               <div className="row row-cols-1 row-cols-md-3 g-4">
                 {newsData.map((newsItem) => (
-                  <div className="col mt-5 px-5" key={newsItem.id}>
+                  <div className="col mt-5 p-5" key={newsItem.id}>
                     <div>
                       <article className="card shadow-lg">
                         <header className="card__thumb">

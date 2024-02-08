@@ -14,7 +14,6 @@ export default function Carousel() {
       <div className="carousel-inner vh-100">
         {/* <!-- Immagini del Carousel --> */}
         <div className="carousel-item active ">
-          
           <img
             src="../../public/img/carousel/1.jpg"
             className="d-block carousel-img"
@@ -44,9 +43,6 @@ export default function Carousel() {
               </div>
             </div>
           </div>
-
-          {/* Renderizza il componente MusicPlayer e passa la funzione di aggiornamento */}
-          <MusicPlayer />
         </div>
 
         {/* <!-- Immagini del Carousel --> */}
@@ -80,9 +76,6 @@ export default function Carousel() {
               </div>
             </div>
           </div>
-
-          {/* Renderizza il componente MusicPlayer e passa la funzione di aggiornamento */}
-          <MusicPlayer />
         </div>
 
         {/* <!-- Immagini del Carousel --> */}
@@ -118,10 +111,10 @@ export default function Carousel() {
               </div>
             </div>
           </div>
-
-          {/* Renderizza il componente MusicPlayer e passa la funzione di aggiornamento */}
-          <MusicPlayer />
         </div>
+
+        {/* Renderizza il componente MusicPlayer e passa la funzione di aggiornamento */}
+        <MusicPlayer />
       </div>
 
       {/* <!-- Controlli del Carousel --> */}

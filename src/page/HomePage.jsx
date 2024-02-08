@@ -6,10 +6,13 @@ import News from "../components/News";
 import PhotoGallery from "../components/PhotoGallery";
 import Video from "../components/Video";
 import Shop from "../components/Shop";
+import ArtistBio from "../components/ArtistBio";
+import Social from "../components/Social";
+import Footer from "../components/Footer";
 
 export default function HomePage() {
   return (
-    <>
+    <section id="home">
       {/* <!-- Carousel con Navbar --> */}
       <Carousel />
 
@@ -33,6 +36,15 @@ export default function HomePage() {
 
       {/* <!-- Shop --> */}
       <Shop />
-    </>
+
+      {/* <!-- Biografia Artista --> */}
+      <ArtistBio />
+
+      {/* <!-- Social --> */}
+      <Social />
+
+      {/* <!-- Footer --> */}
+      <Footer />
+    </section>
   );
 }

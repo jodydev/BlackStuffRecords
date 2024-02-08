@@ -4,7 +4,7 @@ import YouTube from "react-youtube";
 const Video = () => {
   const [videoData, setVideoData] = useState(null);
   const videoId = "c1pr6X1ciso"; // Video ID from YouTube
-  const apiKey = "AIzaSyDS79jvUTG_3BoWK647CHd-Gd0EJ-PRUJA"; 
+  const apiKey = "AIzaSyDS79jvUTG_3BoWK647CHd-Gd0EJ-PRUJA";
 
   useEffect(() => {
     const fetchVideoData = async () => {
@@ -28,7 +28,7 @@ const Video = () => {
   }, [videoId, apiKey]);
 
   return (
-    <section className="video">
+    <section id="video" className="video">
       <div className="container-fluid px-0 py-0">
         <div className="container bg-black shadow-lg">
           <div className="row">

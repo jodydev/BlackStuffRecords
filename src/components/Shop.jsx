@@ -1,6 +1,8 @@
+import BandCampButton from "./BandCampButton";
+
 export default function Shop() {
   return (
-    <section>
+    <section id="shop">
       <div className="container my-5 py-5">
         <div className="row">
           <h3 className="text-center fw-bold fs-1">Shop</h3>
@@ -9,203 +11,148 @@ export default function Shop() {
             quisquam asperiores ipsam maiores atque!
           </p>
 
-          <div className="col-12 col-lg-3 py-5 px-3">
-            <div class="card shadow-lg my-5">
-              <div class="card-image">
-                <div class="hover-text">
-                  <img
-                    src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <div className="card-body p-3 d-flex gap-5">
-                <h3 class="card-title fw-normal fs-5">
-                  Vinilee - <span className="fw-bold fs-5">50$</span>
-                </h3>
+          <div className="col-12 col-lg-4 py-0 py-lg-5  px-3">
+            <div className="container page-wrapper">
+              <div className="page-inner">
+                <div className="row">
+                  <div className="el-wrapper">
+                    <div className="box-up">
+                      <img
+                        src="https://shop.warnermusic.it/cdn/shop/files/vinilemockup.png?v=1688394048"
+                        alt=""
+                        className="img w-75 "
+                      />
+                      <div className="img-info">
+                        <div className="info-inner mt-5">
+                          <span className="p-name fs-4 ">Nome disco</span>
+                          <span className="p-company fs-6 ">Artista</span>
+                        </div>
+                      </div>
+                    </div>
 
-                <span>
-                  <a href="#" class="btn btn-sm btn-dark">
-                    Acquista
-                  </a>
-                </span>
+                    <div className="box-down my-5">
+                      <div className="h-bg">
+                        <div className="h-bg-inner"></div>
+                      </div>
+
+                      <a className="cart" href="#">
+                        <span className="price fw-bold fs-5">100€</span>
+                        <span className="add-to-cart">
+                          <span className="txt fs-6">
+                            Acquista su{" "}
+                            <span
+                              className="fw-bold"
+                              style={{ color: "#2596be" }}
+                            >
+                              BandCamp
+                            </span>{" "}
+                            <i
+                              class="fa-solid fa-cart-shopping fa-xl mx-2"
+                              style={{ color: "white" }}
+                            ></i>
+                          </span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="col-12 col-lg-3 py-5 px-3">
-            <div class="card shadow-lg my-5">
-              <div class="card-image">
-                <div class="hover-text">
-                  <img
-                    src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <div className="card-body p-3 d-flex gap-5">
-                <h3 class="card-title fw-normal fs-5">
-                  Vinile - <span className="fw-bold fs-5">50$</span>
-                </h3>
+          <div className="col-12 col-lg-4 py-0 py-lg-5  px-3">
+            <div className="container page-wrapper">
+              <div className="page-inner">
+                <div className="row">
+                  <div className="el-wrapper">
+                    <div className="box-up">
+                      <img
+                        src="https://shop.warnermusic.it/cdn/shop/files/vinilemockup.png?v=1688394048"
+                        alt=""
+                        className="img w-75 "
+                      />
+                      <div className="img-info">
+                        <div className="info-inner mt-5">
+                          <span className="p-name fs-4 ">Nome disco</span>
+                          <span className="p-company fs-6 ">Artista</span>
+                        </div>
+                      </div>
+                    </div>
 
-                <span>
-                  <a href="#" class="btn btn-sm btn-dark">
-                    Acquista
-                  </a>
-                </span>
+                    <div className="box-down my-5">
+                      <div className="h-bg">
+                        <div className="h-bg-inner"></div>
+                      </div>
+
+                      <a className="cart" href="#">
+                        <span className="price fw-bold fs-5">100€</span>
+                        <span className="add-to-cart">
+                          <span className="txt fs-6">
+                            Acquista su{" "}
+                            <span
+                              className="fw-bold"
+                              style={{ color: "#2596be" }}
+                            >
+                              BandCamp
+                            </span>{" "}
+                            <i
+                              class="fa-solid fa-cart-shopping fa-xl mx-2"
+                              style={{ color: "white" }}
+                            ></i>
+                          </span>
+                        </span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="col-12 col-lg-3 py-5 px-3">
-            <div class="card shadow-lg my-5">
-              <div class="card-image">
-                <div class="hover-text">
-                  <img
-                    src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <div className="card-body p-3 d-flex gap-5">
-                <h3 class="card-title fw-normal fs-5">
-                  Vinile - <span className="fw-bold fs-5">50$</span>
-                </h3>
+          <div className="col-12 col-lg-4 py-0 py-lg-5  px-3">
+            <div className="container page-wrapper">
+              <div className="page-inner">
+                <div className="row">
+                  <div className="el-wrapper">
+                    <div className="box-up">
+                      <img
+                        src="https://shop.warnermusic.it/cdn/shop/files/vinilemockup.png?v=1688394048"
+                        alt=""
+                        className="img w-75 "
+                      />
+                      <div className="img-info">
+                        <div className="info-inner mt-5">
+                          <span className="p-name fs-4 ">Nome disco</span>
+                          <span className="p-company fs-6 ">Artista</span>
+                        </div>
+                      </div>
+                    </div>
 
-                <span>
-                  <a href="#" class="btn btn-sm btn-dark">
-                    Acquista
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
+                    <div className="box-down my-5">
+                      <div className="h-bg">
+                        <div className="h-bg-inner"></div>
+                      </div>
 
-          <div className="col-12 col-lg-3 py-5 px-3">
-            <div class="card shadow-lg my-5">
-              <div class="card-image">
-                <div class="hover-text">
-                  <img
-                    src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <div className="card-body p-3 d-flex gap-5">
-                <h3 class="card-title fw-normal fs-5">
-                  Vinile - <span className="fw-bold fs-5">50$</span>
-                </h3>
-
-                <span>
-                  <a href="#" class="btn btn-sm btn-dark">
-                    Acquista
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <div className="row">
-            <div className="col-12 col-lg-3 px-3">
-              <div class="card shadow-lg my-5">
-                <div class="card-image">
-                  <div class="hover-text">
-                    <img
-                      src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
+                      <a className="cart" href="#">
+                        <span className="price fw-bold fs-5">100€</span>
+                        <span className="add-to-cart">
+                          <span className="txt fs-6">
+                            Acquista su{" "}
+                            <span
+                              className="fw-bold"
+                              style={{ color: "#2596be" }}
+                            >
+                              BandCamp
+                            </span>{" "}
+                            <i
+                              class="fa-solid fa-cart-shopping fa-xl mx-2"
+                              style={{ color: "white" }}
+                            ></i>
+                          </span>
+                        </span>
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div className="card-body p-3 d-flex gap-5">
-                  <h3 class="card-title fw-normal fs-5">
-                    Vinile - <span className="fw-bold fs-5">50$</span>{" "}
-                  </h3>
-
-                  <span>
-                    <a href="#" class="btn btn-sm btn-dark">
-                      Acquista
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-12 col-lg-3 px-3">
-              <div class="card shadow-lg my-5">
-                <div class="card-image">
-                  <div class="hover-text">
-                    <img
-                      src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div className="card-body p-3 d-flex gap-5">
-                  <h3 class="card-title fw-normal fs-5">
-                    Vinile - <span className="fw-bold fs-5">50$</span>
-                  </h3>
-
-                  <span>
-                    <a href="#" class="btn btn-sm btn-dark">
-                      Acquista
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-12 col-lg-3  px-3">
-              <div class="card shadow-lg my-5">
-                <div class="card-image">
-                  <div class="hover-text">
-                    <img
-                      src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div className="card-body p-3 d-flex gap-5">
-                  <h3 class="card-title fw-normal fs-5">
-                    Vinile - <span className="fw-bold fs-5">50$</span>
-                  </h3>
-
-                  <span>
-                    <a href="#" class="btn btn-sm btn-dark">
-                      Acquista
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-12 col-lg-3  px-3">
-              <div class="card shadow-lg my-5">
-                <div class="card-image">
-                  <div class="hover-text">
-                    <img
-                      src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg"
-                      class="card-img-top"
-                      alt="..."
-                    />
-                  </div>
-                </div>
-                <div className="card-body p-3 d-flex gap-5">
-                  <h3 class="card-title fw-normal fs-5">
-                    Vinile - <span className="fw-bold fs-5">50$</span>
-                  </h3>
-
-                  <span>
-                    <a href="#" class="btn btn-sm btn-dark">
-                      Acquista
-                    </a>
-                  </span>
                 </div>
               </div>
             </div>

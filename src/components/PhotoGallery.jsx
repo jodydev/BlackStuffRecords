@@ -1,6 +1,6 @@
 export default function PhotoGallery() {
   return (
-    <section id="photo">
+    <section id="photo-gallery">
       <div className="container-fluid px-0 mt-5 pt-5">
         <div className="row">
           <div className="col-12 col-lg-3 px-0">
@@ -25,7 +25,7 @@ export default function PhotoGallery() {
             />
           </div>
           <div className="col-12 col-lg-3 px-0">
-          <img
+            <img
               src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-17.jpg"
               class="card-img-top"
               alt="..."
@@ -33,25 +33,8 @@ export default function PhotoGallery() {
           </div>
         </div>
 
-
         <div className="row">
           <div className="col-12 col-lg-3 px-0">
-            
-          <img
-              src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-17.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-          </div>
-          <div className="col-12 col-lg-3 px-0">
-          <img
-              src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg"
-              class="card-img-top"
-              alt="..."
-            />
-          </div>
-          <div className="col-12 col-lg-3 px-0">
-            
             <img
               src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-17.jpg"
               class="card-img-top"
@@ -59,7 +42,20 @@ export default function PhotoGallery() {
             />
           </div>
           <div className="col-12 col-lg-3 px-0">
-          
+            <img
+              src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+          <div className="col-12 col-lg-3 px-0">
+            <img
+              src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-17.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+          </div>
+          <div className="col-12 col-lg-3 px-0">
             <img
               src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-7.jpg"
               class="card-img-top"

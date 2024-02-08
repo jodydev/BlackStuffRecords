@@ -4,18 +4,18 @@ export default function Navbar() {
       <div id="nav" className="container py-3 py-lg-0">
         <div className="row">
           <div className="col-2 d-flex justify-content-center align-items-center">
-            {/* <img
-              src="/public/img/logo/new-logo-black-stuff.png"
-              className=" me-lg-4 nav-logo"
-            /> */}
+            <img
+              src="/public/img/logo/blackstuffrecords-logo.png"
+              className=" me-lg-4 nav-logo w-100"
+            /> 
 
-            <video className="w-75 rounded-2 video-logo" autoPlay loop muted>
+            {/* <video className="w-75 rounded-2 video-logo" autoPlay loop muted>
               <source src="/public/img/logo/black-stuff.mp4" type="video/mp4" />
               Il tuo browser non supporta il tag video.
-            </video>
+            </video> */}
           </div>
           <div className="col-8 d-flex align-items-center">
-            <a className="navbar-title text-light fw-semibold  my-1 " href="#">
+            <a className="navbar-title text-light" href="#">
               BlackStuffRecords
             </a>
           </div>
@@ -39,12 +39,12 @@ export default function Navbar() {
           id="navbarSupportedContent"
         >
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item mx-2">
+            <li className="nav-item mx-1">
               <a className="nav-link text-light" aria-current="page" href="#">
                 Home
               </a>
             </li>
-            <li className="nav-item mx-2">
+            <li className="nav-item mx-1">
               <a
                 className="nav-link text-light"
                 aria-current="page"
@@ -53,7 +53,7 @@ export default function Navbar() {
                 Discografia
               </a>
             </li>
-            <li className="nav-item mx-2">
+            <li className="nav-item mx-1">
               <a
                 className="nav-link text-light"
                 aria-current="page"
@@ -62,7 +62,7 @@ export default function Navbar() {
                 Eventi
               </a>
             </li>
-            <li className="nav-item mx-2">
+            <li className="nav-item mx-1">
               <a
                 className="nav-link text-light"
                 aria-current="page"
@@ -72,16 +72,27 @@ export default function Navbar() {
               </a>
             </li>
 
-            <li className="nav-item mx-2">
+            <li className="nav-item mx-1">
               <a
                 className="nav-link text-light"
                 aria-current="page"
-                href="#news"
+                href="#photo-gallery"
               >
                 Galleria
               </a>
             </li>
-            <li className="nav-item mx-2">
+
+            <li className="nav-item mx-1">
+              <a
+                className="nav-link text-light"
+                aria-current="page"
+                href="#video"
+              >
+                Video
+              </a>
+            </li>
+
+            <li className="nav-item mx-1">
               <a
                 className="nav-link text-light"
                 aria-current="page"
@@ -90,11 +101,11 @@ export default function Navbar() {
                 Shop
               </a>
             </li>
-            <li className="nav-item mx-2">
+            <li className="nav-item mx-1">
               <a
                 className="nav-link text-light"
                 aria-current="page"
-                href="#contacts"
+                href="#footer"
               >
                 Contatti
               </a>
