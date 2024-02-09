@@ -9,7 +9,7 @@ export default function Discografia () {
           <p className="my-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam illo fugit blanditiis voluptas perferendis magni quod nam unde cumque.
           </p>
-          {/* Ciclo sugli album */}
+        
           {albumsData.map(album => (
             <div className="col-12 col-lg-4 mt-3 my-3 my-lg-5 px-5 p-lg-3" key={album.id}>
               <div className="card-discografia">

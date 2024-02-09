@@ -40,9 +40,6 @@ export default function HomePage() {
       {/* <!-- Biografia Artista --> */}
       <ArtistBio />
 
-      {/* <!-- Social --> */}
-      <Social />
-
       {/* <!-- Footer --> */}
       <Footer />
     </section>
