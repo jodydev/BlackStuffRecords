@@ -20,13 +20,10 @@ export default function Carousel() {
             alt="Immagine 1"
           /> */}
 
-         <video className="video-item" autoPlay loop muted>
-            <source
-              src="/public/video/1.mp4"
-              type="video/mp4"
-            />
+          <video className="video-item" autoPlay loop muted>
+            <source src="/public/video/1.mp4" type="video/mp4" />
             Il tuo browser non supporta il tag video.
-          </video> 
+          </video>
 
           <div className="container position-absolute carousel-text-container">
             <div className="row">
@@ -47,13 +44,10 @@ export default function Carousel() {
 
         {/* <!-- Immagini del Carousel --> */}
         <div className="carousel-item">
-           <video className="video-item" autoPlay loop muted>
-            <source
-              src="/public/video/2.mp4"
-              type="video/mp4"
-            />
+          <video className="video-item" autoPlay loop muted>
+            <source src="/public/video/2.mp4" type="video/mp4" />
             Il tuo browser non supporta il tag video.
-          </video> 
+          </video>
 
           {/* <img
             src="../../public/img/carousel/3.jpg"
@@ -86,20 +80,15 @@ export default function Carousel() {
             alt="Immagine 1"
           /> */}
 
-           <video className="video-item" autoPlay loop muted>
-            <source
-              src="/public/video/3.mp4"
-              type="video/mp4"
-            />
+          <video className="video-item" autoPlay loop muted>
+            <source src="/public/video/3.mp4" type="video/mp4" />
             Il tuo browser non supporta il tag video.
           </video>
 
           <div className="container position-absolute carousel-text-container">
             <div className="row">
               <div className="col-12 col-lg-8">
-                <h2 className="carousel-title">
-                Quello che ci accomuna!
-                </h2>
+                <h2 className="carousel-title">Quello che ci accomuna!</h2>
                 <h3 className="carousel-intestation text-wrap">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
                   ratione earum, ex quam amet corrupti? Lorem ipsum dolor sit

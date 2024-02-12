@@ -5,11 +5,16 @@ export default function Shop() {
     <section id="shop">
       <div className="container my-5 py-5">
         <div className="row">
-          <h3 className="text-center fw-bold fs-1">Shop</h3>
+        <div className="content">
+            <div data-aos="fade-down" data-aos-duration="2000">
+            <h2 className="text-center fw-bold fs-1">Shop</h2>
           <p className="text-center mt-3">
             Lorem dolor sit, amet consectetur adipisicing elit. Ipsum eius
             quisquam asperiores ipsam maiores atque!
           </p>
+            </div>
+          </div>
+      
 
           <div className="col-12 col-lg-4 py-0 py-lg-5  px-3">
             <div className="container page-wrapper">
@@ -17,11 +22,13 @@ export default function Shop() {
                 <div className="row">
                   <div className="el-wrapper">
                     <div className="box-up">
-                      <img
-                        src="https://shop.warnermusic.it/cdn/shop/files/vinilemockup.png?v=1688394048"
-                        alt=""
-                        className="img w-75 "
-                      />
+                      <div data-aos="fade-right" data-aos-duration="2000">
+                        <img
+                          src="https://shop.warnermusic.it/cdn/shop/files/vinilemockup.png?v=1688394048"
+                          alt=""
+                          className="img w-75 "
+                        />
+                      </div>
                       <div className="img-info">
                         <div className="info-inner mt-5">
                           <span className="p-name fs-4 ">Nome disco</span>
@@ -66,11 +73,13 @@ export default function Shop() {
                 <div className="row">
                   <div className="el-wrapper">
                     <div className="box-up">
-                      <img
-                        src="https://shop.warnermusic.it/cdn/shop/files/vinilemockup.png?v=1688394048"
-                        alt=""
-                        className="img w-75 "
-                      />
+                      <div data-aos="fade-up" data-aos-duration="2000">
+                        <img
+                          src="https://shop.warnermusic.it/cdn/shop/files/vinilemockup.png?v=1688394048"
+                          alt=""
+                          className="img w-75 "
+                        />
+                      </div>
                       <div className="img-info">
                         <div className="info-inner mt-5">
                           <span className="p-name fs-4 ">Nome disco</span>
@@ -86,6 +95,7 @@ export default function Shop() {
 
                       <a className="cart" href="#">
                         <span className="price fw-bold fs-5">100€</span>
+
                         <span className="add-to-cart">
                           <span className="txt fs-6">
                             Acquista su{" "}
@@ -115,11 +125,13 @@ export default function Shop() {
                 <div className="row">
                   <div className="el-wrapper">
                     <div className="box-up">
-                      <img
-                        src="https://shop.warnermusic.it/cdn/shop/files/vinilemockup.png?v=1688394048"
-                        alt=""
-                        className="img w-75 "
-                      />
+                      <div data-aos="fade-left" data-aos-duration="2000">
+                        <img
+                          src="https://shop.warnermusic.it/cdn/shop/files/vinilemockup.png?v=1688394048"
+                          alt=""
+                          className="img w-75 "
+                        />
+                      </div>
                       <div className="img-info">
                         <div className="info-inner mt-5">
                           <span className="p-name fs-4 ">Nome disco</span>
