@@ -84,10 +84,10 @@
     height: 100vh !important;
   }
   .music-author {
-    font-size: 10px !important;
+    font-size: 11px !important;
   }
   .music-title {
-    font-size: 18px !important;
+    font-size: 12px !important;
   }
 
   .music-cover {
@@ -129,6 +129,14 @@
     height: 1900px !important;
   }
 
+  .control-player-icon {
+    font-size: 16px !important;
+  }
+
+  .vertical-hr {
+    height: 80px !important;
+    border: none !important;
+  }
 
   /* cambio file immagine in vista mobile */
 
@@ -227,21 +235,21 @@ html {
 
 }
 .music-author {
-  font-size: 18px;
+  font-size: 16px;
 }
 .music-title {
-  font-size: 24px;
+  font-size: 20px;
 }
 
 /* Music Player */
 .container-music {
-  top: 94%;
+  top: 92%;
   left: 25%;
 }
 
 .vertical-hr {
   border-right: 1px solid #ffffff;
-  height: 90px;
+  height: 110px;
 }
 
 .control-player-icon {

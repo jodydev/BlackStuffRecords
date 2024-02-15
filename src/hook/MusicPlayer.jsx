@@ -236,7 +236,7 @@ const MusicPlayer = () => {
     <div className="container music-player position-absolute container-music">
       <div className="row">
         {/* Sezione dell'album */}
-        <div className="col-3 col-lg-1">
+        <div className="col-3 col-lg-1 pe-2 pe-lg-0 px-0 px-lg-0">
           <img
             src={currentTrack[currentTrackIndex].poster}
             className="music-cover"
@@ -245,8 +245,8 @@ const MusicPlayer = () => {
         </div>
 
         {/* Informazioni sulla traccia corrente */}
-        <div className="col-3 col-lg-2 offset-lg-0 offset-0 offcanvas-1 flex-column justify-content-center align-items-center vertical-hr info-music-box px-2 px-lg-5">
-          <p className="music-title text-light fw-semibold">
+        <div className="col-3 col-lg-2 offset-lg-0 offset-0 offcanvas-1 flex-column justify-content-center align-items-center vertical-hr info-music-box px-0 p-0 px-lg-3">
+          <p className="music-title text-light fw-semibold mt-3">
             {currentTrack[currentTrackIndex].title}
           </p>
           <p className="music-author text-light fw-normal">
