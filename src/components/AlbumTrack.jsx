@@ -1,6 +1,3 @@
-import BandCampButton from "./BandCampButton";
-import DiscogsButton from "./DiscogsButton";
-
 export default function AlbumTrack() {
   return (
     <section className="px-0 mx-0 px-lg-5 mx-lg-5">
@@ -17,29 +14,38 @@ export default function AlbumTrack() {
               <div className="row ">
                 <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center px-0">
                   <img
-                    src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-7.jpg"
-                    alt=""
+                    src="/public/img/artist/ANZWART/cover/cover.png"
                     className="cover-album"
                   />
 
                   <div className="container-fluid my-5">
                     <div className="row">
-                      <div className="col-12 col-lg-8 offset-0 offset-lg-2 px-5 px-lg-4 my-3">
-                        <p className="fs-2 text-light fw-semibold">
-                          Titolo Album - 2024
+                      <div className="col-12 col-lg-8 offset-0 offset-lg-2 px-5 px-lg-5">
+                        <p className="fs-2 text-light fw-semibold my-3">
+                          EP - Anzwart
                         </p>
-                        <p className="fs-6 text-light fw-light mb-5 albumtrack-description">
-                          Lorem ipsum, dolor sit am et consectetur adipisicing
-                          elit. Repellendus dolor, sed earum dolore quas tempora
-                          eveniet modi error dolorum natus suscipit praesentium
-                          voluptate! Impedit nihil porro debitis alias, cum
-                          expedita.
-                        </p>
+                        <ul>
+                          <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                            Titolo Album - Ep
+                          </li>
+                          <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                            Nome Artista - Anzwart
+                          </li>
+                          <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                            Genere - Rock
+                          </li>
+                          <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                            Data di uscita - 2024
+                          </li>
+                          <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                            Etichetta - Black Stuff Records
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start p-0 p-lg-5 px-5 px-lg-0 my-3">
+                <div className="col-12 col-lg-5 d-flex flex-column justify-content-center align-items-start p-0 p-lg-5 px-5 px-lg-0 my-3">
                   <div className="container px-0 px-lg-5">
                     <table className="table my-lg-5">
                       <thead>
@@ -47,7 +53,6 @@ export default function AlbumTrack() {
                           <th className="py-3 fs-5">#</th>
                           <th className="py-3 fs-5">Titolo</th>
                           <th className="py-3 fs-5">Durata</th>
-                          <th className="py-3 fs-5">Ascolta</th>
                         </tr>
                       </thead>
 
@@ -56,91 +61,35 @@ export default function AlbumTrack() {
                           <td className="py-3">1.</td>
                           <td className="py-3">Nome Canzone</td>
                           <td className="py-3 fs-6" id="sec">
-                            0:20
-                          </td>
-                          <td className="py-3">
-                            <i
-                              id="play-pausa-icon"
-                              className="fa-solid fa-play  "
-                            ></i>
+                            0:00
                           </td>
                         </tr>
                         <tr>
                           <td className="py-3">2.</td>
                           <td className="py-3">Nome Canzone</td>
                           <td className="py-3 fs-6" id="sec">
-                            0:20
-                          </td>
-                          <td className="py-3">
-                            <i
-                              id="play-pausa-icon"
-                              className="fa-solid fa-play  "
-                            ></i>
+                            0:00
                           </td>
                         </tr>
                         <tr>
                           <td className="py-3">3.</td>
                           <td className="py-3">Nome Canzone</td>
                           <td className="py-3 fs-6" id="sec">
-                            0:20
-                          </td>
-                          <td className="py-3">
-                            <i
-                              id="play-pausa-icon"
-                              className="fa-solid fa-play  "
-                            ></i>
+                            0:00
                           </td>
                         </tr>
                         <tr>
                           <td className="py-3">4.</td>
                           <td className="py-3">Nome Canzone</td>
                           <td className="py-3 fs-6" id="sec">
-                            0:20
-                          </td>
-                          <td className="py-3">
-                            <i
-                              id="play-pausa-icon"
-                              className="fa-solid fa-play  "
-                            ></i>
+                            0:00
                           </td>
                         </tr>
                         <tr>
                           <td className="py-3">5.</td>
                           <td className="py-3">Nome Canzone</td>
                           <td className="py-3 fs-6" id="sec">
-                            0:20
-                          </td>
-                          <td className="py-3">
-                            <i
-                              id="play-pausa-icon"
-                              className="fa-solid fa-play  "
-                            ></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td className="py-3">6.</td>
-                          <td className="py-3">Nome Canzone</td>
-                          <td className="py-3 fs-6" id="sec">
-                            0:20
-                          </td>
-                          <td className="py-3">
-                            <i
-                              id="play-pausa-icon"
-                              className="fa-solid fa-play  "
-                            ></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td className="py-3">7.</td>
-                          <td className="py-3">Nome Canzone</td>
-                          <td className="py-3 fs-6" id="sec">
-                            0:20
-                          </td>
-                          <td className="py-3">
-                            <i
-                              id="play-pausa-icon"
-                              className="fa-solid fa-play  "
-                            ></i>
+                            0:00
                           </td>
                         </tr>
                       </tbody>
@@ -149,11 +98,29 @@ export default function AlbumTrack() {
 
                   <div className="container px-0 px-lg-5 my-5">
                     <div className="row justify-content-center">
-                      <BandCampButton />
-                      <p className="text-white text-center fs-6 my-3">
-                        oppure
-                      </p>{" "}
-                      <DiscogsButton />
+                      <a className="playstore-button" href="#">
+                        <img
+                          src="/public/img/logo/bandcamp-logo.webp"
+                          alt="BandCamp Logo"
+                          className="icon"
+                        />
+                        <span className="texts">
+                          <span className="text-1">Acquista su</span>
+                          <span className="text-2">BandCamp</span>
+                        </span>
+                      </a>
+                      <p className="text-white text-center fs-6 my-3">oppure</p>{" "}
+                      <a className="playstore-button " href="#">
+                        <img
+                          src="/public/img/logo/discogs-logo.png"
+                          alt="Discogs Logo"
+                          className="icon"
+                        />
+                        <span className="texts">
+                          <span className="text-1">Acquista su</span>
+                          <span className="text-2">Discogs</span>
+                        </span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -169,29 +136,38 @@ export default function AlbumTrack() {
                 <div className="row ">
                   <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center px-0 px-lg-5">
                     <img
-                      src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-17.jpg"
-                      alt=""
+                      src="/public/img/artist/EHCS/cover/cover.jpg"
                       className="cover-album"
                     />
 
                     <div className="container-fluid my-5">
                       <div className="row">
-                        <div className="col-12 col-lg-8 offset-0 offset-lg-2 px-5 px-lg-4 my-3">
-                          <p className="fs-2 text-light fw-semibold">
-                            Titolo Album - 2024
+                        <div className="col-12 col-lg-8 offset-0 offset-lg-1 px-5 px-lg-4">
+                          <p className="fs-2 text-light fw-semibold my-3">
+                            Belvedere Chaos - E.H.C.S
                           </p>
-                          <p className="fs-6 text-light fw-light mb-5 albumtrack-description">
-                            Lorem ipsum, dolor sit am et consectetur adipisicing
-                            elit. Repellendus dolor, sed earum dolore quas
-                            tempora eveniet modi error dolorum natus suscipit
-                            praesentium voluptate! Impedit nihil porro debitis
-                            alias, cum expedita.
-                          </p>
+                          <ul>
+                            <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                              Nome Album - Belvedere Chaos
+                            </li>
+                            <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                              Nome Artista - E.H.C.S
+                            </li>
+                            <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                              Genere - Rock
+                            </li>
+                            <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                              Data di uscita - 2024
+                            </li>
+                            <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                              Etichetta - Black Stuff Records
+                            </li>
+                          </ul>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start p-0 p-lg-5 px-5 px-lg-0 my-3">
+                  <div className="col-12 col-lg-5 d-flex flex-column justify-content-center align-items-start p-0 p-lg-5 px-5 px-lg-0 my-3">
                     <div className="container px-0 px-lg-5">
                       <table className="table my-lg-5">
                         <thead>
@@ -199,7 +175,6 @@ export default function AlbumTrack() {
                             <th className="py-3 fs-5">#</th>
                             <th className="py-3 fs-5">Titolo</th>
                             <th className="py-3 fs-5">Durata</th>
-                            <th className="py-3 fs-5">Ascolta</th>
                           </tr>
                         </thead>
 
@@ -208,91 +183,35 @@ export default function AlbumTrack() {
                             <td className="py-3">1.</td>
                             <td className="py-3">Nome Canzone</td>
                             <td className="py-3 fs-6" id="sec">
-                              0:20
-                            </td>
-                            <td className="py-3">
-                              <i
-                                id="play-pausa-icon"
-                                className="fa-solid fa-play  "
-                              ></i>
+                              0:00
                             </td>
                           </tr>
                           <tr>
                             <td className="py-3">2.</td>
                             <td className="py-3">Nome Canzone</td>
                             <td className="py-3 fs-6" id="sec">
-                              0:20
-                            </td>
-                            <td className="py-3">
-                              <i
-                                id="play-pausa-icon"
-                                className="fa-solid fa-play  "
-                              ></i>
+                              0:00
                             </td>
                           </tr>
                           <tr>
                             <td className="py-3">3.</td>
                             <td className="py-3">Nome Canzone</td>
                             <td className="py-3 fs-6" id="sec">
-                              0:20
-                            </td>
-                            <td className="py-3">
-                              <i
-                                id="play-pausa-icon"
-                                className="fa-solid fa-play  "
-                              ></i>
+                              0:00
                             </td>
                           </tr>
                           <tr>
                             <td className="py-3">4.</td>
                             <td className="py-3">Nome Canzone</td>
                             <td className="py-3 fs-6" id="sec">
-                              0:20
-                            </td>
-                            <td className="py-3">
-                              <i
-                                id="play-pausa-icon"
-                                className="fa-solid fa-play  "
-                              ></i>
+                              0:00
                             </td>
                           </tr>
                           <tr>
                             <td className="py-3">5.</td>
                             <td className="py-3">Nome Canzone</td>
                             <td className="py-3 fs-6" id="sec">
-                              0:20
-                            </td>
-                            <td className="py-3">
-                              <i
-                                id="play-pausa-icon"
-                                className="fa-solid fa-play  "
-                              ></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="py-3">6.</td>
-                            <td className="py-3">Nome Canzone</td>
-                            <td className="py-3 fs-6" id="sec">
-                              0:20
-                            </td>
-                            <td className="py-3">
-                              <i
-                                id="play-pausa-icon"
-                                className="fa-solid fa-play  "
-                              ></i>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td className="py-3">7.</td>
-                            <td className="py-3">Nome Canzone</td>
-                            <td className="py-3 fs-6" id="sec">
-                              0:20
-                            </td>
-                            <td className="py-3">
-                              <i
-                                id="play-pausa-icon"
-                                className="fa-solid fa-play  "
-                              ></i>
+                              0:00
                             </td>
                           </tr>
                         </tbody>
@@ -301,11 +220,31 @@ export default function AlbumTrack() {
 
                     <div className="container px-0 px-lg-5 my-5">
                       <div className="row justify-content-center">
-                        <BandCampButton />
+                        <a className="playstore-button" href="#">
+                          <img
+                            src="/public/img/logo/bandcamp-logo.webp"
+                            alt="BandCamp Logo"
+                            className="icon"
+                          />
+                          <span className="texts">
+                            <span className="text-1">Acquista su</span>
+                            <span className="text-2">BandCamp</span>
+                          </span>
+                        </a>
                         <p className="text-white text-center fs-6 my-3">
                           oppure
                         </p>{" "}
-                        <DiscogsButton />
+                        <a className="playstore-button " href="#">
+                          <img
+                            src="/public/img/logo/discogs-logo.png"
+                            alt="Discogs Logo"
+                            className="icon"
+                          />
+                          <span className="texts">
+                            <span className="text-1">Acquista su</span>
+                            <span className="text-2">Discogs</span>
+                          </span>
+                        </a>
                       </div>
                     </div>
                   </div>
@@ -321,29 +260,38 @@ export default function AlbumTrack() {
               <div className="row ">
                 <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center px-0 px-lg-5">
                   <img
-                    src="https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg"
-                    alt=""
+                    src="/public/img/artist/NTR-MISSION/cover/cover.jpg"
                     className="cover-album"
                   />
 
-                  <div className="container-fluid my-5">
+                  <div className="container-fluid my-3">
                     <div className="row">
-                      <div className="col-12 col-lg-8 offset-0 offset-lg-2 px-5 px-lg-4 my-3">
-                        <p className="fs-2 text-light fw-semibold">
-                          Titolo Album - 2024
+                      <div className="col-12 col-lg-8 offset-0 offset-lg-1 px-5 px-lg-4">
+                        <p className="fs-2 text-light fw-semibold my-3">
+                          Supernova Remnants - NTR Mission
                         </p>
-                        <p className="fs-6 text-light fw-light mb-5 albumtrack-description">
-                          Lorem ipsum, dolor sit am et consectetur adipisicing
-                          elit. Repellendus dolor, sed earum dolore quas tempora
-                          eveniet modi error dolorum natus suscipit praesentium
-                          voluptate! Impedit nihil porro debitis alias, cum
-                          expedita.
-                        </p>
+                        <ul>
+                          <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                            Nome Album - Supernova Remnants
+                          </li>
+                          <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                            Nome Artista - NTR Mission
+                          </li>
+                          <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                            Genere - Rock
+                          </li>
+                          <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                            Data di uscita - 2024
+                          </li>
+                          <li className="fs-6 text-light fw-light mb-3 albumtrack-description">
+                            Etichetta - Black Stuff Records
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start p-0 p-lg-5 px-5 px-lg-0 my-3">
+                <div className="col-12 col-lg-5 d-flex flex-column justify-content-center align-items-start p-0 p-lg-5 px-5 px-lg-0 my-3">
                   <div className="container px-0 px-lg-5">
                     <table className="table my-lg-5">
                       <thead>
@@ -351,7 +299,6 @@ export default function AlbumTrack() {
                           <th className="py-3 fs-5">#</th>
                           <th className="py-3 fs-5">Titolo</th>
                           <th className="py-3 fs-5">Durata</th>
-                          <th className="py-3 fs-5">Ascolta</th>
                         </tr>
                       </thead>
 
@@ -360,91 +307,35 @@ export default function AlbumTrack() {
                           <td className="py-3">1.</td>
                           <td className="py-3">Nome Canzone</td>
                           <td className="py-3 fs-6" id="sec">
-                            0:20
-                          </td>
-                          <td className="py-3">
-                            <i
-                              id="play-pausa-icon"
-                              className="fa-solid fa-play  "
-                            ></i>
+                            0:00
                           </td>
                         </tr>
                         <tr>
                           <td className="py-3">2.</td>
                           <td className="py-3">Nome Canzone</td>
                           <td className="py-3 fs-6" id="sec">
-                            0:20
-                          </td>
-                          <td className="py-3">
-                            <i
-                              id="play-pausa-icon"
-                              className="fa-solid fa-play  "
-                            ></i>
+                            0:00
                           </td>
                         </tr>
                         <tr>
                           <td className="py-3">3.</td>
                           <td className="py-3">Nome Canzone</td>
                           <td className="py-3 fs-6" id="sec">
-                            0:20
-                          </td>
-                          <td className="py-3">
-                            <i
-                              id="play-pausa-icon"
-                              className="fa-solid fa-play  "
-                            ></i>
+                            0:00
                           </td>
                         </tr>
                         <tr>
                           <td className="py-3">4.</td>
                           <td className="py-3">Nome Canzone</td>
                           <td className="py-3 fs-6" id="sec">
-                            0:20
-                          </td>
-                          <td className="py-3">
-                            <i
-                              id="play-pausa-icon"
-                              className="fa-solid fa-play  "
-                            ></i>
+                            0:00
                           </td>
                         </tr>
                         <tr>
                           <td className="py-3">5.</td>
                           <td className="py-3">Nome Canzone</td>
                           <td className="py-3 fs-6" id="sec">
-                            0:20
-                          </td>
-                          <td className="py-3">
-                            <i
-                              id="play-pausa-icon"
-                              className="fa-solid fa-play  "
-                            ></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td className="py-3">6.</td>
-                          <td className="py-3">Nome Canzone</td>
-                          <td className="py-3 fs-6" id="sec">
-                            0:20
-                          </td>
-                          <td className="py-3">
-                            <i
-                              id="play-pausa-icon"
-                              className="fa-solid fa-play  "
-                            ></i>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td className="py-3">7.</td>
-                          <td className="py-3">Nome Canzone</td>
-                          <td className="py-3 fs-6" id="sec">
-                            0:20
-                          </td>
-                          <td className="py-3">
-                            <i
-                              id="play-pausa-icon"
-                              className="fa-solid fa-play  "
-                            ></i>
+                            0:00
                           </td>
                         </tr>
                       </tbody>
@@ -453,11 +344,29 @@ export default function AlbumTrack() {
 
                   <div className="container px-0 px-lg-5 my-5">
                     <div className="row justify-content-center">
-                      <BandCampButton />
-                      <p className="text-white text-center fs-6 my-3">
-                        oppure
-                      </p>{" "}
-                      <DiscogsButton />
+                      <a className="playstore-button" href="#">
+                        <img
+                          src="/public/img/logo/bandcamp-logo.webp"
+                          alt="BandCamp Logo"
+                          className="icon"
+                        />
+                        <span className="texts">
+                          <span className="text-1">Acquista su</span>
+                          <span className="text-2">BandCamp</span>
+                        </span>
+                      </a>
+                      <p className="text-white text-center fs-6 my-3">oppure</p>{" "}
+                      <a className="playstore-button " href="#">
+                        <img
+                          src="/public/img/logo/discogs-logo.png"
+                          alt="Discogs Logo"
+                          className="icon"
+                        />
+                        <span className="texts">
+                          <span className="text-1">Acquista su</span>
+                          <span className="text-2">Discogs</span>
+                        </span>
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -480,7 +389,7 @@ export default function AlbumTrack() {
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next"
+          className="carousel-control-next "
           type="button"
           data-bs-target="#albumTrackCarousel"
           data-bs-slide="next"

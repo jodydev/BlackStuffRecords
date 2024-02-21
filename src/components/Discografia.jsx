@@ -16,17 +16,19 @@ export default function Discografia() {
 
   return (
     <section id="discografia">
-      <div className="container py-5">
+      <div className="container py-0 py-lg-5">
         <div className="row text-center my-5 py-3 py-lg-5">
-          <div className="content">
+          <div className="container">
             <div data-aos="fade-down" data-aos-duration="2000">
               <h2 className="text-uppercase text-center fs-1 my-3 fw-bold">
                 Ultimi Album
               </h2>
+              
               <p className="text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
-                eius quisquam asperiores ipsam maiores atque!
+              Esplora gli ultimi album musicali e scopri un mondo di suoni innovativi e stili unici. <br /> Dalla sperimentazione audace alle melodie accattivanti, c'è qualcosa per tutti i gusti.
               </p>
+             
+            
             </div>
           </div>
 
@@ -39,7 +41,7 @@ export default function Discografia() {
                 className="col-12 col-lg-4 mt-3 my-3 my-lg-5 px-5 p-lg-3"
               >
                 <div className="card-discografia">
-                  <img src={album.imageUrl} alt="Album Cover" />
+                  <img src={album.cover} alt="Album Cover" />
                   <figcaption>
                     <h3>{album.songName}</h3>
                     <h4 className="my-1">{album.artist}</h4>

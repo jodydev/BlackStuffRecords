@@ -105,6 +105,15 @@ export default function Navbar() {
               <a
                 className="nav-link text-light"
                 aria-current="page"
+                href="#artist-bio"
+              >
+                Artisti
+              </a>
+            </li>
+            <li className="nav-item mx-1">
+              <a
+                className="nav-link text-light"
+                aria-current="page"
                 href="#footer"
               >
                 Contatti

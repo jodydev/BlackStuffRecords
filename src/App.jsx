@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./page/HomePage";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -9,9 +10,12 @@ function App() {
   AOS.init();
 
   return (
-    <>
-      <HomePage />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
+    </Router>
+   
   );
 }
 

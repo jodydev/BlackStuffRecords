@@ -18,20 +18,19 @@ export default function News() {
     <section id="news" className="py-5">
       <div className="container-fluid py-5">
         <div className="row">
-          <div className="content">
+          <div className="container">
             <div data-aos="fade-down" data-aos-duration="2000">
               <h2 className="text-uppercase text-center fs-1 my-3 fw-bold">
                 Ultime News
               </h2>
               <p className="text-center">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
-                eius quisquam asperiores ipsam maiores atque!
+              Scopri le ultime novità musicali nella sezione "News" del nostro sito! <br /> Resta aggiornato su nuove uscite, recensioni e tendenze che stanno definendo il panorama musicale attuale. <br /> Entra e lasciati ispirare!
               </p>
             </div>
           </div>
 
           <section id="focus" className="focus-section">
-            <div className="container-lg py-0 py-lg-5 my-0 my-lg-5">
+            <div className="container  my-0 my-lg-5">
               <div className="row row-cols-1 row-cols-md-3 g-4">
                 {newsData.map((newsItem, index) => (
                   <div

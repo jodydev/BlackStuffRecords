@@ -14,16 +14,15 @@ export default function Carousel() {
       <div className="carousel-inner vh-100">
         {/* <!-- Immagini del Carousel --> */}
         <div className="carousel-item active ">
-          {/* <img
-            src="../../public/img/carousel/1.jpg"
+           <img
+            src="/public/img/artist/NTR-MISSION/foto/carousel-1.jpg"
             className="d-block carousel-img"
-            alt="Immagine 1"
-          /> */}
+          /> 
 
-          <video className="video-item" autoPlay loop muted>
+          {/* <video className="video-item" autoPlay loop muted>
             <source src="/public/video/1.mp4" type="video/mp4" />
             Il tuo browser non supporta il tag video.
-          </video>
+          </video> */}
 
           <div className="container position-absolute carousel-text-container">
             <div className="row">
@@ -44,16 +43,16 @@ export default function Carousel() {
 
         {/* <!-- Immagini del Carousel --> */}
         <div className="carousel-item">
-          <video className="video-item" autoPlay loop muted>
+          {/* <video className="video-item" autoPlay loop muted>
             <source src="/public/video/2.mp4" type="video/mp4" />
             Il tuo browser non supporta il tag video.
-          </video>
+          </video> */}
 
-          {/* <img
-            src="../../public/img/carousel/3.jpg"
+        
+          <img
+            src="/public/img/artist/NTR-MISSION/foto/carousel-2.jpg"
             className="d-block carousel-img"
-            alt="Immagine 1"
-          /> */}
+          /> 
 
           <div className="container position-absolute carousel-text-container">
             <div className="row">
@@ -74,16 +73,15 @@ export default function Carousel() {
 
         {/* <!-- Immagini del Carousel --> */}
         <div className="carousel-item">
-          {/* <img
-            src="../../public/img/carousel/3.jpg"
+        <img
+            src="/public/img/artist/NTR-MISSION/foto/carousel-3.jpg"
             className="d-block carousel-img"
-            alt="Immagine 1"
-          /> */}
+          /> 
 
-          <video className="video-item" autoPlay loop muted>
+          {/* <video className="video-item" autoPlay loop muted>
             <source src="/public/video/3.mp4" type="video/mp4" />
             Il tuo browser non supporta il tag video.
-          </video>
+          </video> */}
 
           <div className="container position-absolute carousel-text-container">
             <div className="row">
@@ -124,6 +122,7 @@ export default function Carousel() {
       >
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
+        
       </button>
     </div>
   );

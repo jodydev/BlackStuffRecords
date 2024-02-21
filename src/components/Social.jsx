@@ -1,112 +1,70 @@
-export default function Social() {
+export default function Social({ socialLinks }) {
+  const socialNames = [
+    "Facebook",
+    "Instagram",
+    "Youtube",
+    "Spotify",
+    "BandCamp",
+    "LinkTree",
+  ];
+
   return (
     <section id="social">
       <div className="container-fluid">
         <div className="row">
-          <div className="col-12 col-lg-2 bg-semi-dark">
-            <a href="http://">
-              <span className="position-relative">
-                <img
-                  src="../../public/img/logo-social/facebook.png"
-                  alt=""
-                 
-                />
-                <p
-                  className="text-secondary position-absolute fs-5"
-                  style={{ top: "70%", left: "40%" }}
-                >
-                  Facebook
-                </p>
-              </span>
-            </a>
-          </div>
-          <div className="col-12 col-lg-2 bg-darkk">
-            <a href="http://">
-              <span className="position-relative">
-                <img
-                  src="../../public/img/logo-social/instagram.png"
-                  alt=""
-                 
-                />
-                <p
-                  className="text-secondary position-absolute fs-5"
-                  style={{ top: "70%", left: "40%" }}
-                >
-                  Instagram
-                </p>
-              </span>
-            </a>
-          </div>
-          <div className="col-12 col-lg-2 bg-semi-dark">
-            <a href="http://">
-              <span className="position-relative">
-                <img
-                  src="../../public/img/logo-social/whatsapp.png"
-                  alt=""
-                 
-                />
-                <p
-                  className="text-secondary position-absolute fs-5"
-                  style={{ top: "70%", left: "40%" }}
-                >
-                  Whatsapp
-                </p>
-              </span>
-            </a>
-          </div>
-          <div className="col-12 col-lg-2 bg-darkk">
-            <a href="http://">
-              <span className="position-relative">
-                <img
-                  src="../../public/img/logo-social/youtube.png"
-                  alt=""
-                 
-                />
-                <p
-                  className="text-secondary position-absolute fs-5"
-                  style={{ top: "70%", left: "40%" }}
-                >
-                  Youtube
-                </p>
-              </span>
-            </a>
-          </div>
-          <div className="col-12 col-lg-2 bg-semi-dark">
-            <a href="http://">
-              <span className="position-relative">
-                <img
-                  src="../../public/img/logo-social/spotify.png"
-                  alt=""
-                 
-                />
-                <p
-                  className="text-secondary position-absolute fs-5"
-                  style={{ top: "70%", left: "40%" }}
-                >
-                  Spotify
-                </p>
-              </span>
-            </a>
-          </div>
-          <div className="col-12 col-lg-2 bg-darkk">
-            <a href="http://">
-              <span className="position-relative">
-                <img
-                  src="../../public/img/logo/bandcamp-logo.webp"
-                  alt=""
-                 
-                />
-                <p
-                  className="text-secondary position-absolute fs-5"
-                  style={{ top: "70%", left: "40%" }}
-                >
-                  BandCamp
-                </p>
-              </span>
-            </a>
-          </div>
+          {socialLinks.map((link, index) => (
+            <div
+              key={index}
+              className={`${
+                socialNames[index] === "Facebook" ||
+                socialNames[index] === "Youtube" ||
+                socialNames[index] === "BandCamp"
+                  ? "bg-semi-dark"
+                  : "bg-darkk"
+              }  col-12 col-lg-2  d-flex justify-content-center align-items-center`}
+            >
+              <a href={link}>
+                <span className="position-relative">
+                  <img
+                    src={`/public/img/logo-social/${getSocialIcon(index)}.png`}
+                  />
+                  {/* <p
+                    className="text-secondary position-absolute fs-5 text-center"
+                    style={{ top: "70%", left: "35%" }}
+                  >
+                    {getSocialName(index)}
+                  </p> */}
+                </span>
+              </a>
+            </div>
+          ))}
         </div>
       </div>
     </section>
   );
+}
+
+// Funzioni ausiliarie per ottenere il nome e l'icona del social media
+// function getSocialName(index) {
+//   const socialNames = [
+//     "Facebook",
+//     "Instagram",
+//     "Youtube",
+//     "Spotify",
+//     "BandCamp",
+//     "LinkTree",
+//   ];
+//   return socialNames[index];
+// }
+
+function getSocialIcon(index) {
+  const socialIcons = [
+    "facebook",
+    "instagram",
+    "youtube",
+    "spotify",
+    "bandcamp",
+    "linktree",
+  ];
+  return socialIcons[index];
 }

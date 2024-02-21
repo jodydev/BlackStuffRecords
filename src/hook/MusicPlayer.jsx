@@ -4,19 +4,25 @@ const MusicPlayer = () => {
   const [currentTrack, setCurrentTrack] = useState([
     
     {
-      title: "Cro Magnon Man",
-      artist: "The Stark Palace",
-      mp3: "http://www.jplayer.org/audio/mp3/TSP-01-Cro_magnon_man.mp3",
-      oga: "http://www.jplayer.org/audio/ogg/TSP-01-Cro_magnon_man.ogg",
+      title: "Berlin",
+      artist: "Anzwart",
+      mp3: "/public/img/artist/ANZWART/mp3/Berlin.mp3",
       poster:
-        "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/248198469/original/b1c3dc3c85b47969fb8994b3d14e1df0ee9795e6/animate-your-album-cover-art-mitape-single-ep-cover.jpg",
+        "/public/img/artist/ANZWART/cover/cover.png",
     },
     {
-      title: "Bubble",
-      artist: "The Stark Palace",
-      mp3: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+      title: "Cup of Tea",
+      artist: "E.H.C.S",
+      mp3: "/public/img/artist/EHCS/mp3/CUP-OF-TEA.mp3",
       poster:
-        "https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/333153091/original/a95cee54427c97d1f7bc34e772304030427c2e53/do-artistic-and-retro-album-cover-art-design.jpg",
+        "/public/img/artist/EHCS/cover/cover.jpg",
+    },
+    {
+      title: "NGC 2080",
+      artist: "NTR Mission",
+      mp3: "/public/img/artist/NTR-MISSION/mp3/NGC-2080.mp3",
+      poster:
+        "/public/img/artist/NTR-MISSION/cover/cover.jpg",
     },
   ]);
   // Stato per l'indice della traccia corrente
@@ -233,7 +239,7 @@ const MusicPlayer = () => {
 
   // Renderizza il componente MusicPlayer
   return (
-    <div className="container music-player position-absolute container-music">
+    <div className="container position-absolute container-music ">
       <div className="row">
         {/* Sezione dell'album */}
         <div className="col-3 col-lg-1 pe-2 pe-lg-0 px-0 px-lg-0">

@@ -2,22 +2,25 @@
 const albumsData = [
     {
       id: 1,
-      imageUrl: 'https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-7.jpg',
-      songName: 'Nome Canzone',
-      artist: 'Artista'
+      songName: "Berlin",
+      artist: "Anzwart",
+      cover:
+        "/public/img/artist/ANZWART/cover/cover.png",
     },
     {
       id: 2,
-      imageUrl: 'https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-17.jpg',
-      songName: 'Nome Canzone',
-      artist: 'Artista'
+      songName: "Cup of Tea",
+      artist: "E.H.C.S",
+      cover:
+        "/public/img/artist/EHCS/cover/cover.jpg",
     },
     {
       id: 3,
-      imageUrl: 'https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg',
-      songName: 'Nome Canzone',
-      artist: 'Artista'
-    }
+      songName: "NGC 2080",
+      artist: "NTR Mission",
+      cover:
+        "/public/img/artist/NTR-MISSION/cover/cover.jpg",
+    },
   ];
 
 export default albumsData;

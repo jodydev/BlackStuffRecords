@@ -3,44 +3,33 @@ const newsData = [
   {
     id: 1,
     imageUrl:
-      "https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-7.jpg",
-    date: {
-      day: 1,
-      month: "Jan",
-    },
+      "/public/img/artist/NTR-MISSION/cover/cover.jpg",
     category: "music",
-    title: "an ice cream sundae party！",
-    subtitle: "an ice cream sundae party！",
+    title: "Nuovo Album di NTR Mission domina le Classifiche di Vendita!",
+    subtitle: "Il tanto atteso album di NTR Mission ha debuttato in testa alle classifiche di vendita..",
     description:
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam illo fugit blanditiis voluptas perferendis magni quod nam unde cumquerem ",
+      "Conquistando il cuore dei fan in tutto il mondo. Con canzoni che esplorano nuovi territori sonori e testi profondamente personali, Swift dimostra ancora una volta il suo talento eccezionale nel trasportare gli ascoltatori in un viaggio emotivo. Scopri di più su questo straordinario album che continua a lasciare un'impronta indelebile nel mondo della musica pop.",
   },
   {
     id: 2,
     imageUrl:
-      "https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-17.jpg",
-    date: {
-      day: 1,
-      month: "Jan",
-    },
+      "/public/img/artist/EHCS/cover/cover.jpg",
+ 
     category: "music",
-    title: "an ice cream sundae party！",
-    subtitle: "an ice cream sundae party！",
+    title: "Collaborazione Esplosiva: E.H.C.S e Black Stuff Records rilasciano un Nuovo Singolo",
+    subtitle: "Due giganti della musica, E.H.C.S e Black Stuff Records..",
     description:
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam illo fugit blanditiis voluptas perferendis magni quod nam unde cumquerem ",
+      "Hanno unito le forze per creare un singolo esplosivo intitolato Cup of Tea. La traccia, un mix irresistibile di rap incendiario e melodie orecchiabili, ha già catturato l'attenzione del pubblico internazionale. Scopri di più su questa collaborazione straordinaria che sta facendo vibrare le scene musicali di tutto il mondo.",
   },
   {
     id: 3,
     imageUrl:
-      "https://shuffle.qodeinteractive.com/wp-content/uploads/2016/09/album-cover-image-18.jpg",
-    date: {
-      day: 1,
-      month: "Jan",
-    },
+      "/public/img/artist/ANZWART/cover/cover.png",
     category: "music",
-    title: "an ice cream sundae party！",
-    subtitle: "an ice cream sundae party！",
+    title: "Annuncio Speciale: Anzwant Si Prepara a Rilasciare Nuovo Album a Sorpresa",
+    subtitle: "Anzwant sorprendente: è in arrivo un nuovo album a sorpresa..",
     description:
-      "lorem ipsum dolor sit amet consectetur adipisicing elit. Rem totam illo fugit blanditiis voluptas perferendis magni quod nam unde cumquerem ",
+      "Hanno fatto un annuncio sorprendente: è in arrivo un nuovo album a sorpresa. Con il suo stile innovativo e la sua capacità di reinventarsi costantemente, Anzwant continua a stupire il mondo della musica e dello spettacolo. Fan di tutto il mondo aspettano con ansia il debutto di questo nuovo capitolo musicale.",
   },
 ];
 
