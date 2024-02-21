@@ -21,19 +21,19 @@ export default function Social({ socialLinks }) {
                 socialNames[index] === "BandCamp"
                   ? "bg-semi-dark"
                   : "bg-darkk"
-              }  col-12 col-lg-2  d-flex justify-content-center align-items-center`}
+              }  col-12 col-lg-2 d-flex justify-content-center align-items-center`}
             >
               <a href={link}>
                 <span className="position-relative">
                   <img
                     src={`/public/img/logo-social/${getSocialIcon(index)}.png`}
                   />
-                  {/* <p
+                   <p
                     className="text-secondary position-absolute fs-5 text-center"
-                    style={{ top: "70%", left: "35%" }}
+                    style={{ top: "70%", left: "center", right: "center", bottom: "center",}}
                   >
                     {getSocialName(index)}
-                  </p> */}
+                  </p> 
                 </span>
               </a>
             </div>
@@ -44,18 +44,18 @@ export default function Social({ socialLinks }) {
   );
 }
 
-// Funzioni ausiliarie per ottenere il nome e l'icona del social media
-// function getSocialName(index) {
-//   const socialNames = [
-//     "Facebook",
-//     "Instagram",
-//     "Youtube",
-//     "Spotify",
-//     "BandCamp",
-//     "LinkTree",
-//   ];
-//   return socialNames[index];
-// }
+
+function getSocialName(index) {
+  const socialNames = [
+    "Facebook",
+    "Instagram",
+    "Youtube",
+    "Spotify",
+    "BandCamp",
+    "LinkTree",
+  ];
+  return socialNames[index];
+}
 
 function getSocialIcon(index) {
   const socialIcons = [

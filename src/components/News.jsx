@@ -24,7 +24,10 @@ export default function News() {
                 Ultime News
               </h2>
               <p className="text-center">
-              Scopri le ultime novità musicali nella sezione "News" del nostro sito! <br /> Resta aggiornato su nuove uscite, recensioni e tendenze che stanno definendo il panorama musicale attuale. <br /> Entra e lasciati ispirare!
+                Scopri le ultime novità musicali nella sezione "News" del nostro
+                sito! <br /> Resta aggiornato su nuove uscite, recensioni e
+                tendenze che stanno definendo il panorama musicale attuale.{" "}
+                <br /> Entra e lasciati ispirare!
               </p>
             </div>
           </div>
@@ -42,17 +45,15 @@ export default function News() {
                       <div>
                         <article className="card shadow-lg">
                           <header className="card__thumb">
-                            <a href="#">
-                              <img src={newsItem.imageUrl} alt="News" />
-                            </a>
+                            <img src={newsItem.imageUrl} alt="News" />
                           </header>
 
                           <div className="card__body">
                             <div className="card__category">
-                              <a href="#">{newsItem.category}</a>
+                              {newsItem.category}
                             </div>
                             <h2 className="card__title">
-                              <a href="#">{newsItem.title}</a>
+                              {newsItem.title}
                             </h2>
                             <div className="card__subtitle">
                               {newsItem.subtitle}

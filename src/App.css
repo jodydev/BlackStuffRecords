@@ -7,7 +7,11 @@
 /* MEDIA QUERY */
 
 /* (DESKTOP) = 1920px */
-@media screen and (max-width: 1920px) {
+@media screen and (min-width: 1920px) {
+  .cover-album {
+    max-width: 500px !important;
+    max-height: 500px !important;
+  }
   .nav-logo {
     width: 50px !important;
   }
@@ -48,6 +52,10 @@
     width: 300px !important;
     padding: 100px !important;
   }
+  .cover-album {
+    max-width: 400px !important;
+    max-height: 400px !important;
+  }
 }
 
 /* (MOBILE) = 480px */
@@ -82,11 +90,14 @@
   }
   .carousel-intestation {
     font-size: 16px !important;
+    margin-top: 20%;
   }
   .carousel-text-container {
     top: 30% !important;
     left: 5% !important;
     width: 90% !important;
+    text-align: center !important;
+
   }
   .container-music {
     top: 90% !important;
@@ -96,10 +107,10 @@
     height: 100vh !important;
   }
   .music-author {
-    font-size: 11px !important;
+    font-size: 13px !important;
   }
   .music-title {
-    font-size: 12px !important;
+    font-size: 14px !important;
   }
 
   .music-cover {
@@ -107,7 +118,9 @@
   }
 
   .cover-album {
-    width: 80% !important;
+    width: 100% !important;
+    margin-top: 0% !important;
+    margin-left: 0% !important;
   }
   .container-album {
     width: 100% !important;
@@ -146,12 +159,42 @@
   }
 
   .vertical-hr {
-    height: 80px !important;
-    border: none !important;
+    height: 100px !important;
+
   }
 
-  .card:hover .card__body {
+  
+
+  #news .card {
     height: 500px !important;
+  }
+
+  #news .card:hover .card__description {
+    display: none !important;
+  }
+  .container-artist-bio-1 {
+    top: 10% !important;
+    left: 0% !important;
+  }
+  .container-artist-bio-2 {
+    top: 10% !important;
+    left: 0% !important;
+  }
+  .container-artist-bio-3 {
+    top: 10% !important;
+    left: 0% !important;
+  }
+
+
+  .text-bio h2 {
+    font-size: 24px !important;
+    text-align: start !important;
+  }
+
+  .text-bio p {
+    margin-top: 20% !important;
+    font-size: 17px !important;
+    text-align: start !important;
   }
 
   /* cambio file immagine in vista mobile */
@@ -200,6 +243,12 @@ html {
   color: #fff !important;
   font-size: 18px !important;
   font-weight: 400 !important;
+}
+
+.nav-link:hover {
+  color: #23a5b4 !important;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .fa-bars {
@@ -260,6 +309,10 @@ html {
 .container-music {
   top: 92%;
   left: 25%;
+}
+
+.my-bg-transparent {
+  background-color: #0000009a;
 }
 
 .vertical-hr {
@@ -567,7 +620,8 @@ td {
   transition-delay: 0.35s;
 }
 
-** * CARD **/ .card {
+/* ** * CARD **/  */
+.card {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -761,7 +815,7 @@ td {
   padding-left: 10px;
 }
 
-/** BUTTON BANDCAMP **/
+/** BUTTON BANDCAMP-DISCOGS **/
 
 .playstore-button {
   display: inline-flex;
@@ -1080,7 +1134,7 @@ td {
 
 .container-artist-bio-2 {
   top: 20%;
-  left: 60%;
+  left: 10%;
 }
 
 .container-artist-bio-3 {
@@ -1092,6 +1146,15 @@ td {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   font-style: italic;
+}
+.text-bio h2 {
+  font-size: 40px ;
+  text-align: start ;
+}
+
+.text-bio p {
+  font-size: 24px ;
+  text-align: start ;
 }
 
 /* SOCIAL */
@@ -1121,4 +1184,16 @@ td {
 
 #social .col-12:hover p {
   display: block;
+}
+
+.carousel ul {
+  list-style-type: none; /* Rimuove i punti predefiniti */
+}
+
+.carousel li:before {
+  content: "\2022"; /* Utilizza un bullet point come punto */
+  color: white; /* Imposta il colore bianco */
+  display: inline-block;
+  width: 2em; /* Imposta la larghezza del bullet point */
+  margin-left: -1em; /* Sposta il bullet point a sinistra rispetto al contenuto del <li> */
 }

@@ -242,7 +242,7 @@ const MusicPlayer = () => {
     <div className="container position-absolute container-music ">
       <div className="row">
         {/* Sezione dell'album */}
-        <div className="col-3 col-lg-1 pe-2 pe-lg-0 px-0 px-lg-0">
+        <div className="col-3 col-lg-1 pe-2 pe-lg-0 px-0 px-lg-0 my-bg-transparent">
           <img
             src={currentTrack[currentTrackIndex].poster}
             className="music-cover"
@@ -251,7 +251,7 @@ const MusicPlayer = () => {
         </div>
 
         {/* Informazioni sulla traccia corrente */}
-        <div className="col-3 col-lg-2 offset-lg-0 offset-0 offcanvas-1 flex-column justify-content-center align-items-center vertical-hr info-music-box px-0 p-0 px-lg-3">
+        <div className="col-3 col-lg-2 offset-lg-0 offset-0 offcanvas-1 flex-column justify-content-center align-items-center vertical-hr info-music-box px-0 p-0 px-lg-3 my-bg-transparent">
           <p className="music-title text-light fw-semibold mt-3">
             {currentTrack[currentTrackIndex].title}
           </p>
@@ -270,7 +270,7 @@ const MusicPlayer = () => {
         <div
           id="precedente"
           onClick={handlePrevClick}
-          className="col-2 col-lg-1 d-flex justify-content-center align-items-center vertical-hr"
+          className="col-2 col-lg-1 d-flex justify-content-center align-items-center vertical-hr my-bg-transparent"
         >
           <i className="fa-solid fa-angles-left control-player-icon"></i>
         </div>
@@ -279,7 +279,7 @@ const MusicPlayer = () => {
         <div
           id="play-pausa"
           onClick={handlePlayPauseClick}
-          className="col-2 col-lg-1 d-flex justify-content-center align-items-center vertical-hr"
+          className="col-2 col-lg-1 d-flex justify-content-center align-items-center vertical-hr my-bg-transparent"
         >
           <i
             id="play-pausa-icon"
@@ -291,13 +291,13 @@ const MusicPlayer = () => {
         <div
           id="prossima"
           onClick={handleNextClick}
-          className="col-2 col-lg-1 d-flex justify-content-center align-items-center vertical-hr"
+          className="col-2 col-lg-1 d-flex justify-content-center align-items-center vertical-hr my-bg-transparent"
         >
           <i className="fa-solid fa-angles-right control-player-icon"></i>
         </div>
 
         {/* Sezione della barra di ricerca e del tempo */}
-        <div className="col-1 col-lg-4 d-none d-lg-block vertical-h d-flex justify-content-center align-items-center vertical-hr px-5 ">
+        <div className="col-1 col-lg-4 d-none d-lg-block vertical-h d-flex justify-content-center align-items-center vertical-hr px-5 my-bg-transparent">
           <TimeDisplay
             currentTime={currentTime}
             duration={audioRef.current ? audioRef.current.duration : 0}

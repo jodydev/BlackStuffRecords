@@ -44,7 +44,7 @@ export default function ArtistBio() {
   };
 
   return (
-    <section className="d-none d-lg-block h-100" id="artist-bio">
+    <section id="artist-bio">
       <div
         id="carouselExampleInterval"
         className="carousel slide"
@@ -56,16 +56,13 @@ export default function ArtistBio() {
             <img
               src="/public/img//artist-bio/1.jpg"
               className="d-block carousel-img-bio"
-              alt="Immagine 1"
             />
 
             <div className="container position-absolute container-artist-bio-1 text-start p-5">
               <div className="row">
-                <div className="col-12 col-lg-6 ">
-                  <h2 className="text-white fs-1">
-                    Biografia Artista - Anzwart
-                  </h2>
-                  <p className="text-white text-bio fs-5 my-3 my-lg-5">
+                <div className="col-12 col-lg-6 text-bio">
+                  <h2 className="text-white">Biografia Artista - Anzwart</h2>
+                  <p className="text-white my-3 my-lg-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dicta ratione earum, ex quam amet corrupti? Lorem ipsum
                     dolor sit amet consectetur adipisicing elit. Quo suscipit
@@ -91,11 +88,9 @@ export default function ArtistBio() {
 
             <div className="container position-absolute container-artist-bio-2 text-start p-5">
               <div className="row">
-                <div className="col-12 col-lg-6 ">
-                  <h2 className="text-white fs-1">
-                    Biografia Artista - E.H.C.S{" "}
-                  </h2>
-                  <p className="text-white text-bio fs-5 my-3 my-lg-5">
+                <div className="col-12 col-lg-6 text-bio">
+                  <h2 className="text-white">Biografia Artista - E.H.C.S </h2>
+                  <p className="text-white my-3 my-lg-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dicta ratione earum, ex quam amet corrupti? Lorem ipsum
                     dolor sit amet consectetur adipisicing elit. Quo suscipit
@@ -121,18 +116,12 @@ export default function ArtistBio() {
 
             <div className="container position-absolute container-artist-bio-3 text-start p-5">
               <div className="row">
-                <div className="col-12 col-lg-6 ">
-                  <h2 className="text-white fs-1">
+                
+                <div className="col-12 col-lg-6 text-bio" >
+                  <h2 className="text-white">
                     Biografia Artista - NTR Mission
                   </h2>
-                  <p
-                    className="text-white text-bio fs-5 my-3 my-lg-5"
-                    style={{
-                      fontFamily: "'Montserrat', sans-serif",
-                      fontWeight: "200",
-                      fontStyle: "italic",
-                    }}
-                  >
+                  <p className="text-white my-3 my-lg-5">
                     Nel 2014 nasce INTERMISSION, diventando poi NTR MISSION nel
                     2022, guidato da Matteo Zavattin. La loro musica, ispirata
                     dalla conquista dello spazio, offre atmosfere rarefatte e
@@ -151,21 +140,27 @@ export default function ArtistBio() {
 
         {/* <!-- Controlli del Carousel --> */}
         <button
-          className="carousel-control-prev"
+          className="carousel-control-prev d-none d-lg-block"
           type="button"
           data-bs-target="#carouselExampleInterval"
           data-bs-slide="prev"
         >
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next"
+          className="carousel-control-next d-none d-lg-block"
           type="button"
           data-bs-target="#carouselExampleInterval"
           data-bs-slide="next"
         >
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
           <span className="visually-hidden">Next</span>
         </button>
       </div>

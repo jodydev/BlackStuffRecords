@@ -68,6 +68,7 @@ export default function Footer() {
                   src="/public/img/logo/blackstuffrecords-logo.png"
                   alt="Black Stuff Records"
                   width="200"
+                  className="d-none d-lg-block"
                 />
               </a>
             </div>
@@ -77,7 +78,7 @@ export default function Footer() {
 
       <section className="bg-semi-dark">
         <footer className="d-flex flex-wrap justify-content-between align-items-center p-5 container">
-          <div className="col-8 d-flex align-items-center">
+          <div className="col-6 d-flex align-items-center">
             <span class="text-white">
               © 2024 created by{" "}
               <a
@@ -89,7 +90,7 @@ export default function Footer() {
             </span>
           </div>
 
-          <ul className="nav col-4 justify-content-end list-unstyled d-flex">
+          <ul className="nav col-6 justify-content-end list-unstyled d-flex">
             <li className="ms-2">
               <a
                 className="text-white"
