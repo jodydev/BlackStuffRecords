@@ -26,14 +26,14 @@ export default function Social({ socialLinks }) {
               <a href={link}>
                 <span className="position-relative">
                   <img
-                    src={`/public/img/logo-social/${getSocialIcon(index)}.png`}
+                    src={`/img/logo-social/${getSocialIcon(index)}.png`}
                   />
-                   <p
+                   {/* <p
                     className="text-secondary position-absolute fs-5 text-center"
                     style={{ top: "70%", left: "center", right: "center", bottom: "center",}}
                   >
                     {getSocialName(index)}
-                  </p> 
+                  </p>  */}
                 </span>
               </a>
             </div>
@@ -45,17 +45,17 @@ export default function Social({ socialLinks }) {
 }
 
 
-function getSocialName(index) {
-  const socialNames = [
-    "Facebook",
-    "Instagram",
-    "Youtube",
-    "Spotify",
-    "BandCamp",
-    "LinkTree",
-  ];
-  return socialNames[index];
-}
+// function getSocialName(index) {
+//   const socialNames = [
+//     "Facebook",
+//     "Instagram",
+//     "Youtube",
+//     "Spotify",
+//     "BandCamp",
+//     "LinkTree",
+//   ];
+//   return socialNames[index];
+// }
 
 function getSocialIcon(index) {
   const socialIcons = [

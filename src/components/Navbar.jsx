@@ -5,12 +5,12 @@ export default function Navbar() {
         <div className="row">
           <div className="col-2 d-flex justify-content-center align-items-center">
             <img
-              src="/public/img/logo/blackstuffrecords-logo.png"
+              src="/img/logo/blackstuffrecords-logo.png"
               className=" me-lg-4 nav-logo w-100"
             /> 
 
             {/* <video className="w-75 rounded-2 video-logo" autoPlay loop muted>
-              <source src="/public/img/logo/black-stuff.mp4" type="video/mp4" />
+              <source src="/img/logo/black-stuff.mp4" type="video/mp4" />
               Il tuo browser non supporta il tag video.
             </video> */}
           </div>

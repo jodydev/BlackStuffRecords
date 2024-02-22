@@ -56,6 +56,16 @@
     max-width: 400px !important;
     max-height: 400px !important;
   }
+  .carousel-text-container {
+    top: 30% !important;
+    left: 20% !important;
+    text-align: center !important;
+  }
+
+  .carousel-title {
+    font-size: 70px !important;
+    margin-bottom: 30px !important;
+  }
 }
 
 /* (MOBILE) = 480px */
@@ -97,7 +107,6 @@
     left: 5% !important;
     width: 90% !important;
     text-align: center !important;
-
   }
   .container-music {
     top: 90% !important;
@@ -281,8 +290,10 @@ html {
 }
 .carousel-intestation {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: lighter !important;
   color: #fff;
+  font-style: italic;
+  margin-top: 5%;
 }
 
 .carousel-img {
@@ -1148,7 +1159,7 @@ td {
   font-style: italic;
 }
 .text-bio h2 {
-  font-size: 40px ;
+  font-size: 0px ;
   text-align: start ;
 }
 
@@ -1186,11 +1197,11 @@ td {
   display: block;
 }
 
-.carousel ul {
+#album-trak ul {
   list-style-type: none; /* Rimuove i punti predefiniti */
 }
 
-.carousel li:before {
+#album-trak li:before {
   content: "\2022"; /* Utilizza un bullet point come punto */
   color: white; /* Imposta il colore bianco */
   display: inline-block;

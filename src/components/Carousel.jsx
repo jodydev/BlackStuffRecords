@@ -15,12 +15,12 @@ export default function Carousel() {
         {/* <!-- Immagini del Carousel --> */}
         <div className="carousel-item active ">
            <img
-            src="/public/img/artist/NTR-MISSION/foto/carousel-1.jpg"
+            src="/img/artist/NTR-MISSION/foto/carousel-1.jpg"
             className="d-block carousel-img"
           /> 
 
           {/* <video className="video-item" autoPlay loop muted>
-            <source src="/public/video/1.mp4" type="video/mp4" />
+            <source src="/video/1.mp4" type="video/mp4" />
             Il tuo browser non supporta il tag video.
           </video> */}
 
@@ -44,13 +44,13 @@ export default function Carousel() {
         {/* <!-- Immagini del Carousel --> */}
         <div className="carousel-item">
           {/* <video className="video-item" autoPlay loop muted>
-            <source src="/public/video/2.mp4" type="video/mp4" />
+            <source src="/video/2.mp4" type="video/mp4" />
             Il tuo browser non supporta il tag video.
           </video> */}
 
         
           <img
-            src="/public/img/artist/NTR-MISSION/foto/carousel-2.jpg"
+            src="/img/artist/NTR-MISSION/foto/carousel-2.jpg"
             className="d-block carousel-img"
           /> 
 
@@ -74,12 +74,12 @@ export default function Carousel() {
         {/* <!-- Immagini del Carousel --> */}
         <div className="carousel-item">
         <img
-            src="/public/img/artist/NTR-MISSION/foto/carousel-3.jpg"
+            src="/img/artist/NTR-MISSION/foto/carousel-3.jpg"
             className="d-block carousel-img"
           /> 
 
           {/* <video className="video-item" autoPlay loop muted>
-            <source src="/public/video/3.mp4" type="video/mp4" />
+            <source src="/video/3.mp4" type="video/mp4" />
             Il tuo browser non supporta il tag video.
           </video> */}
 

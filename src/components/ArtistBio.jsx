@@ -54,7 +54,7 @@ export default function ArtistBio() {
           {/* <!-- PRIMA SLIDE - ANZWART --> */}
           <div className="carousel-item  active " data-bs-interval="5000">
             <img
-              src="/public/img//artist-bio/1.jpg"
+              src="/img//artist-bio/1.jpg"
               className="d-block carousel-img-bio"
             />
 
@@ -82,7 +82,7 @@ export default function ArtistBio() {
 
           <div className="carousel-item  " data-bs-interval="5000">
             <img
-              src="/public/img/artist/NTR-MISSION/foto/biooo.jpg"
+              src="/img/artist/NTR-MISSION/foto/biooo.jpg"
               className="d-block carousel-img-bio"
             />
 
@@ -110,7 +110,7 @@ export default function ArtistBio() {
 
           <div className="carousel-item  ">
             <img
-              src="/public/img/artist/NTR-MISSION/foto/bio.jpg"
+              src="/img/artist/NTR-MISSION/foto/bio.jpg"
               className="d-block carousel-img-bio"
             />
 
@@ -140,7 +140,7 @@ export default function ArtistBio() {
 
         {/* <!-- Controlli del Carousel --> */}
         <button
-          className="carousel-control-prev d-none d-lg-block"
+          className="carousel-control-prev d-none d-lg-block h-75"
           type="button"
           data-bs-target="#carouselExampleInterval"
           data-bs-slide="prev"
@@ -152,7 +152,7 @@ export default function ArtistBio() {
           <span className="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next d-none d-lg-block"
+          className="carousel-control-next d-none d-lg-block h-75"
           type="button"
           data-bs-target="#carouselExampleInterval"
           data-bs-slide="next"

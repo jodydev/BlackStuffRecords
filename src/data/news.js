@@ -3,7 +3,7 @@ const newsData = [
   {
     id: 1,
     imageUrl:
-      "/public/img/artist/NTR-MISSION/cover/cover.jpg",
+      "/img/artist/NTR-MISSION/cover/cover.jpg",
     category: "music",
     title: "Nuovo Album di NTR Mission domina le Classifiche di Vendita!",
     subtitle: "Il tanto atteso album di NTR Mission ha debuttato in testa alle classifiche di vendita..",
@@ -13,7 +13,7 @@ const newsData = [
   {
     id: 2,
     imageUrl:
-      "/public/img/artist/EHCS/cover/cover.jpg",
+      "/img/artist/EHCS/cover/cover.jpg",
  
     category: "music",
     title: "Collaborazione Esplosiva: E.H.C.S e Black Stuff Records rilasciano un Nuovo Singolo",
@@ -24,7 +24,7 @@ const newsData = [
   {
     id: 3,
     imageUrl:
-      "/public/img/artist/ANZWART/cover/cover.png",
+      "/img/artist/ANZWART/cover/cover.png",
     category: "music",
     title: "Annuncio Speciale: Anzwant Si Prepara a Rilasciare Nuovo Album a Sorpresa",
     subtitle: "Anzwant sorprendente: è in arrivo un nuovo album a sorpresa..",

@@ -6,23 +6,23 @@ const MusicPlayer = () => {
     {
       title: "Berlin",
       artist: "Anzwart",
-      mp3: "/public/img/artist/ANZWART/mp3/Berlin.mp3",
+      mp3: "/img/artist/ANZWART/mp3/Berlin.mp3",
       poster:
-        "/public/img/artist/ANZWART/cover/cover.png",
+        "/img/artist/ANZWART/cover/cover.png",
     },
     {
       title: "Cup of Tea",
       artist: "E.H.C.S",
-      mp3: "/public/img/artist/EHCS/mp3/CUP-OF-TEA.mp3",
+      mp3: "/img/artist/EHCS/mp3/CUP-OF-TEA.mp3",
       poster:
-        "/public/img/artist/EHCS/cover/cover.jpg",
+        "/img/artist/EHCS/cover/cover.jpg",
     },
     {
       title: "NGC 2080",
       artist: "NTR Mission",
-      mp3: "/public/img/artist/NTR-MISSION/mp3/NGC-2080.mp3",
+      mp3: "/img/artist/NTR-MISSION/mp3/NGC-2080.mp3",
       poster:
-        "/public/img/artist/NTR-MISSION/cover/cover.jpg",
+        "/img/artist/NTR-MISSION/cover/cover.jpg",
     },
   ]);
   // Stato per l'indice della traccia corrente

@@ -65,7 +65,7 @@ export default function Footer() {
             <div className="col-lg-3 col-md-6">
               <a href="#home" className="text-white text-decoration-none lh-1">
                 <img
-                  src="/public/img/logo/blackstuffrecords-logo.png"
+                  src="/img/logo/blackstuffrecords-logo.png"
                   alt="Black Stuff Records"
                   width="200"
                   className="d-none d-lg-block"

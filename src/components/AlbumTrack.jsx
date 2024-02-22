@@ -1,6 +1,6 @@
 export default function AlbumTrack() {
   return (
-    <section className="px-0 mx-0 px-lg-5 mx-lg-5">
+    <section id="album-trak" className="px-0 mx-0 px-lg-5 mx-lg-5">
       <div
         id="albumTrackCarousel"
         className="carousel slide"
@@ -14,7 +14,7 @@ export default function AlbumTrack() {
               <div className="row ">
                 <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center px-0">
                   <img
-                    src="/public/img/artist/ANZWART/cover/cover.png"
+                    src="/img/artist/ANZWART/cover/cover.png"
                     className="cover-album"
                   />
 
@@ -100,7 +100,7 @@ export default function AlbumTrack() {
                     <div className="row justify-content-center">
                       <a className="playstore-button" href="#">
                         <img
-                          src="/public/img/logo/bandcamp-logo.webp"
+                          src="/img/logo/bandcamp-logo.webp"
                           alt="BandCamp Logo"
                           className="icon"
                         />
@@ -112,7 +112,7 @@ export default function AlbumTrack() {
                       <p className="text-white text-center fs-6 my-3">oppure</p>{" "}
                       <a className="playstore-button " href="#">
                         <img
-                          src="/public/img/logo/discogs-logo.png"
+                          src="/img/logo/discogs-logo.png"
                           alt="Discogs Logo"
                           className="icon"
                         />
@@ -135,7 +135,7 @@ export default function AlbumTrack() {
               <div className="row ">
                 <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center px-0">
                   <img
-                    src="/public/img/artist/EHCS/cover/cover.jpg"
+                    src="/img/artist/EHCS/cover/cover.jpg"
                     className="cover-album"
                   />
 
@@ -221,7 +221,7 @@ export default function AlbumTrack() {
                     <div className="row justify-content-center">
                       <a className="playstore-button" href="#">
                         <img
-                          src="/public/img/logo/bandcamp-logo.webp"
+                          src="/img/logo/bandcamp-logo.webp"
                           alt="BandCamp Logo"
                           className="icon"
                         />
@@ -233,7 +233,7 @@ export default function AlbumTrack() {
                       <p className="text-white text-center fs-6 my-3">oppure</p>{" "}
                       <a className="playstore-button " href="#">
                         <img
-                          src="/public/img/logo/discogs-logo.png"
+                          src="/img/logo/discogs-logo.png"
                           alt="Discogs Logo"
                           className="icon"
                         />
@@ -256,7 +256,7 @@ export default function AlbumTrack() {
               <div className="row ">
                 <div className="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center px-0">
                   <img
-                    src="/public/img/artist/NTR-MISSION/cover/cover.jpg"
+                    src="/img/artist/NTR-MISSION/cover/cover.jpg"
                     className="cover-album"
                   />
 
@@ -342,7 +342,7 @@ export default function AlbumTrack() {
                     <div className="row justify-content-center">
                       <a className="playstore-button" href="#">
                         <img
-                          src="/public/img/logo/bandcamp-logo.webp"
+                          src="/img/logo/bandcamp-logo.webp"
                           alt="BandCamp Logo"
                           className="icon"
                         />
@@ -354,7 +354,7 @@ export default function AlbumTrack() {
                       <p className="text-white text-center fs-6 my-3">oppure</p>{" "}
                       <a className="playstore-button " href="#">
                         <img
-                          src="/public/img/logo/discogs-logo.png"
+                          src="/img/logo/discogs-logo.png"
                           alt="Discogs Logo"
                           className="icon"
                         />

@@ -23,8 +23,7 @@ export default function Shop() {
                     <div className="box-up">
                       <div data-aos="fade-right" data-aos-duration="2000">
                         <img
-                          src="/public/img/artist/ANZWART/cover/cover.png"
-                          alt=""
+                          src="/img/artist/ANZWART/cover/cover.png"
                           className="img w-75 "
                         />
                       </div>
@@ -74,8 +73,7 @@ export default function Shop() {
                     <div className="box-up">
                       <div data-aos="fade-up" data-aos-duration="2000">
                         <img
-                          src="/public/img/artist/EHCS/cover/cover.jpg"
-                          alt=""
+                          src="/img/artist/EHCS/cover/cover.jpg"
                           className="img w-75 "
                         />
                       </div>
@@ -126,8 +124,7 @@ export default function Shop() {
                     <div className="box-up">
                       <div data-aos="fade-left" data-aos-duration="2000">
                         <img
-                          src="/public/img/artist/NTR-MISSION/cover/cover.jpg"
-                          alt=""
+                          src="/img/artist/NTR-MISSION/cover/cover.jpg"
                           className="img w-75 "
                         />
                       </div>
