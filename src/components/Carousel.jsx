@@ -28,7 +28,7 @@ export default function Carousel() {
             <div className="row">
               <div className="col-12 col-lg-8">
                 <h2 className="carousel-title">Quello che ci accomuna!</h2>
-                <h3 className="carousel-intestation  text-wrap">
+                <h3 className="carousel-intestation  text-wrap lh-1">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
                   ratione earum, ex quam amet corrupti? Lorem ipsum dolor sit
                   amet consectetur adipisicing elit. Quo suscipit corporis
@@ -58,7 +58,7 @@ export default function Carousel() {
             <div className="row">
               <div className="col-12 col-lg-8">
                 <h2 className="carousel-title ">Quello che ci accomuna!</h2>
-                <h3 className="carousel-intestation  text-wrap">
+                <h3 className="carousel-intestation  text-wrap lh-1">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
                   ratione earum, ex quam amet corrupti? Lorem ipsum dolor sit
                   amet consectetur adipisicing elit. Quo suscipit corporis
@@ -87,7 +87,7 @@ export default function Carousel() {
             <div className="row">
               <div className="col-12 col-lg-8">
                 <h2 className="carousel-title">Quello che ci accomuna!</h2>
-                <h3 className="carousel-intestation text-wrap">
+                <h3 className="carousel-intestation text-wrap lh-1">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
                   ratione earum, ex quam amet corrupti? Lorem ipsum dolor sit
                   amet consectetur adipisicing elit. Quo suscipit corporis

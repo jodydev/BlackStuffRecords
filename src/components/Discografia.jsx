@@ -47,7 +47,7 @@ export default function Discografia() {
                     <h3>{album.songName}</h3>
                     <h4 className="my-1">{album.artist}</h4>
                   </figcaption>
-                  <a href="#"></a>
+                  <a href={album.linkBandcamp}></a>
                 </div>
               </div>
             ))}

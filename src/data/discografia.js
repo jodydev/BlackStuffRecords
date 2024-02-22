@@ -6,6 +6,7 @@ const albumsData = [
       artist: "Anzwart",
       cover:
         "/img/artist/ANZWART/cover/cover.png",
+      linkBandcamp: "",
     },
     {
       id: 2,
@@ -13,6 +14,7 @@ const albumsData = [
       artist: "E.H.C.S",
       cover:
         "/img/artist/EHCS/cover/cover.jpg",
+      linkBandcamp: "",
     },
     {
       id: 3,
@@ -20,6 +22,7 @@ const albumsData = [
       artist: "NTR Mission",
       cover:
         "/img/artist/NTR-MISSION/cover/cover.jpg",
+      linkBandcamp: "https://ntrmission.bandcamp.com",  
     },
   ];
 

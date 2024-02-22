@@ -340,7 +340,7 @@ export default function AlbumTrack() {
 
                   <div className="container px-5 px-lg-5 my-5">
                     <div className="row justify-content-center">
-                      <a className="playstore-button" href="#">
+                      <a className="playstore-button" href="https://ntrmission.bandcamp.com">
                         <img
                           src="/img/logo/bandcamp-logo.webp"
                           alt="BandCamp Logo"

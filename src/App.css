@@ -28,6 +28,7 @@
   .container-music {
     top: 91% !important;
   }
+ 
 }
 
 /* (PORTATILI) = 1500px */
@@ -35,10 +36,6 @@
   .container-music {
     top: 87% !important;
     left: 15% !important;
-  }
-
-  .nav-link {
-    font-size: 10px;
   }
 
   .card:hover .card__body {
@@ -66,6 +63,20 @@
     font-size: 70px !important;
     margin-bottom: 30px !important;
   }
+  .container-artist-bio-1 {
+    top: 20%;
+    left: 40%;
+  }
+  
+  .container-artist-bio-2 {
+    top: 20%;
+    left: 10%;
+  }
+  
+  .container-artist-bio-3 {
+    top: 20%;
+    left: 10%;
+  }
 }
 
 /* (MOBILE) = 480px */
@@ -75,7 +86,7 @@
     background: #fff !important;
   }
   .navbar-title {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: #fff;
     text-decoration: none !important;
@@ -96,14 +107,14 @@
 
   .carousel-title {
     font-size: 50px !important;
-    margin-bottom: 30px !important;
+    margin-bottom: 20% !important;
   }
   .carousel-intestation {
-    font-size: 16px !important;
-    margin-top: 20%;
+    font-size: 18px !important;
+    margin-top: 40%;
   }
   .carousel-text-container {
-    top: 30% !important;
+    top: 25% !important;
     left: 5% !important;
     width: 90% !important;
     text-align: center !important;
@@ -242,7 +253,7 @@ html {
 }
 
 .navbar-title {
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 600;
   color: #fff;
   text-decoration: none !important;
@@ -250,7 +261,7 @@ html {
 
 .nav-link {
   color: #fff !important;
-  font-size: 18px !important;
+  font-size: 15px !important;
   font-weight: 400 !important;
 }
 
@@ -1140,7 +1151,7 @@ td {
 
 .container-artist-bio-1 {
   top: 20%;
-  left: 60%;
+  left: 50%;
 }
 
 .container-artist-bio-2 {
@@ -1159,7 +1170,7 @@ td {
   font-style: italic;
 }
 .text-bio h2 {
-  font-size: 0px ;
+  font-size: 30px ;
   text-align: start ;
 }
 
@@ -1207,4 +1218,10 @@ td {
   display: inline-block;
   width: 2em; /* Imposta la larghezza del bullet point */
   margin-left: -1em; /* Sposta il bullet point a sinistra rispetto al contenuto del <li> */
+}
+
+.hr-blurry {
+  border: 1px solid black !important; /* Altezza del divider */
+  width: 100% !important; /* Larghezza del divider */
+  margin: 0px !important; /* Spazio sopra il divider */
 }
