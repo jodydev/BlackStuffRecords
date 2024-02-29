@@ -2,10 +2,18 @@ import React, { useState } from "react";
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isOpening, setIsOpening] = useState(false);
+
 
   const handleBurgerClick = () => {
+    setIsOpening(true);
     setIsNavOpen(!isNavOpen);
+    setTimeout(() => {
+      setIsOpening(false);
+    }, 400); // Ritardo di 1 secondo (1000 millisecondi)
   };
+  
+  
 
   return (
     <nav className={`navbar navbar-expand-lg fixed-top  p-0`}>
@@ -48,9 +56,12 @@ export default function Navbar() {
         </div>
 
         <div
-          className={`collapse navbar-collapse rounded-4 my-3 ${isNavOpen ? "show bg-white px-5 py-2 my-5 mx-4" : ""}`}
-          id="navbarSupportedContent"
-        >
+  className={`collapse navbar-collapse rounded-4 my-3 ${
+    isNavOpen ? (isOpening ? "opening" : "show bg-white px-5 py-2 my-5 mx-4") : ""
+  }`}
+  id="navbarSupportedContent"
+>
+
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item mx-1">
               <a
@@ -148,6 +159,7 @@ export default function Navbar() {
                 Contatti
               </a>
             </li>
+            
           </ul>
         </div>
       </div>
