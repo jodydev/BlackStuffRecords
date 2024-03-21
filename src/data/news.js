@@ -6,9 +6,9 @@ const newsData = [
       "/img/artist/NTR-MISSION/cover/cover.jpg",
     category: "music",
     title: "Nuovo Album di NTR Mission domina le Classifiche di Vendita!",
-    subtitle: "Il tanto atteso album di NTR Mission ha debuttato in testa alle classifiche di vendita..",
+    subtitle: "Il tanto atteso album di NTR Mission ha debuttato in testa alle classifiche..",
     description:
-      "Conquistando il cuore dei fan in tutto il mondo. Con canzoni che esplorano nuovi territori sonori e testi profondamente personali, Swift dimostra ancora una volta il suo talento eccezionale nel trasportare gli ascoltatori in un viaggio emotivo. Scopri di più su questo straordinario album che continua a lasciare un'impronta indelebile nel mondo della musica pop.",
+      "Conquistando il cuore dei fan in tutto il mondo. Con canzoni che esplorano nuovi territori sonori e testi profondamente personali, Swift dimostra ancora una volta il suo talento eccezionale nel trasportare gli ascoltatori in un viaggio emotivo.",
   },
   {
     id: 2,

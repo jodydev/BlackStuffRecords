@@ -19,7 +19,7 @@ export default function Shop() {
             <div className="container page-wrapper">
               <div className="page-inner">
                 <div className="row">
-                  <div className="card p-3 rounded-4 ">
+                  <div className="card p-3 rounded-4 my-5 ">
                     <img
                       src="/img/artist/ANZWART/cover/cover.png"
                       className="card-img-top"
@@ -64,7 +64,7 @@ export default function Shop() {
             <div className="container page-wrapper">
               <div className="page-inner">
                 <div className="row">
-                  <div className="card p-3 rounded-4 ">
+                  <div className="card p-3 rounded-4 my-5 ">
                     <img
                       src="/img/artist/EHCS/cover/cover.jpg"
                       className="card-img-top"
@@ -109,9 +109,7 @@ export default function Shop() {
             <div className="container page-wrapper">
               <div className="page-inner">
                 <div className="row">
-                  
-
-                  <div className="card p-3 rounded-4 ">
+                  <div className="card p-3 rounded-4 my-5 ">
                     <img
                       src="/img/artist/NTR-MISSION/cover/cover.jpg"
                       className="card-img-top"

@@ -5,9 +5,9 @@ function getAOSAnimation(index) {
     case 0:
       return "fade-right";
     case 1:
-      return "fade-left";
+      return "fade-up";
     case 2:
-      return "fade-right";
+      return "fade-left";
     default:
       return "";
   }
@@ -23,7 +23,7 @@ export default function News() {
               <h2 className="text-uppercase text-center fs-1 my-3 fw-bold">
                 Ultime News
               </h2>
-              <p className="text-center">
+              <p className="text-center fs-5">
                 Scopri le ultime novità musicali nella sezione "News" del nostro
                 sito! <br /> Resta aggiornato su nuove uscite, recensioni e
                 tendenze che stanno definendo il panorama musicale attuale.{" "}

@@ -54,14 +54,14 @@ export default function ArtistBio() {
           {/* <!-- PRIMA SLIDE - ANZWART --> */}
           <div className="carousel-item  active " data-bs-interval="5000">
             <img
-              src="/img//artist-bio/1.jpg"
+              src="https://www.cyranofactory.com/wp-content/uploads/2023/12/31fc0a5d-d07a-bc7d-5b35-16150eabc659.jpeg"
               className="d-block carousel-img-bio"
             />
 
             <div className="container position-absolute container-artist-bio-1 text-start p-5">
               <div className="row">
                 <div className="col-12 col-lg-6 text-bio">
-                  <h2 className="text-white">Biografia Artista - Anzwart</h2>
+                  <h2 className="text-white fs-1">Biografia Artista - Anzwart</h2>
                   <p className="text-white my-3 my-lg-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dicta ratione earum, ex quam amet corrupti? Lorem ipsum
@@ -82,14 +82,14 @@ export default function ArtistBio() {
 
           <div className="carousel-item  " data-bs-interval="5000">
             <img
-              src="/img/artist/NTR-MISSION/foto/biooo.jpg"
+              src="https://scontent.fblq3-1.fna.fbcdn.net/v/t1.18169-9/22852164_1460876707359810_3112232783589925726_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Bs9Ooye0L1kAX9GVcUH&_nc_ht=scontent.fblq3-1.fna&oh=00_AfDznl314a336vZnEavx5sLxg1BkF8ATq199T3wN8JYYZg&oe=6623FAB8"
               className="d-block carousel-img-bio"
             />
 
             <div className="container position-absolute container-artist-bio-2 text-start p-5">
               <div className="row">
                 <div className="col-12 col-lg-6 text-bio">
-                  <h2 className="text-white">Biografia Artista - E.H.C.S </h2>
+                  <h2 className="text-white fs-1">Biografia Artista - E.H.C.S </h2>
                   <p className="text-white my-3 my-lg-5">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Dicta ratione earum, ex quam amet corrupti? Lorem ipsum
@@ -118,7 +118,7 @@ export default function ArtistBio() {
               <div className="row">
                 
                 <div className="col-12 col-lg-6 text-bio" >
-                  <h2 className="text-white">
+                  <h2 className="text-white fs-1">
                     Biografia Artista - NTR Mission
                   </h2>
                   <p className="text-white my-3 my-lg-5">
