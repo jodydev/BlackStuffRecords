@@ -12,53 +12,45 @@ export default function Carousel() {
       <Navbar />
 
       <div className="carousel-inner vh-100">
-        {/* <!-- Immagini del Carousel --> */}
+        {/* <!-- CAROUSEL - 1 --> */}
         <div className="carousel-item active ">
-           <img
+          <img
             src="/img/artist/NTR-MISSION/foto/carousel-1.jpg"
             className="d-block carousel-img"
-          /> 
-
-          {/* <video className="video-item" autoPlay loop muted>
-            <source src="/video/1.mp4" type="video/mp4" />
-            Il tuo browser non supporta il tag video.
-          </video> */}
-
+          />
           <div className="container position-absolute carousel-text-container">
             <div className="row">
               <div className="col-12 col-lg-8">
-                <h2 className="carousel-title">Quello che ci accomuna!</h2>
-                <h3 className="carousel-intestation  text-wrap lh-1">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                  ratione earum, ex quam amet corrupti? Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Quo suscipit corporis
-                  quibusdam. Odit, ut exercitationem? Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Quo suscipit corporis quibusdam.
-                  Odit, ut exercitationem?
-                </h3>
+                <div data-aos="fade-down" data-aos-duration="2000">
+                  <h2 className="carousel-title">Quello che ci accomuna!</h2>
+                </div>
+                <div data-aos="fade-right" data-aos-duration="2000">
+                  <h3 className="carousel-intestation  text-wrap lh-base ">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dicta ratione earum, ex quam amet corrupti? Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Quo suscipit
+                    corporis quibusdam. Odit, ut exercitationem? Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Quo suscipit
+                    corporis quibusdam. Odit, ut exercitationem?
+                  </h3>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* <!-- Immagini del Carousel --> */}
+        {/* <!-- CAROUSEL - 2 --> */}
         <div className="carousel-item">
-          {/* <video className="video-item" autoPlay loop muted>
-            <source src="/video/2.mp4" type="video/mp4" />
-            Il tuo browser non supporta il tag video.
-          </video> */}
-
-        
           <img
             src="/img/artist/NTR-MISSION/foto/carousel-2.jpg"
             className="d-block carousel-img"
-          /> 
-
+          />
           <div className="container position-absolute carousel-text-container">
             <div className="row">
               <div className="col-12 col-lg-8">
                 <h2 className="carousel-title ">Quello che ci accomuna!</h2>
-                <h3 className="carousel-intestation  text-wrap lh-1">
+
+                <h3 className="carousel-intestation  text-wrap lh-base">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
                   ratione earum, ex quam amet corrupti? Lorem ipsum dolor sit
                   amet consectetur adipisicing elit. Quo suscipit corporis
@@ -71,23 +63,18 @@ export default function Carousel() {
           </div>
         </div>
 
-        {/* <!-- Immagini del Carousel --> */}
+        {/* <!-- CAROUSEL - 3 --> */}
         <div className="carousel-item">
-        <img
+          <img
             src="/img/artist/NTR-MISSION/foto/carousel-3.jpg"
             className="d-block carousel-img"
-          /> 
-
-          {/* <video className="video-item" autoPlay loop muted>
-            <source src="/video/3.mp4" type="video/mp4" />
-            Il tuo browser non supporta il tag video.
-          </video> */}
-
+          />
           <div className="container position-absolute carousel-text-container">
             <div className="row">
               <div className="col-12 col-lg-8">
                 <h2 className="carousel-title">Quello che ci accomuna!</h2>
-                <h3 className="carousel-intestation text-wrap lh-1">
+
+                <h3 className="carousel-intestation text-wrap lh-base">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
                   ratione earum, ex quam amet corrupti? Lorem ipsum dolor sit
                   amet consectetur adipisicing elit. Quo suscipit corporis
@@ -100,7 +87,6 @@ export default function Carousel() {
           </div>
         </div>
 
-        {/* Renderizza il componente MusicPlayer e passa la funzione di aggiornamento */}
         <MusicPlayer />
       </div>
 
@@ -122,7 +108,6 @@ export default function Carousel() {
       >
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
-        
       </button>
     </div>
   );

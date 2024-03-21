@@ -1,13 +1,12 @@
 import Carousel from "../components/Carousel";
 import Discografia from "../components/Discografia";
-import AlbumTrack from "../components/AlbumTrack";
+// import AlbumTrack from "../components/AlbumTrack";
 import Events from "../components/Events";
 import News from "../components/News";
 import PhotoGallery from "../components/PhotoGallery";
 import Video from "../components/Video";
 import Shop from "../components/Shop";
 import ArtistBio from "../components/ArtistBio";
-import Social from "../components/Social";
 import Footer from "../components/Footer";
 
 export default function HomePage() {
@@ -20,7 +19,7 @@ export default function HomePage() {
       <Discografia />
 
       {/* <!-- Senzione Album Track --> */}
-      <AlbumTrack />
+      {/* <AlbumTrack /> */}
 
       {/* <!-- Sezione Eventi --> */}
       <Events />

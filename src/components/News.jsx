@@ -1,21 +1,21 @@
 import newsData from "../data/news";
+
 function getAOSAnimation(index) {
   switch (index) {
     case 0:
       return "fade-right";
     case 1:
-      return "fade-up";
-    case 2:
       return "fade-left";
+    case 2:
+      return "fade-right";
     default:
       return "";
   }
 }
 
-// Componente News
 export default function News() {
   return (
-    <section id="news" className="py-5">
+    <section id="news" className="py-0 py-lg-5">
       <div className="container-fluid py-5">
         <div className="row">
           <div className="container">

@@ -4,7 +4,7 @@ import { useState } from "react";
 export default function ArtistBio() {
   const artistLink = {
     anzwart: [
-      "https://www.instagram.com/anzwart/",
+      "https://www.instagram.com/anzwart/", //** DA SOSTITUIRE TUTTO */
       "https://www.facebook.com/anzwartmusic",
       "https://www.youtube.com/channel/UCfPz9G6nBZU9Yb9lX4f9m7w",
       "https://open.spotify.com/artist/3nF3W1Z9XQy6ZPqz4C3b4I?si=1e8b9f3b2f5b4f8b",
@@ -12,7 +12,7 @@ export default function ArtistBio() {
       "https://linktr.ee/ntrmission",
     ],
     ehcs: [
-      "https://www.instagram.com/ehcs_music/",
+      "https://www.instagram.com/ehcs_music/", //** DA SOSTITUIRE TUTTO */
       "https://www.facebook.com/ehcsmusic",
       "https://www.youtube.com/channel/UCfPz9G6nBZU9Yb9lX4f9m7w",
       "https://open.spotify.com/artist/3nF3W1Z9XQy6ZPqz4C3b4I?si=1e8b9f3b2f5b4f8b",

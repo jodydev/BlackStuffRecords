@@ -19,43 +19,38 @@ export default function Shop() {
             <div className="container page-wrapper">
               <div className="page-inner">
                 <div className="row">
-                  <div className="el-wrapper">
-                    <div className="box-up">
-                      <div data-aos="fade-right" data-aos-duration="2000">
+                  <div className="card p-3 rounded-4 ">
+                    <img
+                      src="/img/artist/ANZWART/cover/cover.png"
+                      className="card-img-top"
+                      alt="Anzwart album cover"
+                    />
+                    <div className="card-body text-center">
+                      <h5 className="card-title fs-4 fw-semibold">
+                        EP - Anzwart
+                      </h5>
+                      <p className="card-text fw-normal fs-5">100$</p>
+                      <a className="playstore-button w-100" href="#">
                         <img
-                          src="/img/artist/ANZWART/cover/cover.png"
-                          className="img w-75 "
+                          src="/img/logo/bandcamp-logo.webp"
+                          alt="BandCamp Logo"
+                          className="icon"
                         />
-                      </div>
-                      <div className="img-info">
-                        <div className="info-inner mt-5">
-                          <span className="p-name fs-4 ">EP</span>
-                          <span className="p-company fs-6 ">Anzwart</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="box-down my-5">
-                      <div className="h-bg">
-                        <div className="h-bg-inner"></div>
-                      </div>
-
-                      <a className="cart" href="#">
-                        <span className="price fw-bold fs-5">100€</span>
-                        <span className="add-to-cart">
-                          <span className="txt fs-6">
-                            Acquista su{" "}
-                            <span
-                              className="fw-bold"
-                              style={{ color: "#2596be" }}
-                            >
-                              BandCamp
-                            </span>{" "}
-                            <i
-                              className="fa-solid fa-cart-shopping fa-xl mx-2"
-                              style={{ color: "white" }}
-                            ></i>
-                          </span>
+                        <span className="texts">
+                          <span className="text-1">Acquista su</span>
+                          <span className="text-2">BandCamp</span>
+                        </span>
+                      </a>
+                      <p className="text-dark text-center fs-6 my-3">oppure</p>{" "}
+                      <a className="playstore-button w-100" href="#">
+                        <img
+                          src="/img/logo/discogs-logo.png"
+                          alt="Discogs Logo"
+                          className="icon"
+                        />
+                        <span className="texts">
+                          <span className="text-1">Acquista su</span>
+                          <span className="text-2">Discogs</span>
                         </span>
                       </a>
                     </div>
@@ -69,44 +64,38 @@ export default function Shop() {
             <div className="container page-wrapper">
               <div className="page-inner">
                 <div className="row">
-                  <div className="el-wrapper">
-                    <div className="box-up">
-                      <div data-aos="fade-up" data-aos-duration="2000">
+                  <div className="card p-3 rounded-4 ">
+                    <img
+                      src="/img/artist/EHCS/cover/cover.jpg"
+                      className="card-img-top"
+                      alt="EHCS album cover"
+                    />
+                    <div className="card-body text-center">
+                      <h5 className="card-title fs-4 fw-semibold">
+                        Belvedere Chaos - E.H.C.S
+                      </h5>
+                      <p className="card-text fw-normal fs-5">100$</p>
+                      <a className="playstore-button w-100" href="#">
                         <img
-                          src="/img/artist/EHCS/cover/cover.jpg"
-                          className="img w-75 "
+                          src="/img/logo/bandcamp-logo.webp"
+                          alt="BandCamp Logo"
+                          className="icon"
                         />
-                      </div>
-                      <div className="img-info">
-                        <div className="info-inner mt-5">
-                          <span className="p-name fs-4 ">Belvedere Chaos</span>
-                          <span className="p-company fs-6 ">E.H.C.S</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="box-down my-5">
-                      <div className="h-bg">
-                        <div className="h-bg-inner"></div>
-                      </div>
-
-                      <a className="cart" href="#">
-                        <span className="price fw-bold fs-5">100€</span>
-
-                        <span className="add-to-cart">
-                          <span className="txt fs-6">
-                            Acquista su{" "}
-                            <span
-                              className="fw-bold"
-                              style={{ color: "#2596be" }}
-                            >
-                              BandCamp
-                            </span>{" "}
-                            <i
-                              className="fa-solid fa-cart-shopping fa-xl mx-2"
-                              style={{ color: "white" }}
-                            ></i>
-                          </span>
+                        <span className="texts">
+                          <span className="text-1">Acquista su</span>
+                          <span className="text-2">BandCamp</span>
+                        </span>
+                      </a>
+                      <p className="text-dark text-center fs-6 my-3">oppure</p>{" "}
+                      <a className="playstore-button w-100" href="#">
+                        <img
+                          src="/img/logo/discogs-logo.png"
+                          alt="Discogs Logo"
+                          className="icon"
+                        />
+                        <span className="texts">
+                          <span className="text-1">Acquista su</span>
+                          <span className="text-2">Discogs</span>
                         </span>
                       </a>
                     </div>
@@ -120,45 +109,40 @@ export default function Shop() {
             <div className="container page-wrapper">
               <div className="page-inner">
                 <div className="row">
-                  <div className="el-wrapper">
-                    <div className="box-up">
-                      <div data-aos="fade-left" data-aos-duration="2000">
+                  
+
+                  <div className="card p-3 rounded-4 ">
+                    <img
+                      src="/img/artist/NTR-MISSION/cover/cover.jpg"
+                      className="card-img-top"
+                      alt="Anzwart album cover"
+                    />
+                    <div className="card-body text-center">
+                      <h5 className="card-title fs-4 fw-semibold">
+                        EP - Anzwart
+                      </h5>
+                      <p className="card-text fw-normal fs-5">100$</p>
+                      <a className="playstore-button w-100" href="">
                         <img
-                          src="/img/artist/NTR-MISSION/cover/cover.jpg"
-                          className="img w-75 "
+                          src="/img/logo/bandcamp-logo.webp"
+                          alt="BandCamp Logo"
+                          className="icon"
                         />
-                      </div>
-                      <div className="img-info">
-                        <div className="info-inner mt-5">
-                          <span className="p-name fs-4 ">
-                            Supernova Remnants
-                          </span>
-                          <span className="p-company fs-6 ">NTR Mission</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="box-down my-5">
-                      <div className="h-bg">
-                        <div className="h-bg-inner"></div>
-                      </div>
-
-                      <a className="cart" href="#">
-                        <span className="price fw-bold fs-5">100€</span>
-                        <span className="add-to-cart">
-                          <span className="txt fs-6">
-                            Acquista su{" "}
-                            <span
-                              className="fw-bold"
-                              style={{ color: "#2596be" }}
-                            >
-                              BandCamp
-                            </span>{" "}
-                            <i
-                              class="fa-solid fa-cart-shopping fa-xl mx-2"
-                              style={{ color: "white" }}
-                            ></i>
-                          </span>
+                        <span className="texts">
+                          <span className="text-1">Acquista su</span>
+                          <span className="text-2">BandCamp</span>
+                        </span>
+                      </a>
+                      <p className="text-dark text-center fs-6 my-3">oppure</p>{" "}
+                      <a className="playstore-button w-100" href="#">
+                        <img
+                          src="/img/logo/discogs-logo.png"
+                          alt="Discogs Logo"
+                          className="icon"
+                        />
+                        <span className="texts">
+                          <span className="text-1">Acquista su</span>
+                          <span className="text-2">Discogs</span>
                         </span>
                       </a>
                     </div>

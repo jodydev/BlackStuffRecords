@@ -3,7 +3,7 @@ import YouTube from "react-youtube";
 
 const Video = () => {
   const [videoData, setVideoData] = useState(null);
-  const videoId = "0yHe4wYV0k4"; // Video ID from YouTube
+  const videoId = "rlytYo4aE70"; // Video ID from YouTube
   const apiKey = "AIzaSyDS79jvUTG_3BoWK647CHd-Gd0EJ-PRUJA";
 
   useEffect(() => {
@@ -39,7 +39,7 @@ const Video = () => {
                     Ultimi video
                   </h2>
                   <h3 className="text-white text-center fs-5 my-4">
-                    {videoData && videoData.title}
+                    {videoData && videoData.title} - {videoData.channelTitle}
                   </h3>
 
                   <YouTube

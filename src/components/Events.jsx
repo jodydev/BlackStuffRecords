@@ -22,7 +22,7 @@ const Events = () => {
       <div className="container-fluid position-absolute container-countdown">
         <div className="row">
           <div className="col-12 text-center">
-            <div className="content">
+            <div className="content mt-5">
               <div data-aos="fade-down" data-aos-duration="2000">
                 <h2 className="text-white text-uppercase fw-bold">
                   Prossimi eventi
