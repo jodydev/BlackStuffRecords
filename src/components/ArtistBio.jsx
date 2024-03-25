@@ -22,7 +22,7 @@ const artistData = [
     //? DA SOSTITUIRE TUTTO
     name: "ehcs",
     bioImage:
-      "https://scontent.fblq3-1.fna.fbcdn.net/v/t1.18169-9/22852164_1460876707359810_3112232783589925726_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Bs9Ooye0L1kAX9GVcUH&_nc_ht=scontent.fblq3-1.fna&oh=00_AfDznl314a336vZnEavx5sLxg1BkF8ATq199T3wN8JYYZg&oe=6623FAB8",
+      "/img/artist/EHCS/EHCS.png",
     bioTitle: "E.H.C.S",
     bioText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ipsum sed voluptatum perferendis veniam enim nulla in, culpa debitis, omnis hic ut? Optio id magnam, vel facilis adipisci dolorum rerum. Ipsam rerum enim doloremque cupiditate adipisci eveniet sapiente porro sint officiis officia ratione non, suscipit ducimus, repellendus odit quod ea?",
@@ -56,7 +56,7 @@ const artistData = [
     bioImage: "/img/artist/LAC/lac.jpeg",
     bioTitle: "LAC - Large Audio Collider",
     bioText:
-      "                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ipsum sed voluptatum perferendis veniam enim nulla in, culpa debitis, omnis hic ut? Optio id magnam, vel facilis adipisci dolorum rerum. Ipsam rerum enim doloremque cupiditate adipisci eveniet sapiente porro sint officiis officia ratione non, suscipit ducimus, repellendus odit quod ea?",
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ipsum sed voluptatum perferendis veniam enim nulla in, culpa debitis, omnis hic ut? Optio id magnam, vel facilis adipisci dolorum rerum. Ipsam rerum enim doloremque cupiditate adipisci eveniet sapiente porro sint officiis officia ratione non, suscipit ducimus, repellendus odit quod ea?",
     socialLinks: [
       "https://www.facebook.com/ntrmissi0n",
       "https://www.instagram.com/ntr.mission/",

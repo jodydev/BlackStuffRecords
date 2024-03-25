@@ -1,14 +1,17 @@
 import albumsData from "../data/discografia";
 
 export default function Discografia() {
-  function getAOSAnimation(index) {
+
+  const sm = window.innerWidth < 576;
+  
+  function getAOSAnimation(index, sm) {
     switch (index) {
       case 0:
         return "fade-right";
       case 1:
-        return "fade-up";
+        return sm ? "fade-left" : "fade-up";
       case 2:
-        return "fade-left";
+        return sm ? "fade-right" : "fade-left";
       default:
         return "";
     }
@@ -32,12 +35,11 @@ export default function Discografia() {
             </div>
           </div>
 
-
           <div className="row">
             {albumsData.map((album, index) => (
               <div
                 key={album.id}
-                data-aos={getAOSAnimation(index)}
+                data-aos={getAOSAnimation(index, sm)}
                 data-aos-duration="2000"
                 className="col-12 col-lg-4 my-5 p-lg-3"
               >
@@ -52,9 +54,6 @@ export default function Discografia() {
               </div>
             ))}
           </div>
-
-
-          
         </div>
       </div>
     </section>

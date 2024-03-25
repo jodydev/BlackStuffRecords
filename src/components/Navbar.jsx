@@ -11,12 +11,13 @@ export default function Navbar() {
     setTimeout(() => {
       setIsOpening(false);
     }, 400); // Ritardo di 1 secondo (1000 millisecondi)
+
   };
   
   
 
   return (
-    <nav className={`navbar navbar-expand-lg fixed-top  p-0`}>
+    <nav className={`navbar navbar-expand-lg fixed-top  p-0`} >
       {" "}
       <div id="nav" className="container py-3 py-lg-0">
         <div className="row">

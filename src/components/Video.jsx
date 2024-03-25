@@ -3,7 +3,7 @@ import YouTube from "react-youtube";
 
 const Video = () => {
   const [videoData, setVideoData] = useState(null);
-  const videoId = "rlytYo4aE70"; // Video ID from YouTube
+  const videoId = "vCVaT3iJlu0";
   const apiKey = "AIzaSyDS79jvUTG_3BoWK647CHd-Gd0EJ-PRUJA";
 
   useEffect(() => {

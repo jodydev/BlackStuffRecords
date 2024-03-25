@@ -79,7 +79,7 @@ export default function Footer() {
       <section className="bg-semi-dark">
         <footer className="d-flex flex-wrap justify-content-between align-items-center p-5 container">
           <div className="col-6 d-flex align-items-center">
-            <span class="text-white">
+            <span className="text-white">
               © 2024 created by{" "}
               <a
                 href="https://jodydev.github.io/Portfolio-it/"

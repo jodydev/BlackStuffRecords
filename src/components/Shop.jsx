@@ -1,5 +1,4 @@
 export default function Shop() {
-
   const shopData = [
     {
       id: 1,
@@ -30,14 +29,16 @@ export default function Shop() {
     },
   ];
 
-  function getAOSAnimation(index) {
+  const sm = window.innerWidth < 576;
+
+  function getAOSAnimation(index, sm) {
     switch (index) {
       case 0:
         return "fade-right";
       case 1:
-        return "fade-left";
+        return sm ? "fade-left" : "fade-up";
       case 2:
-        return "fade-right";
+        return sm ? "fade-right" : "fade-left";
       default:
         return "";
     }
@@ -62,9 +63,9 @@ export default function Shop() {
           {shopData.map((album, index) => (
             <div
               key={album.id}
-              data-aos={getAOSAnimation(index)}
+              data-aos={getAOSAnimation(index, sm)}
               data-aos-duration="2000"
-              className="col-12 col-lg-4 mb-4" // Utilizzo "mb-4" per aggiungere margine inferiore tra le righe su tutti i dispositivi
+              className="col-12 col-lg-4"
             >
               <div className="container page-wrapper">
                 <div className="page-inner">
@@ -79,8 +80,13 @@ export default function Shop() {
                         <h5 className="card-title fs-4 fw-semibold">
                           {album.albumTitle}
                         </h5>
-                        <p className="card-text fw-normal fs-5">{album.price}</p>
-                        <a className="playstore-button w-100" href={album.bandcampLink}>
+                        <p className="card-text fw-normal fs-5">
+                          {album.price}
+                        </p>
+                        <a
+                          className="playstore-button w-100"
+                          href={album.bandcampLink}
+                        >
                           <img
                             src="/img/logo/bandcamp-logo.webp"
                             alt="BandCamp Logo"
@@ -91,8 +97,13 @@ export default function Shop() {
                             <span className="text-2">BandCamp</span>
                           </span>
                         </a>
-                        <p className="text-dark text-center fs-6 my-3">oppure</p>{" "}
-                        <a className="playstore-button w-100" href={album.discogsLink}>
+                        <p className="text-dark text-center fs-6 my-3">
+                          oppure
+                        </p>{" "}
+                        <a
+                          className="playstore-button w-100"
+                          href={album.discogsLink}
+                        >
                           <img
                             src="/img/logo/discogs-logo.png"
                             alt="Discogs Logo"

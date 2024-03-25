@@ -1,13 +1,16 @@
 import newsData from "../data/news";
 
-function getAOSAnimation(index) {
+const sm = window.innerWidth < 576;
+
+function getAOSAnimation(index, sm) {
+
   switch (index) {
     case 0:
       return "fade-right";
     case 1:
-      return "fade-up";
+      return sm ? "fade-left" : "fade-up";
     case 2:
-      return "fade-left";
+      return sm ? "fade-right" : "fade-left";
     default:
       return "";
   }
@@ -38,7 +41,7 @@ export default function News() {
                 {newsData.map((newsItem, index) => (
                   <div
                     key={newsItem.id}
-                    data-aos={getAOSAnimation(index)}
+                    data-aos={getAOSAnimation(index, sm)}
                     data-aos-duration="2000"
                   >
                     <div className="col my-5">
