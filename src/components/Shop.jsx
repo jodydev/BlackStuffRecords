@@ -1,4 +1,48 @@
 export default function Shop() {
+
+  const shopData = [
+    {
+      id: 1,
+      artist: "Anzwart",
+      cover: "/img/artist/ANZWART/cover/cover.png",
+      albumTitle: "EP - Anzwart",
+      price: "100$",
+      bandcampLink: "#",
+      discogsLink: "#",
+    },
+    {
+      id: 2,
+      artist: "EHCS",
+      cover: "/img/artist/EHCS/cover/cover.jpg",
+      albumTitle: "Belvedere Chaos - E.H.C.S",
+      price: "100$",
+      bandcampLink: "#",
+      discogsLink: "#",
+    },
+    {
+      id: 3,
+      artist: "NTR-MISSION",
+      cover: "/img/artist/NTR-MISSION/cover/cover.jpg",
+      albumTitle: "EP - NTR-Mission",
+      price: "100$",
+      bandcampLink: "#",
+      discogsLink: "#",
+    },
+  ];
+
+  function getAOSAnimation(index) {
+    switch (index) {
+      case 0:
+        return "fade-right";
+      case 1:
+        return "fade-left";
+      case 2:
+        return "fade-right";
+      default:
+        return "";
+    }
+  }
+
   return (
     <section id="shop">
       <div className="container my-5 py-5">
@@ -15,140 +59,57 @@ export default function Shop() {
             </div>
           </div>
 
-          <div className="col-12 col-lg-4 py-0 py-lg-5  px-3">
-            <div className="container page-wrapper">
-              <div className="page-inner">
-                <div className="row">
-                  <div className="card p-3 rounded-4 my-5 ">
-                    <img
-                      src="/img/artist/ANZWART/cover/cover.png"
-                      className="card-img-top"
-                      alt="Anzwart album cover"
-                    />
-                    <div className="card-body text-center">
-                      <h5 className="card-title fs-4 fw-semibold">
-                        EP - Anzwart
-                      </h5>
-                      <p className="card-text fw-normal fs-5">100$</p>
-                      <a className="playstore-button w-100" href="#">
-                        <img
-                          src="/img/logo/bandcamp-logo.webp"
-                          alt="BandCamp Logo"
-                          className="icon"
-                        />
-                        <span className="texts">
-                          <span className="text-1">Acquista su</span>
-                          <span className="text-2">BandCamp</span>
-                        </span>
-                      </a>
-                      <p className="text-dark text-center fs-6 my-3">oppure</p>{" "}
-                      <a className="playstore-button w-100" href="#">
-                        <img
-                          src="/img/logo/discogs-logo.png"
-                          alt="Discogs Logo"
-                          className="icon"
-                        />
-                        <span className="texts">
-                          <span className="text-1">Acquista su</span>
-                          <span className="text-2">Discogs</span>
-                        </span>
-                      </a>
+          {shopData.map((album, index) => (
+            <div
+              key={album.id}
+              data-aos={getAOSAnimation(index)}
+              data-aos-duration="2000"
+              className="col-12 col-lg-4 mb-4" // Utilizzo "mb-4" per aggiungere margine inferiore tra le righe su tutti i dispositivi
+            >
+              <div className="container page-wrapper">
+                <div className="page-inner">
+                  <div className="row">
+                    <div className="card p-5 p-lg-3 rounded-4 my-5 w-100">
+                      <img
+                        src={album.cover}
+                        className="card-img-top"
+                        alt={`${album.artist} album cover`}
+                      />
+                      <div className="card-body text-center">
+                        <h5 className="card-title fs-4 fw-semibold">
+                          {album.albumTitle}
+                        </h5>
+                        <p className="card-text fw-normal fs-5">{album.price}</p>
+                        <a className="playstore-button w-100" href={album.bandcampLink}>
+                          <img
+                            src="/img/logo/bandcamp-logo.webp"
+                            alt="BandCamp Logo"
+                            className="icon"
+                          />
+                          <span className="texts">
+                            <span className="text-1">Acquista su</span>
+                            <span className="text-2">BandCamp</span>
+                          </span>
+                        </a>
+                        <p className="text-dark text-center fs-6 my-3">oppure</p>{" "}
+                        <a className="playstore-button w-100" href={album.discogsLink}>
+                          <img
+                            src="/img/logo/discogs-logo.png"
+                            alt="Discogs Logo"
+                            className="icon"
+                          />
+                          <span className="texts">
+                            <span className="text-1">Acquista su</span>
+                            <span className="text-2">Discogs</span>
+                          </span>
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-
-          <div className="col-12 col-lg-4 py-0 py-lg-5  px-3">
-            <div className="container page-wrapper">
-              <div className="page-inner">
-                <div className="row">
-                  <div className="card p-3 rounded-4 my-5 ">
-                    <img
-                      src="/img/artist/EHCS/cover/cover.jpg"
-                      className="card-img-top"
-                      alt="EHCS album cover"
-                    />
-                    <div className="card-body text-center">
-                      <h5 className="card-title fs-4 fw-semibold">
-                        Belvedere Chaos - E.H.C.S
-                      </h5>
-                      <p className="card-text fw-normal fs-5">100$</p>
-                      <a className="playstore-button w-100" href="#">
-                        <img
-                          src="/img/logo/bandcamp-logo.webp"
-                          alt="BandCamp Logo"
-                          className="icon"
-                        />
-                        <span className="texts">
-                          <span className="text-1">Acquista su</span>
-                          <span className="text-2">BandCamp</span>
-                        </span>
-                      </a>
-                      <p className="text-dark text-center fs-6 my-3">oppure</p>{" "}
-                      <a className="playstore-button w-100" href="#">
-                        <img
-                          src="/img/logo/discogs-logo.png"
-                          alt="Discogs Logo"
-                          className="icon"
-                        />
-                        <span className="texts">
-                          <span className="text-1">Acquista su</span>
-                          <span className="text-2">Discogs</span>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="col-12 col-lg-4 py-0 py-lg-5  px-3">
-            <div className="container page-wrapper">
-              <div className="page-inner">
-                <div className="row">
-                  <div className="card p-3 rounded-4 my-5 ">
-                    <img
-                      src="/img/artist/NTR-MISSION/cover/cover.jpg"
-                      className="card-img-top"
-                      alt="Anzwart album cover"
-                    />
-                    <div className="card-body text-center">
-                      <h5 className="card-title fs-4 fw-semibold">
-                        EP - Anzwart
-                      </h5>
-                      <p className="card-text fw-normal fs-5">100$</p>
-                      <a className="playstore-button w-100" href="">
-                        <img
-                          src="/img/logo/bandcamp-logo.webp"
-                          alt="BandCamp Logo"
-                          className="icon"
-                        />
-                        <span className="texts">
-                          <span className="text-1">Acquista su</span>
-                          <span className="text-2">BandCamp</span>
-                        </span>
-                      </a>
-                      <p className="text-dark text-center fs-6 my-3">oppure</p>{" "}
-                      <a className="playstore-button w-100" href="#">
-                        <img
-                          src="/img/logo/discogs-logo.png"
-                          alt="Discogs Logo"
-                          className="icon"
-                        />
-                        <span className="texts">
-                          <span className="text-1">Acquista su</span>
-                          <span className="text-2">Discogs</span>
-                        </span>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
     </section>

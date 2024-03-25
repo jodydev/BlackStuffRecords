@@ -23,7 +23,7 @@ export default function News() {
               <h2 className="text-uppercase text-center fs-1 my-3 fw-bold">
                 Ultime News
               </h2>
-              <p className="text-center fs-5">
+              <p className="text-center fs-6">
                 Scopri le ultime novità musicali nella sezione "News" del nostro
                 sito! <br /> Resta aggiornato su nuove uscite, recensioni e
                 tendenze che stanno definendo il panorama musicale attuale.{" "}

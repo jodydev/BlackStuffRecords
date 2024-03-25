@@ -40,7 +40,7 @@ const Countdown = () => {
         <div className="row justify-content-center">
           <div className="col-md-3 col-sm-6 my-1 my-lg-0">
             <div id="days" className="text-center">
-              <div className="number">{days < 10 ? `0${days}` : days}</div>
+              <div className="number ">{days < 10 ? `0${days}` : days}</div>
               <div className="label">Giorni</div>
             </div>
           </div>

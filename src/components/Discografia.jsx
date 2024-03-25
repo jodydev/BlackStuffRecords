@@ -19,7 +19,7 @@ export default function Discografia() {
       <div className="container py-0 py-lg-5">
         <div className="text-center my-5 py-3 py-lg-5">
           <div data-aos="fade-down" data-aos-duration="2000">
-            <div className="px-5">
+            <div className="px-0 px-lg-5">
               <h2 className="text-uppercase text-center fs-1 my-3 fw-bold">
                 Ultimi Album
               </h2>
@@ -39,7 +39,7 @@ export default function Discografia() {
                 key={album.id}
                 data-aos={getAOSAnimation(index)}
                 data-aos-duration="2000"
-                className="col-12 col-lg-4 mt-3 my-3 my-lg-5 p-lg-3"
+                className="col-12 col-lg-4 my-5 p-lg-3"
               >
                 <div className="card-discografia">
                   <img src={album.cover} alt="Album Cover" />
@@ -52,6 +52,9 @@ export default function Discografia() {
               </div>
             ))}
           </div>
+
+
+          
         </div>
       </div>
     </section>

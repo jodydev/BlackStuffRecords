@@ -7,11 +7,13 @@ export default function Carousel() {
       id="carouselExampleAutoplaying"
       className="carousel slide"
       data-bs-ride="carousel"
+      data-bs-pause="false" // Per evitare la pausa su hover
+      data-bs-wrap="true" // Per consentire il wrapping degli elementi
     >
       {/* <!-- Navbar --> */}
       <Navbar />
 
-      <div className="carousel-inner vh-100">
+      <div className="carousel-inner">
         {/* <!-- CAROUSEL - 1 --> */}
         <div className="carousel-item active ">
           <img
@@ -22,16 +24,17 @@ export default function Carousel() {
             <div className="row">
               <div className="col-12 col-lg-8">
                 <div data-aos="fade-down" data-aos-duration="2000">
-                  <h2 className="carousel-title">Quello che ci accomuna!</h2>
+                  <h2 className="carousel-title">
+                    DIS - ORIENTED UNDERGROUND LABEL
+                  </h2>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="2000">
                   <h3 className="carousel-intestation  text-wrap lh-base ">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dicta ratione earum, ex quam amet corrupti? Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Quo suscipit
-                    corporis quibusdam. Odit, ut exercitationem? Lorem ipsum
-                    dolor sit amet consectetur adipisicing elit. Quo suscipit
-                    corporis quibusdam. Odit, ut exercitationem?
+                    Siamo i narratori dell'audacia, custodi dei segreti musicali
+                    più profondi. Unisciti a noi nell'esplorare l'irregolare,
+                    celebrando la diversità e la libertà creativa. Esplora
+                    l'euforia e lasciati trasportare dalla potenza travolgente
+                    della nostra musica.
                   </h3>
                 </div>
               </div>
@@ -51,12 +54,11 @@ export default function Carousel() {
                 <h2 className="carousel-title ">Quello che ci accomuna!</h2>
 
                 <h3 className="carousel-intestation  text-wrap lh-base">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
-                  ratione earum, ex quam amet corrupti? Lorem ipsum dolor sit
-                  amet consectetur adipisicing elit. Quo suscipit corporis
-                  quibusdam. Odit, ut exercitationem? Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit. Quo suscipit corporis quibusdam.
-                  Odit, ut exercitationem?
+                  Ogni nota prodotta è un messaggio di unità e comprensione.
+                  Attraverso una vasta gamma di generi musicali, dall'indie al
+                  jazz, dall'elettronica al folk, l'etichetta offre
+                  un'esperienza sonora completa che parla direttamente alle
+                  anime dei suoi ascoltatori.
                 </h3>
               </div>
             </div>
