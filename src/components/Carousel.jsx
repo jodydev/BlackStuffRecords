@@ -30,7 +30,7 @@ export default function Carousel() {
             </video>
           )}
 
-          <div className="container position-absolute carousel-text-container">
+          <div className="container position-absolute carousel-text-container ">
             <div className="row">
               <div className="col-12 col-lg-8">
                 <div data-aos="fade-down" data-aos-duration="2000">
@@ -39,7 +39,7 @@ export default function Carousel() {
                   </h2>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="2000">
-                  <h3 className="carousel-intestation text-wrap lh-base ">
+                  <h3 className="carousel-intestation text-wrap">
                     Siamo i narratori dell'audacia, custodi dei segreti musicali
                     più profondi. Unisciti a noi nell'esplorare l'irregolare,
                     celebrando la diversità e la libertà creativa.
@@ -69,7 +69,7 @@ export default function Carousel() {
             <div className="row">
               <div className="col-12 col-lg-8">
                 <div data-aos="fade-down" data-aos-duration="2000">
-                  <h2 className="carousel-title ">Quello che ci accomuna!</h2>
+                  <h2 className="carousel-title ">Quello che ci accomuna</h2>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="2000">
                   <h3 className="carousel-intestation  text-wrap lh-base">
@@ -102,7 +102,7 @@ export default function Carousel() {
             <div className="row">
               <div className="col-12 col-lg-8">
                 <div data-aos="fade-down" data-aos-duration="2000">
-                  <h2 className="carousel-title">La nostra missione</h2>
+                  <h2 className="carousel-title">I nostri valori e la missione</h2>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="2000">
                   <h3 className="carousel-intestation text-wrap lh-base">
