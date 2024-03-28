@@ -13,7 +13,7 @@ function Loader() {
       <div className="container-loader bg-light">
         <div className="text-center container-loader-2  d-flex justify-content-center align-items-center">
           <img
-            src="/public/img/logo/blackstuffrecords-logo.png"
+            src="/img/logo/blackstuffrecords-logo.png"
             alt="Italian Botanical Heritage"
             className="img-fluid loader-img"
           />
