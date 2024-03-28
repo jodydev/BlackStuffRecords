@@ -19,23 +19,26 @@ export default function Carousel() {
         {/* <!-- CAROUSEL - 1 --> */}
         <div className="carousel-item active ">
           {isMobile ? (
-            <video className="carousel-img" autoPlay loop muted playsInline>
-              <source src="/video/carousel/1-mobile.mp4" type="video/mp4" />
-              Il tuo browser non supporta il tag video.
-            </video>
+            // <video className="carousel-img" autoPlay loop muted playsInline>
+            //   <source src="/video/carousel/1-mobile.mp4" type="video/mp4" />
+            //   Il tuo browser non supporta il tag video.
+            // </video>
+            <img src="/img/carousel/1-mobile.png" className="carousel-img" alt="carousel" />
           ) : (
-            <video className="carousel-img" autoPlay loop muted playsInline>
-              <source src="/video/carousel/1.mp4" type="video/mp4" />
-              Il tuo browser non supporta il tag video.
-            </video>
+            // <video className="carousel-img" autoPlay loop muted playsInline>
+            //   <source src="/video/carousel/1.mp4" type="video/mp4" />
+            //   Il tuo browser non supporta il tag video.
+            // </video>
+
+            <img src="/img/carousel/1.png" className="carousel-img" alt="carousel" />
           )}
 
           <div className="container position-absolute carousel-text-container ">
             <div className="row">
               <div className="col-12 col-lg-8">
                 <div data-aos="fade-down" data-aos-duration="2000">
-                  <h2 className="carousel-title">
-                    DIS - Oriented Undergrund Label
+                  <h2 className="carousel-title ">
+                    Dis Oriented Underground Label
                   </h2>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="2000">
@@ -54,15 +57,17 @@ export default function Carousel() {
         {/* <!-- CAROUSEL - 2 --> */}
         <div className="carousel-item">
           {isMobile ? (
-            <video className="carousel-img" autoPlay loop muted playsInline>
-              <source src="/video/carousel/2-mobile.mp4" type="video/mp4" />
-              Il tuo browser non supporta il tag video.
-            </video>
+            // <video className="carousel-img" autoPlay loop muted playsInline>
+            //   <source src="/video/carousel/2-mobile.mp4" type="video/mp4" />
+            //   Il tuo browser non supporta il tag video.
+            // </video>
+            <img src="/img/carousel/2-mobile.png" className="carousel-img" alt="carousel" />
           ) : (
-            <video className="carousel-img" autoPlay loop muted playsInline>
-              <source src="/video/carousel/2.mp4" type="video/mp4" />
-              Il tuo browser non supporta il tag video.
-            </video>
+            // <video className="carousel-img" autoPlay loop muted playsInline>
+            //   <source src="/video/carousel/2.mp4" type="video/mp4" />
+            //   Il tuo browser non supporta il tag video.
+            // </video>
+            <img src="/img/carousel/2.png" className="carousel-img" alt="carousel" />
           )}
 
           <div className="container position-absolute carousel-text-container">
@@ -88,15 +93,17 @@ export default function Carousel() {
         {/* <!-- CAROUSEL - 3 --> */}
         <div className="carousel-item">
           {isMobile ? (
-            <video className="carousel-img" autoPlay loop muted playsInline>
-              <source src="/video/carousel/3-mobile.mp4" type="video/mp4" />
-              Il tuo browser non supporta il tag video.
-            </video>
+            // <video className="carousel-img" autoPlay loop muted playsInline>
+            //   <source src="/video/carousel/3-mobile.mp4" type="video/mp4" />
+            //   Il tuo browser non supporta il tag video.
+            // </video>
+            <img src="/img/carousel/3-mobile.jpeg" className="carousel-img" alt="carousel" />
           ) : (
-            <video className="carousel-img" autoPlay loop muted playsInline>
-              <source src="/video/carousel/3.mp4" type="video/mp4" />
-              Il tuo browser non supporta il tag video.
-            </video>
+            // <video className="carousel-img" autoPlay loop muted playsInline>
+            //   <source src="/video/carousel/3.mp4" type="video/mp4" />
+            //   Il tuo browser non supporta il tag video.
+            // </video>
+            <img src="/img/carousel/3.png" className="carousel-img" alt="carousel" />
           )}
           <div className="container position-absolute carousel-text-container">
             <div className="row">
@@ -124,7 +131,7 @@ export default function Carousel() {
 
       {/* <!-- Controlli del Carousel --> */}
       <button
-        className="carousel-control-prev d-none d-lg-block"
+        className="carousel-control-prev  d-lg-block"
         type="button"
         data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="prev"
@@ -133,7 +140,7 @@ export default function Carousel() {
         <span className="visually-hidden">Previous</span>
       </button>
       <button
-        className="carousel-control-next d-none d-lg-block"
+        className="carousel-control-next  d-lg-block"
         type="button"
         data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="next"

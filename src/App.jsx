@@ -14,7 +14,7 @@ function Loader() {
         <div className="text-center container-loader-2  d-flex justify-content-center align-items-center">
           <img
             src="/img/logo/blackstuffrecords-logo.png"
-            alt="Italian Botanical Heritage"
+            alt="Black Stuff Records"
             className="img-fluid loader-img"
           />
 
