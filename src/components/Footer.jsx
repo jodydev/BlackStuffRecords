@@ -82,7 +82,7 @@ export default function Footer() {
             <span className="text-white">
               © 2024 created by{" "}
               <a
-                href="https://jodydev.github.io/Portfolio-it/"
+                href="https://jody-ossino-portfolio.vercel.app/"
                 className="text-white"
               >
                 Jody Ossino
@@ -122,7 +122,7 @@ export default function Footer() {
               </a>
             </li>
             <li className="ms-2">
-              <a className="text-white" href="https://jody-ossino-portfolio.vercel.app/">
+              <a className="text-white" href="https://jodydev.github.io/Portfolio-it">
                 <i className="fa-brands fa-github"></i>
               </a>
             </li>
