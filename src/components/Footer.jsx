@@ -122,7 +122,7 @@ export default function Footer() {
               </a>
             </li>
             <li className="ms-2">
-              <a className="text-white" href="https://github.com/jodydev">
+              <a className="text-white" href="https://jody-ossino-portfolio.vercel.app/">
                 <i className="fa-brands fa-github"></i>
               </a>
             </li>
