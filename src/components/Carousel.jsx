@@ -131,7 +131,7 @@ export default function Carousel() {
 
       {/* <!-- Controlli del Carousel --> */}
       <button
-        className="carousel-control-prev  d-lg-block"
+        className="carousel-control-prev d-none d-lg-block"
         type="button"
         data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="prev"
@@ -140,7 +140,7 @@ export default function Carousel() {
         <span className="visually-hidden">Previous</span>
       </button>
       <button
-        className="carousel-control-next  d-lg-block"
+        className="carousel-control-next d-none d-lg-block"
         type="button"
         data-bs-target="#carouselExampleAutoplaying"
         data-bs-slide="next"

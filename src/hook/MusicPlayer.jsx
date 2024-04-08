@@ -239,10 +239,11 @@ const MusicPlayer = () => {
 
   // Renderizza il componente MusicPlayer
   return (
-    <div className="container position-absolute container-music ">
+    <div className="container position-absolute container-music" data-aos="fade-up" data-aos-duration="2000">
       <div className="row">
         {/* Sezione dell'album */}
-        <div className="col-3 col-lg-1 pe-2 pe-lg-0 px-0 px-lg-0 my-bg-transparent">
+        <div className="col-3 col-lg-1 px-0 py-0 my-bg-transparent">          
+
           <img
             src={currentTrack[currentTrackIndex].poster}
             className="music-cover"
@@ -251,7 +252,7 @@ const MusicPlayer = () => {
         </div>
 
         {/* Informazioni sulla traccia corrente */}
-        <div className="col-3 col-lg-2 offset-lg-0 offset-0 offcanvas-1 flex-column justify-content-center align-items-center vertical-hr info-music-box px-0 p-0 px-lg-3 my-bg-transparent">
+        <div className="col-3 col-lg-2 offset-lg-0 offset-0 offcanvas-1 flex-column justify-content-center align-items-center vertical-hr info-music-box px-2 px-lg-3 my-bg-transparent">
           <p className="music-title text-light fw-semibold mt-3">
             {currentTrack[currentTrackIndex].title}
           </p>
@@ -263,7 +264,6 @@ const MusicPlayer = () => {
         {/* Elemento audio */}
         <audio id="music-player" ref={audioRef}>
           {" "}
-          Audio non va
         </audio>
 
         {/* Pulsante "Precedente" */}

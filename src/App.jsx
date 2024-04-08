@@ -9,16 +9,15 @@ import AOS from "aos";
 
 function Loader() {
   return (
-    <div className="bg-black vh-100 d-flex justify-content-center align-items-center">
-      <div className="container-loader bg-light">
+    <div id="loader" className="bg-black vh-100 d-flex justify-content-center align-items-center">
+      <div className="container-loader">
         <div className="text-center container-loader-2  d-flex justify-content-center align-items-center">
           <img
             src="/img/logo/blackstuffrecords-logo.png"
             alt="Black Stuff Records"
             className="img-fluid loader-img"
           />
-
-          <div class="loader-text mt-5"></div>
+          <div className="loader-text mt-5"></div>
         </div>
       </div>
     </div>
@@ -29,11 +28,10 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simula un caricamento ritardato (puoi sostituire questo con il tuo reale caricamento dei dati)
     const timeout = setTimeout(() => {
       setLoading(false);
       AOS.init();
-    }, 4000); // Modifica il tempo di caricamento se necessario
+    }, 2000); 
 
     return () => clearTimeout(timeout);
   }, []);

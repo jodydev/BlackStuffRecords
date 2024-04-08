@@ -4,20 +4,20 @@ export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isOpening, setIsOpening] = useState(false);
 
-
   const handleBurgerClick = () => {
     setIsOpening(true);
     setIsNavOpen(!isNavOpen);
     setTimeout(() => {
       setIsOpening(false);
-    }, 400); // Ritardo di 1 secondo (1000 millisecondi)
-
+    }, 400);
   };
-  
-  
+
+  const closeNav = () => {
+    setIsNavOpen(false);
+  }
 
   return (
-    <nav className={`navbar navbar-expand-lg fixed-top  p-0`} >
+    <nav className={`navbar navbar-expand-lg fixed-top  p-0`}>
       {" "}
       <div id="nav" className="container py-3 py-lg-0">
         <div className="row">
@@ -57,18 +57,22 @@ export default function Navbar() {
         </div>
 
         <div
-  className={`collapse navbar-collapse rounded-4 my-3 ${
-    isNavOpen ? (isOpening ? "opening" : "show bg-white px-5 py-2 my-5 mx-4") : ""
-  }`}
-  id="navbarSupportedContent"
->
-
+          className={`collapse navbar-collapse rounded-4 my-3 ${
+            isNavOpen
+              ? isOpening
+                ? "opening"
+                : "show bg-white px-5 py-2 my-5 mx-4"
+              : ""
+          }`}
+          id="navbarSupportedContent"
+        >
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item mx-1">
               <a
                 className={`nav-link ${isNavOpen ? "text-black fs-4 fw-bold d-flex justify-content-center align-items-center" : "text-light"}`}
                 aria-current="page"
                 href="#"
+                onClick={closeNav}
               >
                 Home
               </a>
@@ -79,6 +83,7 @@ export default function Navbar() {
                 className={`nav-link ${isNavOpen ? "text-black fs-4 fw-bold d-flex justify-content-center align-items-center " : "text-light"}`}
                 aria-current="page"
                 href="#discografia"
+                onClick={closeNav}
               >
                 Discografia
               </a>
@@ -90,6 +95,7 @@ export default function Navbar() {
                 className={`nav-link ${isNavOpen ? "text-black fs-4 fw-bold d-flex justify-content-center align-items-center " : "text-light"}`}
                 aria-current="page"
                 href="#events"
+                onClick={closeNav}
               >
                 Eventi
               </a>
@@ -101,6 +107,7 @@ export default function Navbar() {
                 className={`nav-link ${isNavOpen ? "text-black fs-4 fw-bold d-flex justify-content-center align-items-center " : "text-light"}`}
                 aria-current="page"
                 href="#news"
+                onClick={closeNav}
               >
                 News
               </a>
@@ -112,6 +119,7 @@ export default function Navbar() {
                 className={`nav-link ${isNavOpen ? "text-black fs-4 fw-bold d-flex justify-content-center align-items-center " : "text-light"}`}
                 aria-current="page"
                 href="#photo-gallery"
+                onClick={closeNav}
               >
                 Galleria
               </a>
@@ -123,6 +131,7 @@ export default function Navbar() {
                 className={`nav-link ${isNavOpen ? "text-black fs-4 fw-bold d-flex justify-content-center align-items-center " : "text-light"}`}
                 aria-current="page"
                 href="#video"
+                onClick={closeNav}
               >
                 Video
               </a>
@@ -134,6 +143,7 @@ export default function Navbar() {
                 className={`nav-link ${isNavOpen ? "text-black fs-4 fw-bold d-flex justify-content-center align-items-center " : "text-light"}`}
                 aria-current="page"
                 href="#shop"
+                onClick={closeNav}
               >
                 Shop
               </a>
@@ -145,6 +155,7 @@ export default function Navbar() {
                 className={`nav-link ${isNavOpen ? "text-black fs-4 fw-bold d-flex justify-content-center align-items-center " : "text-light"}`}
                 aria-current="page"
                 href="#artist-bio"
+                onClick={closeNav}
               >
                 Artisti
               </a>
@@ -156,11 +167,11 @@ export default function Navbar() {
                 className={`nav-link ${isNavOpen ? "text-black fs-4 fw-bold d-flex justify-content-center align-items-center " : "text-light"}`}
                 aria-current="page"
                 href="#footer"
+                onClick={closeNav}
               >
                 Contatti
               </a>
             </li>
-            
           </ul>
         </div>
       </div>
