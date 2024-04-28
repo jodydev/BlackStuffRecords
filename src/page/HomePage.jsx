@@ -5,7 +5,7 @@ import Events from "../components/Events";
 import News from "../components/News";
 import PhotoGallery from "../components/PhotoGallery";
 import Video from "../components/Video";
-import Shop from "../components/Shop";
+// import Shop from "../components/Shop";
 import ArtistBio from "../components/ArtistBio";
 import Footer from "../components/Footer";
 
@@ -34,7 +34,7 @@ export default function HomePage() {
       <Video />
 
       {/* <!-- Shop --> */}
-      <Shop />
+      {/* <Shop /> */}
 
       {/* <!-- Biografia Artista --> */}
       <ArtistBio />

@@ -1,9 +1,8 @@
 import albumsData from "../data/discografia";
 
 export default function Discografia() {
-
   const sm = window.innerWidth < 576;
-  
+
   function getAOSAnimation(index, sm) {
     switch (index) {
       case 0:
@@ -50,6 +49,29 @@ export default function Discografia() {
                     <h4 className="my-1">{album.artist}</h4>
                   </figcaption>
                   <a href={album.linkBandcamp}></a>
+                </div>
+                <p className="fw-bold fs-4">{album.albumTitle}</p>
+                <div className="list-style text-start px-4 py-2">
+                  <div className="list-item">
+                    <p>
+                      <strong>Genere:</strong> {album.genere}
+                    </p>
+                  </div>
+                  <div className="list-item">
+                    <p>
+                      <strong>Numero Catalogo:</strong> {album.numCatagolo}
+                    </p>
+                  </div>
+                  <div className="list-item">
+                    <p>
+                      <strong>Copie:</strong> {album.numCopie}
+                    </p>
+                  </div>
+                  <div className="list-item">
+                    <p>
+                      <strong>Formato:</strong> {album.formato}
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}

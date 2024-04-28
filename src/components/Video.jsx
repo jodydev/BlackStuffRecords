@@ -13,14 +13,10 @@ const Video = () => {
           `https://www.googleapis.com/youtube/v3/videos?part=snippet&id=${videoId}&key=${apiKey}`
         );
 
-        if (!response.ok) {
-          throw new Error("Failed to fetch video details");
-        }
-
         const data = await response.json();
         setVideoData(data.items[0].snippet);
       } catch (error) {
-        console.error("Error fetching video details:", error);
+        // console.error("Error fetching video details:", error);
       }
     };
 

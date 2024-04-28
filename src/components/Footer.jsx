@@ -10,7 +10,7 @@ export default function Footer() {
               <p className="small text-white mt-3">Indirizzo:</p>
               <p className="small text-white">Email:</p>
               <p className="small text-white">Telefono:</p>
-              <p className="small text-white">www.blackstuffrecord.it</p>
+              <p className="small text-white">www.blackstuffrecords.it</p>
             </div>
             <div className="col-lg-3 col-md-6">
               <h5 className="text-white mb-3">Link Veloci</h5>
