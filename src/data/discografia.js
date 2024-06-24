@@ -36,6 +36,18 @@ const albumsData = [
     numCopie: "1234",
     formato: "test",
   },
+  {
+    id: 4,
+    songName: "Cup of Tea",
+    artist: "E.H.C.S",
+    cover: "/img/artist/EHCS/cover/cover.jpg",
+    albumTitle: "Belvedere Chaos - E.H.C.S",
+    linkBandcamp: "",
+    genere: "test",
+    numCatagolo: "1234",
+    numCopie: "1234",
+    formato: "test",
+  },
 ];
 
 export default albumsData;

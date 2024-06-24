@@ -40,7 +40,7 @@ export default function Discografia() {
                 key={album.id}
                 data-aos={getAOSAnimation(index, sm)}
                 data-aos-duration="2000"
-                className="col-12 col-lg-4 my-5 p-lg-3"
+                className="col-12 col-lg-3 my-5 p-lg-3"
               >
                 <div className="card-discografia">
                   <img src={album.cover} alt="Album Cover" />

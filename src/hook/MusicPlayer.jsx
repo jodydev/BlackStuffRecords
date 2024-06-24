@@ -60,7 +60,7 @@ const MusicPlayer = () => {
     };
 
     return (
-      <p className="fs-6 d-none d-lg-block text-light fw-lighter   my-3">
+      <p className="fs-6 d-none d-lg-block text-light fw-lighter  my-3">
         {audioRef.current
           ? `${formatTime(currentTime)} / ${formatTime(duration)}`
           : "00:00 / 00:00"}

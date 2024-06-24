@@ -7,7 +7,7 @@ export default function Carousel() {
   return (
     <div
       id="carouselExampleAutoplaying"
-      className="carousel slide"
+      className="carousel slide vh-100"
       data-bs-ride="carousel"
       data-bs-pause="true"
       data-bs-wrap="true"

@@ -19,7 +19,7 @@ const newsData = [
     title: "Collaborazione Esplosiva: E.H.C.S e Black Stuff Records rilasciano un Nuovo Singolo",
     subtitle: "Due giganti della musica, E.H.C.S e Black Stuff Records..",
     description:
-      "Hanno unito le forze per creare un singolo esplosivo intitolato Cup of Tea. La traccia, un mix irresistibile di rap incendiario e melodie orecchiabili, ha già catturato l'attenzione del pubblico internazionale. Scopri di più su questa collaborazione straordinaria che sta facendo vibrare le scene musicali di tutto il mondo.",
+      "Hanno unito le forze per creare un singolo esplosivo intitolato Cup of Tea. La traccia, un mix irresistibile di rap incendiario e melodie orecchiabili, ha già catturato l'attenzione del pubblico internazionale. Scopri di più su questa collaborazione straordinaria del momento.",
   },
   {
     id: 3,

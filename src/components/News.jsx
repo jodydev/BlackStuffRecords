@@ -44,7 +44,7 @@ export default function News() {
                     data-aos={getAOSAnimation(index, sm)}
                     data-aos-duration="2000"
                   >
-                    <div className="col my-5">
+                    <div className="col p-5">
                       <div>
                         <article className="card shadow-lg">
                           <header className="card__thumb">

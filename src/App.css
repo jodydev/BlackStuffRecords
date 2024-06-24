@@ -22,13 +22,39 @@
   .container-music {
     top: 91% !important;
   }
+  #events h2 {
+    color: #fff !important;
+    font-size: 60px;
+    font-weight: 600 !important;
+  }
+  
+  #events p {
+    font-size: 30px;
+    font-weight: 400 !important;
+  }
+
+  .container-countdown {
+    top: 20%;
+  }
 }
 
 /* (PORTATILI) = 1500px */
 @media screen and (max-width: 1500px) {
   .container-music {
     top: 87% !important;
-    left: 15% !important;
+    left: 12% !important;
+  }
+
+  #events h2 {
+    color: #fff !important;
+    font-size: 60px;
+    font-weight: 600 !important;
+  }
+  
+  #events p {
+    font-size: 20px;
+    font-weight: 400 !important;
+    margin: 100px 100px ;
   }
 
   .card:hover .card__body {
@@ -47,7 +73,7 @@
     max-height: 400px !important;
   }
   .carousel-text-container {
-    top: 30% !important;
+    top: 25% !important;
     left: 20% !important;
     text-align: center !important;
   }
@@ -59,6 +85,21 @@
   .container-artist-bio-1 {
     top: 20%;
     left: 40%;
+  }
+
+  .text-bio h2 {
+    font-size: 50px !important;
+    text-align: start !important;
+  }
+
+  .text-bio p {
+    margin-top: 20% !important;
+    font-size: 18px !important;
+    text-align: start !important;
+  }
+
+  .container-countdown {
+    top: 20%;
   }
 }
 
@@ -457,16 +498,7 @@ td {
 
 /* Events */
 
-#events h2 {
-  color: #fff !important;
-  font-size: 60px;
-  font-weight: 600 !important;
-}
 
-#events p {
-  font-size: 30px;
-  font-weight: 400 !important;
-}
 
 .video-background {
   width: 100%;
@@ -491,10 +523,6 @@ td {
   filter: blur(10px) brightness(0.5) contrast(1.2) saturate(1.2);
 }
 
-/* COUNTDOWN */
-.container-countdown {
-  top: 30%;
-}
 
 .number {
   font-size: 100px;
@@ -543,8 +571,8 @@ td {
   display: inline-block;
   overflow: hidden;
   margin: 10px;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   color: #fff;
   text-align: left;
   font-size: 26px;
@@ -722,7 +750,7 @@ td {
 **/
 
 .card__thumb {
-  height: 245px;
+  height: 100%;
   overflow: hidden;
   background-color: #000;
   -webkit-transition: height 0.5s;
@@ -791,7 +819,7 @@ td {
   margin: 0;
   padding: 0 0 10px 0;
   color: #000;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -799,7 +827,7 @@ td {
 .card__subtitle {
   margin: 0;
   padding: 0 0 10px 0;
-  font-size: 19px;
+  font-size: 16px;
   color: coral;
 }
 
@@ -834,8 +862,8 @@ td {
 
 .card:hover .card__description {
   opacity: 1;
-  -webkit-transform: translateY(0px);
-  transform: translateY(0px);
+  -webkit-transform: translateY(30px);
+  transform: translateY(30px);
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }

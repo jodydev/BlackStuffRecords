@@ -110,7 +110,7 @@ export default function ArtistBio() {
                     <h2 className="text-white">
                       Biografia Artista - <br /> {artist.bioTitle}
                     </h2>
-                    <p className="text-white my-3 my-lg-5">{artist.bioText}</p>
+                    <p className="text-white">{artist.bioText}</p>
                   </div>
                 </div>
               </div>
