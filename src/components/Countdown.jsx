@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 const Countdown = () => {
-  const targetDate = new Date("2024/07/31 00:00:00");
+  const targetDate = new Date("2024/09/29 21:00:00");
   const [days, setDays] = useState(0);
   const [hrs, setHrs] = useState(0);
   const [min, setMin] = useState(0);

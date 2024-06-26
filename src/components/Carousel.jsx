@@ -38,15 +38,12 @@ export default function Carousel() {
               <div className="col-12 col-lg-8">
                 <div data-aos="fade-down" data-aos-duration="2000">
                   <h2 className="carousel-title ">
-                    Dis Oriented Underground Label
+                    Dis - Oriented Underground Label
                   </h2>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="2000">
                   <h3 className="carousel-intestation text-wrap">
-                    Siamo i narratori dell'audacia, custodi dei segreti musicali
-                    più profondi. Unisciti a noi nell'esplorare l'irregolare,
-                    celebrando la diversità e la libertà creativa.
-                    Ti aspettiamo per un viaggio musicale senza confini.
+                  Uncompromising music and sound without direction
                   </h3>
                 </div>
               </div>
@@ -74,15 +71,13 @@ export default function Carousel() {
             <div className="row">
               <div className="col-12 col-lg-8">
                 <div data-aos="fade-down" data-aos-duration="2000">
-                  <h2 className="carousel-title ">Quello che ci accomuna</h2>
+                  <h2 className="carousel-title ">XX CENTURY ZORRO</h2>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="2000">
                   <h3 className="carousel-intestation  text-wrap lh-base">
-                    Ogni nota prodotta è un messaggio di unità e comprensione.
-                    Attraverso una vasta gamma di generi musicali, dall'indie al
-                    jazz, dall'elettronica al folk, l'etichetta offre
-                    un'esperienza sonora completa che parla direttamente alle
-                    anime dei suoi ascoltatori.
+                  Ricopiate....con cura Mescolate....con calma Ritagliate<br />
+                  In Every Dream Home a Heartache <br />
+                  <span className="fw-bold">TURQUOISE 7" VINYL - OUT ON 28/08/2024</span> 
                   </h3>
                 </div>
               </div>
@@ -109,16 +104,12 @@ export default function Carousel() {
             <div className="row">
               <div className="col-12 col-lg-8">
                 <div data-aos="fade-down" data-aos-duration="2000">
-                  <h2 className="carousel-title">I nostri valori e la missione</h2>
+                  <h2 className="carousel-title">el Funeral de Kocis </h2>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="2000">
                   <h3 className="carousel-intestation text-wrap lh-base">
-                    La nostra missione è quella di creare un'esperienza musicale
-                    che sia unica e indimenticabile. La nostra musica è un
-                    viaggio, un'esperienza che ti porterà in posti che non hai
-                    mai immaginato. Siamo qui per celebrare la diversità e la
-                    creatività, per esplorare nuovi orizzonti e per portare la
-                    musica a un livello superiore.
+                    Baby's on Fire in Kodak color/Warm Leatherette <br />
+                  <span className="fw-bold">TRANSPARENT 7" VINYL - OUT ON 28/08/2024</span> 
                   </h3>
                 </div>
               </div>

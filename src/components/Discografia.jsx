@@ -10,7 +10,9 @@ export default function Discografia() {
       case 1:
         return sm ? "fade-left" : "fade-up";
       case 2:
-        return sm ? "fade-right" : "fade-left";
+        return sm ? "fade-right" : "fade-up";
+      case 3:
+        return "fade-left";
       default:
         return "";
     }
@@ -23,14 +25,14 @@ export default function Discografia() {
           <div data-aos="fade-down" data-aos-duration="2000">
             <div className="px-0 px-lg-5">
               <h2 className="text-uppercase text-center fs-1 my-3 fw-bold">
-                Ultimi Album
+                Discografia
               </h2>
 
-              <p className="text-center">
+              {/* <p className="text-center">
                 Esplora gli ultimi album musicali e scopri un mondo di suoni
                 innovativi e stili unici. <br /> Dalla sperimentazione audace
                 alle melodie accattivanti, c'è qualcosa per tutti i gusti.
-              </p>
+              </p> */}
             </div>
           </div>
 
@@ -50,8 +52,18 @@ export default function Discografia() {
                   </figcaption>
                   <a href={album.linkBandcamp}></a>
                 </div>
-                <p className="fw-bold fs-4">{album.albumTitle}</p>
+                <p className="fw-bold fs-5">{album.albumTitle}</p>
                 <div className="list-style text-start px-4 py-2">
+                <div className="list-item">
+                    <p>
+                      <strong>Artista:</strong> {album.artist}
+                    </p>
+                  </div>
+                  <div className="list-item">
+                    <p>
+                      <strong>Titolo:</strong> {album.songName}
+                    </p>
+                  </div>
                   <div className="list-item">
                     <p>
                       <strong>Genere:</strong> {album.genere}
@@ -59,7 +71,7 @@ export default function Discografia() {
                   </div>
                   <div className="list-item">
                     <p>
-                      <strong>Numero Catalogo:</strong> {album.numCatagolo}
+                      <strong>Numero Catalogo:</strong> {album.catalogo}
                     </p>
                   </div>
                   <div className="list-item">

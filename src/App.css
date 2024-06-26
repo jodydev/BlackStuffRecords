@@ -362,10 +362,10 @@ html {
 
 .carousel-intestation {
   font-size: 20px;
-  font-weight: lighter !important;
+  font-weight: 300 !important;
   color: #fff;
   font-style: italic;
-  margin-top: 5%;
+  margin-top: 10%;
   background-color: #ffffff3a;
   padding: 25px;
   border-radius: 15px;

@@ -8,7 +8,10 @@ const Events = () => {
       <div>
         {isMobile ? (
           <video className="video-event" autoPlay loop muted playsInline>
-            <source src="/video/event/video-event-mobile.mp4" type="video/mp4" />
+            <source
+              src="/video/event/video-event-mobile.mp4"
+              type="video/mp4"
+            />
             Il tuo browser non supporta il tag video.
           </video>
         ) : (
@@ -24,13 +27,11 @@ const Events = () => {
           <div className="col-12 text-center">
             <div className="content mt-5">
               <div data-aos="fade-down" data-aos-duration="2000">
-                <h2 className="text-white text-uppercase fw-bold">
-                  Prossimi eventi
+                <h2 className="text-white text-uppercase fw-bold fs-1 my-5">
+                  SEXTO GRINDHOUSE LIVE PERFORMANCE
                 </h2>
                 <p className="text-white fw-normal my-0 my-lg-5">
-                  Scopri i nostri prossimi eventi, pieni di emozione,
-                  divertimento e sorprese! Dai concerti esclusivi ai workshop
-                  interattivi, c'è qualcosa per tutti.
+                  il 29/09/2024 si terrà il prossimo evento live!
                 </p>
               </div>
             </div>
