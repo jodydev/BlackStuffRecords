@@ -27,8 +27,7 @@ export default function News() {
                 Ultime News
               </h2>
               <p className="text-center fs-6">
-                Scopri le ultime novità musicali nella sezione "News" del nostro
-                sito! <br /> Resta aggiornato su nuove uscite, recensioni e
+                Resta aggiornato su nuove uscite, recensioni e
                 tendenze che stanno definendo il panorama musicale attuale.{" "}
                 <br /> Entra e lasciati ispirare!
               </p>
@@ -36,7 +35,7 @@ export default function News() {
           </div>
 
           <section id="focus" className="focus-section">
-            <div className="container  my-0 my-lg-5">
+            <div className="container my-0 my-lg-5">
               <div className="row row-cols-1 row-cols-md-3 g-4">
                 {newsData.map((newsItem, index) => (
                   <div
@@ -63,6 +62,7 @@ export default function News() {
                             </div>
                             <p className="card__description">
                               {newsItem.description}
+                              <span className="text-decoration-underline cursor-pointer"><br />{newsItem.link}</span>
                             </p>
                           </div>
                         </article>

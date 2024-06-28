@@ -6,13 +6,15 @@ export default function Discografia() {
   function getAOSAnimation(index, sm) {
     switch (index) {
       case 0:
-        return "fade-right";
+        return "fade-up";
       case 1:
         return sm ? "fade-left" : "fade-up";
       case 2:
         return sm ? "fade-right" : "fade-up";
       case 3:
-        return "fade-left";
+        return sm ? "fade-left" : "fade-up";
+      case 4:
+        return sm ? "fade-right" : "fade-up";
       default:
         return "";
     }
@@ -36,13 +38,13 @@ export default function Discografia() {
             </div>
           </div>
 
-          <div className="row">
+          <div className="row my-0 my-lg-5 p-0 p-lg-5">
             {albumsData.map((album, index) => (
               <div
                 key={album.id}
                 data-aos={getAOSAnimation(index, sm)}
                 data-aos-duration="2000"
-                className="col-12 col-lg-3 my-5 p-lg-3"
+                className="col-12 col-lg-4 my-3 my-lg-0 p-lg-3"
               >
                 <div className="card-discografia">
                   <img src={album.cover} alt="Album Cover" />

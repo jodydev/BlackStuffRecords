@@ -7,7 +7,7 @@ export default function Carousel() {
   return (
     <div
       id="carouselExampleAutoplaying"
-      className="carousel slide vh-100"
+      className="carousel home slide"
       data-bs-ride="carousel"
       data-bs-pause="true"
       data-bs-wrap="true"
@@ -19,17 +19,8 @@ export default function Carousel() {
         {/* <!-- CAROUSEL - 1 --> */}
         <div className="carousel-item active ">
           {isMobile ? (
-            // <video className="carousel-img" autoPlay loop muted playsInline>
-            //   <source src="/video/carousel/1-mobile.mp4" type="video/mp4" />
-            //   Il tuo browser non supporta il tag video.
-            // </video>
             <img src="/img/carousel/1-mobile.png" className="carousel-img" alt="carousel" />
           ) : (
-            // <video className="carousel-img" autoPlay loop muted playsInline>
-            //   <source src="/video/carousel/1.mp4" type="video/mp4" />
-            //   Il tuo browser non supporta il tag video.
-            // </video>
-
             <img src="/img/carousel/1.png" className="carousel-img" alt="carousel" />
           )}
 
@@ -43,7 +34,7 @@ export default function Carousel() {
                 </div>
                 <div data-aos="fade-right" data-aos-duration="2000">
                   <h3 className="carousel-intestation text-wrap">
-                  Uncompromising music and sound without direction
+                  Uncompromising music and sounds without directions...
                   </h3>
                 </div>
               </div>
@@ -54,17 +45,9 @@ export default function Carousel() {
         {/* <!-- CAROUSEL - 2 --> */}
         <div className="carousel-item">
           {isMobile ? (
-            // <video className="carousel-img" autoPlay loop muted playsInline>
-            //   <source src="/video/carousel/2-mobile.mp4" type="video/mp4" />
-            //   Il tuo browser non supporta il tag video.
-            // </video>
             <img src="/img/carousel/2-mobile.png" className="carousel-img" alt="carousel" />
           ) : (
-            // <video className="carousel-img" autoPlay loop muted playsInline>
-            //   <source src="/video/carousel/2.mp4" type="video/mp4" />
-            //   Il tuo browser non supporta il tag video.
-            // </video>
-            <img src="/img/carousel/2.png" className="carousel-img" alt="carousel" />
+            <img src="/img/artist/XXCZ/cover/copertina.png" className="carousel-img" alt="carousel" />
           )}
 
           <div className="container position-absolute carousel-text-container">
@@ -88,23 +71,15 @@ export default function Carousel() {
         {/* <!-- CAROUSEL - 3 --> */}
         <div className="carousel-item">
           {isMobile ? (
-            // <video className="carousel-img" autoPlay loop muted playsInline>
-            //   <source src="/video/carousel/3-mobile.mp4" type="video/mp4" />
-            //   Il tuo browser non supporta il tag video.
-            // </video>
             <img src="/img/carousel/3-mobile.jpeg" className="carousel-img" alt="carousel" />
           ) : (
-            // <video className="carousel-img" autoPlay loop muted playsInline>
-            //   <source src="/video/carousel/3.mp4" type="video/mp4" />
-            //   Il tuo browser non supporta il tag video.
-            // </video>
-            <img src="/img/carousel/3.png" className="carousel-img" alt="carousel" />
+            <img src="/img/artist/ELFDEK/cover/copertina.png" className="carousel-img" alt="carousel" />
           )}
           <div className="container position-absolute carousel-text-container">
             <div className="row">
               <div className="col-12 col-lg-8">
                 <div data-aos="fade-down" data-aos-duration="2000">
-                  <h2 className="carousel-title">el Funeral de Kocis </h2>
+                  <h2 className="carousel-title">el FUNERAL de Kocis </h2>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="2000">
                   <h3 className="carousel-intestation text-wrap lh-base">
@@ -117,7 +92,9 @@ export default function Carousel() {
           </div>
         </div>
 
-        <MusicPlayer />
+        <div className="position-relative">
+          <MusicPlayer />
+        </div>
       </div>
 
       {/* <!-- Controlli del Carousel --> */}

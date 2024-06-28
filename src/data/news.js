@@ -1,36 +1,31 @@
-// Definizione delle notizie come array di oggetti
 const newsData = [
   {
     id: 1,
-    imageUrl:
-      "/img/artist/NTR-MISSION/cover/cover.jpg",
-    category: "music",
-    title: "Nuovo Album di NTR Mission domina le Classifiche di Vendita!",
-    subtitle: "Il tanto atteso album di NTR Mission ha debuttato in testa alle classifiche..",
-    description:
-      "Conquistando il cuore dei fan in tutto il mondo. Con canzoni che esplorano nuovi territori sonori e testi profondamente personali, Swift dimostra ancora una volta il suo talento eccezionale nel trasportare gli ascoltatori in un viaggio emotivo.",
-  },
+    imageUrl: "/img/news/1.jpeg",
+    category: "review",
+    title: "Vittore Baroni elogia Black Stuff Records su Facebook",
+    subtitle: "La recensione di Vittore Baroni mette in luce Black Stuff Records",
+    description: "Vittore Baroni elogia Black Stuff Records su Facebook, evidenziando la qualità e l'impegno. Leggi la recensione completa!",
+    link: "https://www.facebook.com/1075553695/posts/10229532541912668/?rdid=NSZlNwLKnN2WKFbm"
+    },  
   {
     id: 2,
-    imageUrl:
-      "/img/artist/EHCS/cover/cover.jpg",
- 
-    category: "music",
-    title: "Collaborazione Esplosiva: E.H.C.S e Black Stuff Records rilasciano un Nuovo Singolo",
-    subtitle: "Due giganti della musica, E.H.C.S e Black Stuff Records..",
-    description:
-      "Hanno unito le forze per creare un singolo esplosivo intitolato Cup of Tea. La traccia, un mix irresistibile di rap incendiario e melodie orecchiabili, ha già catturato l'attenzione del pubblico internazionale. Scopri di più su questa collaborazione straordinaria del momento.",
-  },
+    imageUrl: "/img/news/2.png",
+    category: "radio",
+    title: "L'etichetta Black Stuff Records sotto i riflettori su Radio Rai 3",
+    subtitle: "Battiti Music dedica una recensione approfondita alla Black Stuff Records",
+    description: "Nell'ultima puntata di Battiti Music su Radio Rai 3, Black Stuff Records è stata recensita per la sua varietà musicale. Leggi la recensione completa!",
+        link: "https://www.raiplaysound.it/audio/2024/06/Battiti-del-21062024-ed4dba93-40ee-4f8a-895e-ebb2ff7223c5.html"
+  },  
   {
     id: 3,
-    imageUrl:
-      "/img/artist/ANZWART/cover/cover.png",
-    category: "music",
-    title: "Annuncio Speciale: Anzwant Si Prepara a Rilasciare Nuovo Album a Sorpresa",
-    subtitle: "Anzwant sorprendente: è in arrivo un nuovo album a sorpresa..",
-    description:
-      "Hanno fatto un annuncio sorprendente: è in arrivo un nuovo album a sorpresa. Con il suo stile innovativo e la sua capacità di reinventarsi costantemente, Anzwant continua a stupire il mondo della musica e dello spettacolo. Fan di tutto il mondo aspettano con ansia il debutto di questo nuovo capitolo musicale.",
-  },
+    imageUrl: "/img/news/3.png",
+    category: "event",
+    title: "Sexto Grindhouse: Un Evento da Non Perdere il 29/09/24",
+    subtitle: "Preparati per una serata indimenticabile con Sexto Grindhouse",
+    description: "Unisciti a noi il 29 settembre 2024 per Sexto Grindhouse, un evento straordinario che promette di offrire musica, arte e intrattenimento senza precedenti. Non mancare all'appuntamento ed entra nel vivo dell'azione!",
+  }
+  
 ];
 
 export default newsData;

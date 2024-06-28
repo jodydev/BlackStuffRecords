@@ -36,15 +36,22 @@
   .container-countdown {
     top: 20%;
   }
+  .home{
+    height: 100vh !important;
+  }
 }
 
 /* (PORTATILI) = 1500px */
 @media screen and (max-width: 1500px) {
   .container-music {
-    top: 87% !important;
+    position: absolute;
+    top: 670px !important;
     left: 12% !important;
   }
 
+  .home{
+    height: 100vh !important;
+  }
   #events h2 {
     color: #fff !important;
     font-size: 60px;
@@ -101,6 +108,9 @@
   .container-countdown {
     top: 20%;
   }
+  #carouselExampleAutoplaying .carousel-inner {
+    height: 100% !important;
+  }
 }
 
 /* (MOBILE) = 480px */
@@ -108,6 +118,10 @@
   .carousel-control-next-icon,
   .carousel-control-prev-icon {
     width: 15px !important;
+  }
+  .card__thumb img {
+    width: 100%;
+    height: 350px !important;
   }
 
   #loader {
@@ -166,7 +180,7 @@
     text-align: center !important;
   }
   .container-music {
-    top: 87% !important;
+    top: 565px !important;
     left: 0% !important;
   }
   .carousel-item {
@@ -224,9 +238,6 @@
     font-size: 16px !important;
   }
 
-  .vertical-hr {
-    height: 100px !important;
-  }
 
   #news .card {
     height: 500px !important;
@@ -374,9 +385,7 @@ html {
 .carousel-img {
   width: 100%;
   height: 100%;
-  max-height: 100vh;
   box-shadow: 0 0 0 transparent;
-  /* filter: brightness(0.7) contrast(1.2) saturate(1.2); */
   filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px);
 }
 .carousel-img-bio {
@@ -393,10 +402,10 @@ html {
 }
 
 /* Music Player */
-.container-music {
+/* .container-music {
   top: 92%;
   left: 25%;
-}
+} */
 
 .my-bg-transparent {
   background-color: #0000009a;
@@ -404,7 +413,7 @@ html {
 
 .vertical-hr {
   border-right: 1px solid #ffffff;
-  height: 110px;
+  height: 120px;
 }
 
 .control-player-icon {
@@ -571,8 +580,8 @@ td {
   display: inline-block;
   overflow: hidden;
   margin: 10px;
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   color: #fff;
   text-align: left;
   font-size: 26px;
@@ -759,6 +768,7 @@ td {
 
 .card__thumb img {
   width: 100%;
+  height: 250px;
   display: block;
   opacity: 1;
   -webkit-transform: scale(1);
@@ -1229,4 +1239,13 @@ td {
 
 * {
   font-family: "Montserrat", sans-serif;
+}
+
+#photo-gallery img {
+  width: 100% !important;
+  height: 350px !important;
+}
+
+.cursor-pointer:hover {
+  cursor: pointer;
 }

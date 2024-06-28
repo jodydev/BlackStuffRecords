@@ -6,32 +6,34 @@ export default function Footer() {
           <div className="row gy-4 gx-5">
             <div className="col-lg-3 col-md-6">
               <h5 className="h1 text-white">Informazioni</h5>
+          
+              <p className="small text-white ">Discogs: <span className="text-decoration-underlin cursor-pointer">https://www.discogs.com/it/label/2100232-Black-Stuff-Records?page=1</span></p>
 
-              <p className="small text-white mt-3">Indirizzo:</p>
-              <p className="small text-white">Email:</p>
-              <p className="small text-white">Telefono:</p>
-              <p className="small text-white">www.blackstuffrecords.it</p>
+              <p className="small text-white ">BandCamp: <span className="text-decoration-underline cursor-pointer">in attesa</span></p>
+
+              <p className="small text-white ">Email: <span className="text-decoration-underline cursor-pointer">blackstuffrecords@gmail.com</span></p>
+      
             </div>
             <div className="col-lg-3 col-md-6">
               <h5 className="text-white mb-3">Link Veloci</h5>
               <ul className="list-unstyled text-muted text-decoration-none">
                 <li>
-                  <a className=" text-white fs-6" href="#home">
+                  <a className="small text-white fs-6" href="#home">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a className=" text-white fs-6" href="#discografia">
+                  <a className="small text-white fs-6" href="#discografia">
                     Discografia
                   </a>
                 </li>
                 <li>
-                  <a className=" text-white fs-6" href="#events">
+                  <a className="small text-white fs-6" href="#events">
                     Eventi
                   </a>
                 </li>
                 <li>
-                  <a className=" text-white fs-6" href="#news">
+                  <a className="small text-white fs-6" href="#news">
                     News
                   </a>
                 </li>
@@ -41,22 +43,22 @@ export default function Footer() {
               <h5 className="text-white mb-3">Link Veloci</h5>
               <ul className="list-unstyled text-muted">
                 <li>
-                  <a className=" text-white fs-6" href="#photo-gallery">
+                  <a className="small text-white fs-6" href="#photo-gallery">
                     Galleria
                   </a>
                 </li>
                 <li>
-                  <a className=" text-white fs-6" href="#video">
+                  <a className="small text-white fs-6" href="#video">
                     Video
                   </a>
                 </li>
                 <li>
-                  <a className=" text-white fs-6" href="#shop">
+                  <a className="small text-white fs-6" href="#shop">
                     Shop
                   </a>
                 </li>
                 <li>
-                  <a className=" text-white fs-6" href="#artist-bio">
+                  <a className="small text-white fs-6" href="#artist-bio">
                     Artisti
                   </a>
                 </li>

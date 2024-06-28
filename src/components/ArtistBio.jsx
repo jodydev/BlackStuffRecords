@@ -5,7 +5,7 @@ const artistData = [
   {
     //? DA SOSTITUIRE TUTTO
     name: "anzwart",
-    bioImage: "/img/artist/ANZWART/anzwart.jpeg",
+    bioImage: "/img/artist/ANZWART/photo/anzwart.jpeg",
     bioTitle: "Anzwart",
     bioText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ipsum sed voluptatum perferendis veniam enim nulla in, culpa debitis, omnis hic ut? Optio id magnam, vel facilis adipisci dolorum rerum. Ipsam rerum enim doloremque cupiditate adipisci eveniet sapiente porro sint officiis officia ratione non, suscipit ducimus, repellendus odit quod ea?",
@@ -21,8 +21,7 @@ const artistData = [
   {
     //? DA SOSTITUIRE TUTTO
     name: "ehcs",
-    bioImage:
-      "/img/artist/EHCS/EHCS.png",
+    bioImage: "/img/artist/EHCS/photo/EHCS.png",
     bioTitle: "E.H.C.S",
     bioText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ipsum sed voluptatum perferendis veniam enim nulla in, culpa debitis, omnis hic ut? Optio id magnam, vel facilis adipisci dolorum rerum. Ipsam rerum enim doloremque cupiditate adipisci eveniet sapiente porro sint officiis officia ratione non, suscipit ducimus, repellendus odit quod ea?",
@@ -37,7 +36,7 @@ const artistData = [
   },
   {
     name: "ntrMission",
-    bioImage: "/img/artist/NTR-MISSION/foto/bio.jpg",
+    bioImage: "/img/artist/NTR-MISSION/photo/bio.jpg",
     bioTitle: "NTR Mission",
     bioText:
       "Nel 2014 nasce INTERMISSION, diventando poi NTR MISSION nel 2022, guidato da Matteo Zavattin. La loro musica, ispirata dalla conquista dello spazio, offre atmosfere rarefatte e ritmiche organiche. Utilizzano strumenti digitali, analogici ed elettroacustici, con visual evocativi. I loro riferimenti includono Brian Eno, Tycho, Boards Of Canada, Solar Fields e Carbon Based Lifeforms.",
@@ -53,10 +52,27 @@ const artistData = [
   {
     //? DA SOSTITUIRE TUTTO
     name: "lac",
-    bioImage: "/img/artist/LAC/lac.jpeg",
+    bioImage: "/img/artist/LAC/photo/lac.jpeg",
     bioTitle: "LAC - Large Audio Collider",
     bioText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, ipsum sed voluptatum perferendis veniam enim nulla in, culpa debitis, omnis hic ut? Optio id magnam, vel facilis adipisci dolorum rerum. Ipsam rerum enim doloremque cupiditate adipisci eveniet sapiente porro sint officiis officia ratione non, suscipit ducimus, repellendus odit quod ea?",
+    socialLinks: [
+      "https://www.facebook.com/ntrmissi0n",
+      "https://www.instagram.com/ntr.mission/",
+      "https://www.youtube.com/channel/UCDQLmET8fH_D6UnoscS6uYQ/featured",
+      "https://open.spotify.com/artist/1p7aYEh3BNZOSmmvcRwWV1?si=hV6vJRTpSpmIJA35ujr8FQ",
+      "https://ntrmission.bandcamp.com",
+      "https://linktr.ee/ntrmission",
+    ],
+  },
+  {
+    //? DA SOSTITUIRE TUTTO
+    name: "XX CENTURY ZORRO",
+    bioImage: "/img/artist/XXCZ/photo/1.jpg",
+    bioTitle:
+      "XX CENTURY ZORRO",
+    bioText:
+      "xoX è un inventore musicale noto per la sua etichetta Compact Cassette ECHØ. Ha fondato la punk band HitlersS e prodotto il primo vinile autoprodotto di punk italiano con i Tampax. Ha collaborato con Italian Records e creato progetti come Andy Warhol Banana Technicolor e XX Century Zorro, pubblicando vari LP e cassette. Recentemente, ha lavorato con Black Stuff Records su diversi progetti, incluso un doppio LP in uscita.",
     socialLinks: [
       "https://www.facebook.com/ntrmissi0n",
       "https://www.instagram.com/ntr.mission/",
@@ -83,8 +99,6 @@ export default function ArtistBio() {
     );
   };
 
-  const artist = artistData[index];
-
   return (
     <section id="artist-bio">
       <div
@@ -106,11 +120,11 @@ export default function ArtistBio() {
               />
               <div className="container position-absolute container-artist-bio-1 text-start">
                 <div className="row">
-                  <div className="col-12 col-lg-6 text-bio">
-                    <h2 className="text-white">
+                  <div className="col-12 col-lg-6 ">
+                    <h2 className="text-white fs-1 mb-5">
                       Biografia Artista - <br /> {artist.bioTitle}
                     </h2>
-                    <p className="text-white">{artist.bioText}</p>
+                    <p className="text-white p-4 my-5 fs-6 fw-light carousel-intestation"><em>{artist.bioText}</em></p>
                   </div>
                 </div>
               </div>

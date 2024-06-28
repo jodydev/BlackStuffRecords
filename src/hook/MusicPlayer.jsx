@@ -24,31 +24,29 @@ const MusicPlayer = () => {
       poster:
         "/img/artist/NTR-MISSION/cover/cover.jpg",
     },
+    {
+      title: "Demo",
+      artist: "XX CENTURY ZORRO",
+      poster: "/img/artist/XXCZ/cover/cover.png",
+      mp3: "/img/artist/XXCZ/mp3/demo.mp3",
+    },
+    {
+      title: "Demo",
+      artist: "el FUNERAL de Kocis",
+      poster: "/img/artist/ELFDEK/cover/cover.png",
+      mp3: "/img/artist/ELFDEK/mp3/demo.mp3",
+    },
   ]);
-  // Stato per l'indice della traccia corrente
+
   const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
-
-  // Ref per l'elemento audio
   const audioRef = useRef(null);
-
-  // Ref per la barra di ricerca della traccia
   const seekBarRef = useRef(null);
-
-  // Stato per indicare se la traccia è in riproduzione
   const [isPlaying, setIsPlaying] = useState(false);
-
-  // Stato per indicare se l'utente sta cercando nella barra di ricerca
   const [isSeeking, setIsSeeking] = useState(false);
-
-  // Stato per la durata totale della traccia
   const [trackDuration, setTrackDuration] = useState(0);
-
-  // Stato per il tempo corrente della traccia
   const [currentTime, setCurrentTime] = useState(0);
 
-  // Componente per visualizzare il tempo della traccia
   const TimeDisplay = ({ currentTime, duration }) => {
-    // Funzione per formattare il tempo in minuti e secondi
     const formatTime = (timeInSeconds) => {
       const minutes = Math.floor(timeInSeconds / 60);
       const seconds = Math.floor(timeInSeconds % 60);
@@ -60,7 +58,7 @@ const MusicPlayer = () => {
     };
 
     return (
-      <p className="fs-6 d-none d-lg-block text-light fw-lighter  my-3">
+      <p className="fs-6 d-none d-lg-block text-light fw-lighter mt-4">
         {audioRef.current
           ? `${formatTime(currentTime)} / ${formatTime(duration)}`
           : "00:00 / 00:00"}
@@ -68,23 +66,18 @@ const MusicPlayer = () => {
     );
   };
 
-  // Funzione per aggiornare l'elemento audio con la traccia corrente
   const updateAudio = () => {
     const currentSong = currentTrack[currentTrackIndex];
-
     audioRef.current.src = currentSong.mp3;
 
-    // Verifica se l'elemento audio è stato caricato
     audioRef.current.onloadeddata = () => {
       if (isPlaying) {
         audioRef.current.play();
       }
-      // Cancella l'evento per evitare di essere chiamato più volte
       audioRef.current.onloadeddata = null;
     };
   };
 
-  // Gestore del click sul pulsante "Precedente"
   const handlePrevClick = () => {
     setCurrentTrackIndex((prevIndex) =>
       prevIndex > 0 ? prevIndex - 1 : currentTrack.length - 1
@@ -92,7 +85,6 @@ const MusicPlayer = () => {
     updateAudio();
   };
 
-  // Gestore del click sul pulsante "Successivo"
   const handleNextClick = () => {
     setCurrentTrackIndex((prevIndex) =>
       prevIndex < currentTrack.length - 1 ? prevIndex + 1 : 0
@@ -100,7 +92,6 @@ const MusicPlayer = () => {
     updateAudio();
   };
 
-  // Gestore del click sul pulsante "Play/Pausa"
   const handlePlayPauseClick = () => {
     const icon = document.getElementById("play-pausa-icon");
 
@@ -117,18 +108,16 @@ const MusicPlayer = () => {
     }
   };
 
-  // Gestore del mousedown sulla barra di ricerca della traccia
+
   const handleSeekBarMouseDown = () => {
     setIsSeeking(true);
   };
 
-  // Gestore del mouseup sulla barra di ricerca della traccia
   const handleSeekBarMouseUp = (event) => {
     if (isSeeking) {
       const { offsetX, target } = event.nativeEvent;
       const percent = (offsetX / target.clientWidth) * 100;
 
-      // Verifica se la percentuale è un numero valido
       if (!isNaN(percent) && isFinite(percent)) {
         audioRef.current.currentTime =
           (percent / 100) * audioRef.current.duration;
@@ -138,13 +127,11 @@ const MusicPlayer = () => {
     }
   };
 
-  // Effetto per impostare la sorgente audio iniziale e aggiornare l'audio in base all'indice della traccia corrente
   useEffect(() => {
     audioRef.current.src = currentTrack[currentTrackIndex].mp3;
     updateAudio();
   }, [currentTrackIndex]);
 
-  // Effetto per aggiornare la posizione della barra di ricerca durante la riproduzione
   useEffect(() => {
     const updateSeekBar = () => {
       if (!isSeeking) {
@@ -161,7 +148,6 @@ const MusicPlayer = () => {
     };
   }, [isSeeking]);
 
-  // Effetto per aggiornare la barra di ricerca e il tempo corrente durante la riproduzione
   useEffect(() => {
     const updateSeekBar = () => {
       if (!isSeeking) {
@@ -183,7 +169,6 @@ const MusicPlayer = () => {
     };
   }, [isSeeking, isPlaying, trackDuration]);
 
-  // Effetto per gestire gli eventi "playing" e "pause" dell'elemento audio
   useEffect(() => {
     const handlePlay = () => {
       setIsPlaying(true);
@@ -202,10 +187,8 @@ const MusicPlayer = () => {
     };
   }, []);
 
-  // Effetto per aggiornare la barra di ricerca e il tempo corrente durante la riproduzione
   useEffect(() => {
     const handleLoadedMetadata = () => {
-      // Imposta la durata solo se l'elemento audio è pronto e la durata è valida
       if (audioRef.current.readyState >= 2) {
         setTrackDuration(audioRef.current.duration);
       }
@@ -223,12 +206,10 @@ const MusicPlayer = () => {
       }
     };
 
-    // Aggiungi gestore per l'evento loadedmetadata
     audioRef.current.addEventListener("loadedmetadata", handleLoadedMetadata);
     audioRef.current.addEventListener("timeupdate", updateSeekBar);
 
     return () => {
-      // Rimuovi gli eventi al cambio della traccia o alla dismissione del componente
       audioRef.current.removeEventListener(
         "loadedmetadata",
         handleLoadedMetadata
@@ -237,10 +218,9 @@ const MusicPlayer = () => {
     };
   }, [isSeeking, isPlaying]);
 
-  // Renderizza il componente MusicPlayer
   return (
-    <div className="container position-absolute container-music" data-aos="fade-up" data-aos-duration="2000">
-      <div className="row">
+    <div className="container px-0 py-0 container-music">
+      <div className="row px-0 py-0">
         {/* Sezione dell'album */}
         <div className="col-3 col-lg-1 px-0 py-0 my-bg-transparent">          
 
