@@ -81,8 +81,16 @@
 @media screen and (max-width: 1500px) {
   .container-music {
     position: absolute;
-    top: 670px !important;
+    top: 705px !important;
     left: 12% !important;
+  }
+
+  .video-event {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5) contrast(1.2) saturate(1.2);
+    max-height: 90vh !important;
   }
 
   .home{

@@ -9,8 +9,7 @@ export default function Carousel() {
       id="carouselExampleAutoplaying"
       className="carousel home slide"
       data-bs-ride="carousel"
-      data-bs-pause="true"
-      data-bs-wrap="true"
+    data-bs-interval="3000"
     >
       {/* <!-- Navbar --> */}
       <Navbar />
