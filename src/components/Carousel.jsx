@@ -6,10 +6,11 @@ export default function Carousel() {
 
   return (
     <div
-      id="carouselExampleAutoplaying"
+      id="carouselExampleInterval"
       className="carousel home slide"
       data-bs-ride="carousel"
     data-bs-interval="3000"
+    data-bs-touch="true"
     >
       {/* <!-- Navbar --> */}
       <Navbar />

@@ -3,8 +3,83 @@
 
 /* MEDIA QUERY */
 
-/* (DESKTOP) = 1920px */
-@media screen and (min-width: 1920px) {
+@media (min-width: 1920px) and (max-width: 2460px) {
+  .cover-album {
+    max-width: 500px !important;
+    max-height: 500px !important;
+  }
+  #carouselExampleAutoplaying .carousel-inner {
+    height: 100% !important;
+  }
+  .nav-logo {
+    width: 50px !important;
+  }
+  .navbar-brand {
+    font-size: 20px !important;
+  }
+  .carousel-intestation {
+    font-size: 24px !important;
+  }
+  .container-music {
+    position: absolute;
+    top: 970px !important;
+    left: 23% !important;
+  }
+
+  .container-artist-bio-1 h2{
+    font-size: 90px !important;
+    text-wrap: nowrap !important;
+  }
+  .container-artist-bio-1 p{
+    margin-top: 10% !important;
+    font-size: 22px !important;
+  }
+
+  .video-event {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5) contrast(1.2) saturate(1.2);
+    max-height: 130vh !important;
+  }
+
+
+  .carousel-img {
+    width: 100%;
+    height: 100vh !important;
+    box-shadow: 0 0 0 transparent;
+    filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px);
+  }
+
+
+  .container-countdown {
+    top: 20%;
+  }
+  .container-countdown h2 {
+    font-size: 60px !important;
+    margin-bottom: 150px !important;
+  }
+  .container-countdown p {
+    font-size: 40px !important;
+    margin-bottom: 100px !important;
+  }
+  .home{
+    height: 100vh !important;
+  }
+  .carousel-text-container {
+    position: absolute;
+    top: 25% !important;
+    left: 28% !important;
+    text-align: center !important;
+  }
+  #photo-gallery img {
+    width: 100% !important;
+    height: 450px !important;
+  }
+}
+
+/* (2k) = 2460px */
+@media (min-width: 2460px) {
   .cover-album {
     max-width: 500px !important;
     max-height: 500px !important;
@@ -50,6 +125,13 @@
     font-weight: 600 !important;
   }
 
+  .carousel-img {
+    width: 100%;
+    height: 100vh !important;
+    box-shadow: 0 0 0 transparent;
+    filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px);
+  }
+
 
   .container-countdown {
     top: 20%;
@@ -84,8 +166,13 @@
     top: 705px !important;
     left: 12% !important;
   }
-
-  .video-event {
+  .carousel-img {
+    width: 100%;
+    height: 100vh !important;
+    box-shadow: 0 0 0 transparent;
+    filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px);
+  }
+    .video-event {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -167,7 +254,20 @@
     width: 100%;
     height: 350px !important;
   }
-
+  .video-background {
+    width: 100%;
+    height: 100vh !important;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  .container-countdown h2 {
+    font-size: 60px !important;
+  }
+  .container-countdown p {
+    font-size: 30px !important;
+  }
   #loader {
     background-color: white !important;
   }
@@ -192,7 +292,7 @@
   .video-event {
     object-fit: cover;
     filter: brightness(0.5) contrast(1.2) saturate(1.2);
-    max-height: 110vh !important;
+    height: 120vh !important;
   }
   .navbar-collapse {
     padding: 0px !important;
@@ -228,7 +328,7 @@
     text-align: center !important;
   }
   .container-music {
-    top: 565px !important;
+    top: 548px !important;
     left: 0% !important;
   }
   .carousel-item {
@@ -243,6 +343,7 @@
 
   .music-cover {
     width: 100% !important;
+    height: 120px !important;
   }
 
   .cover-album {
@@ -256,6 +357,13 @@
 
   td {
     padding: 150px !important;
+  }
+
+  .carousel-img {
+    width: 100%;
+    height: 90vh !important;
+    box-shadow: 0 0 0 transparent;
+    filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px);
   }
 
   .container-countdown {
@@ -283,7 +391,7 @@
   }
 
   .label {
-    font-size: 20px !important;
+    font-size: 12px !important;
   }
 
   #social img {
@@ -446,7 +554,6 @@ html {
   height: 100%;
   box-shadow: 0 0 0 transparent;
   filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px);
-  object-fit:fill;
 }
 .carousel-img-bio {
   width: 100%;
