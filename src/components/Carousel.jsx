@@ -29,12 +29,12 @@ export default function Carousel() {
               <div className="col-12 col-lg-8">
                 <div data-aos="fade-down" data-aos-duration="2000">
                   <h2 className="carousel-title ">
-                    Dis - Oriented Underground Label
+                    Dis - Oriented <br /> Underground Label
                   </h2>
                 </div>
                 <div data-aos="fade-right" data-aos-duration="2000">
                   <h3 className="carousel-intestation text-wrap">
-                  Uncompromising music and sounds without directions...
+                  "Uncompromising music and sounds without directions..."
                   </h3>
                 </div>
               </div>
@@ -47,7 +47,7 @@ export default function Carousel() {
           {isMobile ? (
             <img src="/img/carousel/2-mobile.png" className="carousel-img" alt="carousel" />
           ) : (
-            <img src="/img/artist/XXCZ/cover/copertina.png" className="carousel-img" alt="carousel" />
+            <img src="/img/artist/XXCZ/cover/cover-1.png" className="carousel-img" alt="carousel" />
           )}
 
           <div className="container position-absolute carousel-text-container">
@@ -73,7 +73,7 @@ export default function Carousel() {
           {isMobile ? (
             <img src="/img/carousel/3-mobile.jpeg" className="carousel-img" alt="carousel" />
           ) : (
-            <img src="/img/artist/ELFDEK/cover/copertina.png" className="carousel-img" alt="carousel" />
+            <img src="/img/artist/ELFDEK/cover/cover-1.png" className="carousel-img" alt="carousel" />
           )}
           <div className="container position-absolute carousel-text-container">
             <div className="row">

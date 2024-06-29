@@ -4,17 +4,17 @@ export default function Footer() {
       <footer className="w-100 py-4 flex-shrink-0">
         <div className="container p-5">
           <div className="row gy-4 gx-5">
-            <div className="col-lg-3 col-md-6">
-              <h5 className="h1 text-white">Informazioni</h5>
+            <div className="col-lg-6 col-md-6">
+              <h5 className="h1 text-white mb-4">Informazioni</h5>
           
-              <p className="small text-white ">Discogs: <span className="text-decoration-underlin cursor-pointer">https://www.discogs.com/it/label/2100232-Black-Stuff-Records?page=1</span></p>
+              <p className="small text-white fw-semibold">Discogs: <span className="text-decoration-underline cursor-pointer fw-light ms-0 ms-lg-2">https://www.discogs.com/it/label/2100232-Black-Stuff-Records?page=1</span></p>
 
-              <p className="small text-white ">BandCamp: <span className="text-decoration-underline cursor-pointer">in attesa</span></p>
+              <p className="small text-white fw-semibold">BandCamp: <span className="text-decoration-underline cursor-pointer fw-light ms-0 ms-lg-2">in attesa</span></p>
 
-              <p className="small text-white ">Email: <span className="text-decoration-underline cursor-pointer">blackstuffrecords@gmail.com</span></p>
+              <p className="small text-white fw-semibold">Email: <span className="text-decoration-underline cursor-pointer fw-light ms-0 ms-lg-2">blackstuffrecords@gmail.com</span></p>
       
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-2 col-md-6">
               <h5 className="text-white mb-3">Link Veloci</h5>
               <ul className="list-unstyled text-muted text-decoration-none">
                 <li>
@@ -39,7 +39,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-2 col-md-6">
               <h5 className="text-white mb-3">Link Veloci</h5>
               <ul className="list-unstyled text-muted">
                 <li>
@@ -64,7 +64,7 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-            <div className="col-lg-3 col-md-6">
+            <div className="col-lg-2 col-md-6">
               <a href="#home" className="text-white text-decoration-none lh-1">
                 <img
                   src="/img/logo/blackstuffrecords-logo.png"

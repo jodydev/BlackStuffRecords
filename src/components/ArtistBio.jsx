@@ -101,64 +101,61 @@ export default function ArtistBio() {
 
   return (
     <section id="artist-bio">
-      <div
-        id="carouselExampleInterval"
-        className="carousel slide"
-        data-bs-ride="carousel"
-      >
-        <div className="carousel-inner">
-          {artistData.map((artist, idx) => (
-            <div
-              key={idx}
-              className={`carousel-item ${idx === index ? "active" : ""}`}
-              data-bs-interval="5000"
-            >
-              <img
-                src={artist.bioImage}
-                className="d-block carousel-img-bio"
-                alt={`Biografia ${artist.name}`}
-              />
-              <div className="container position-absolute container-artist-bio-1 text-start">
-                <div className="row">
-                  <div className="col-12 col-lg-6 ">
-                    <h2 className="text-white fs-1 mb-5">
-                      Biografia Artista - <br /> {artist.bioTitle}
-                    </h2>
-                    <p className="text-white p-4 my-5 fs-6 fw-light carousel-intestation"><em>{artist.bioText}</em></p>
-                  </div>
+    <div
+      id="carouselExampleInterval"
+      className="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="3000"
+    >
+      <div className="carousel-inner">
+        {artistData.map((artist, idx) => (
+          <div
+            key={idx}
+            className={`carousel-item ${idx === index ? "active" : ""}`}
+          >
+            <img
+              src={artist.bioImage}
+              className="d-block carousel-img-bio"
+              alt={`Biografia ${artist.name}`}
+            />
+            <div className="container position-absolute container-artist-bio-1 text-start">
+              <div className="row">
+                <div className="col-12 col-lg-6 ">
+                  <h2 className="text-white fs-1 mb-5">
+                    Biografia Artista - <br /> {artist.bioTitle}
+                  </h2>
+                  <p className="text-white p-4 my-5 fs-6 fw-light carousel-intestation">
+                    <em>{artist.bioText}</em>
+                  </p>
                 </div>
               </div>
-              <Social socialLinks={artist.socialLinks} />
             </div>
-          ))}
-        </div>
-        <button
-          className="carousel-control-prev d-none d-lg-block h-75"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="prev"
-          onClick={handlePrev}
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next d-none d-lg-block h-75"
-          type="button"
-          data-bs-target="#carouselExampleInterval"
-          data-bs-slide="next"
-          onClick={handleNext}
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+            <Social socialLinks={artist.socialLinks} />
+          </div>
+        ))}
       </div>
-    </section>
+      <button
+        className="carousel-control-prev d-none d-lg-block h-75"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev"
+        onClick={handlePrev}
+      >
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Previous</span>
+      </button>
+      <button
+        className="carousel-control-next d-none d-lg-block h-75"
+        type="button"
+        data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next"
+        onClick={handleNext}
+      >
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+  
   );
 }

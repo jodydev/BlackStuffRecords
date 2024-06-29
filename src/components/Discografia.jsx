@@ -26,7 +26,7 @@ export default function Discografia() {
         <div className="text-center my-5 py-3 py-lg-5">
           <div data-aos="fade-down" data-aos-duration="2000">
             <div className="px-0 px-lg-5">
-              <h2 className="text-uppercase text-center fs-1 my-3 fw-bold">
+              <h2 className="text-uppercase text-center fs-1 mb-5 fw-bold">
                 Discografia
               </h2>
 

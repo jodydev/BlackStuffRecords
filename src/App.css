@@ -9,35 +9,71 @@
     max-width: 500px !important;
     max-height: 500px !important;
   }
+  #carouselExampleAutoplaying .carousel-inner {
+    height: 100% !important;
+  }
   .nav-logo {
     width: 50px !important;
   }
   .navbar-brand {
     font-size: 20px !important;
   }
-
   .carousel-intestation {
     font-size: 24px !important;
   }
   .container-music {
-    top: 91% !important;
+    position: absolute;
+    top: 1215px !important;
+    left: 30% !important;
   }
+
+  .container-artist-bio-1 h2{
+    font-size: 90px !important;
+    text-wrap: nowrap !important;
+  }
+  .container-artist-bio-1 p{
+    margin-top: 10% !important;
+    font-size: 22px !important;
+  }
+
+  .video-event {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5) contrast(1.2) saturate(1.2);
+    max-height: 90vh !important;
+  }
+
   #events h2 {
     color: #fff !important;
     font-size: 60px;
     font-weight: 600 !important;
   }
-  
-  #events p {
-    font-size: 30px;
-    font-weight: 400 !important;
-  }
+
 
   .container-countdown {
     top: 20%;
   }
+  .container-countdown h2 {
+    font-size: 90px !important;
+    margin-bottom: 150px !important;
+  }
+  .container-countdown p {
+    font-size: 40px !important;
+    margin-bottom: 100px !important;
+  }
   .home{
     height: 100vh !important;
+  }
+  .carousel-text-container {
+    position: absolute;
+    top: 28% !important;
+    left: 32% !important;
+    text-align: center !important;
+  }
+  #photo-gallery img {
+    width: 100% !important;
+    height: 450px !important;
   }
 }
 
@@ -145,7 +181,11 @@
     color: #fff;
     text-decoration: none !important;
   }
-
+  .video-event {
+    object-fit: cover;
+    filter: brightness(0.5) contrast(1.2) saturate(1.2);
+    max-height: 110vh !important;
+  }
   .navbar-collapse {
     padding: 0px !important;
     border-radius: 10px !important;
@@ -217,6 +257,18 @@
     font-size: 50px !important;
     border-right: none !important;
   }
+  .container-artist-bio-1 h2{
+    font-size: 40px !important;
+    text-wrap: nowrap !important;
+  }
+  .container-artist-bio-1 p{
+    margin-top: 20% !important;
+    font-size: 14px !important;
+  }
+
+  .home{
+    height: 90vh !important;
+  }
 
   .last-number {
     font-size: 50px !important;
@@ -237,10 +289,13 @@
   .control-player-icon {
     font-size: 16px !important;
   }
-
-
   #news .card {
-    height: 500px !important;
+    height: 450px !important;
+  }
+
+  #news p {
+    font-size: 14px !important;
+    font-style: italic;
   }
 
   #news .card:hover .card__description {
@@ -360,10 +415,6 @@ html {
   background-color: black !important;
 }
 
-.carousel-text-container {
-  top: 30%;
-  left: 20%;
-}
 .carousel-title {
   font-size: 100px;
   font-weight: 600;
@@ -387,6 +438,7 @@ html {
   height: 100%;
   box-shadow: 0 0 0 transparent;
   filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px);
+  object-fit:fill;
 }
 .carousel-img-bio {
   width: 100%;
@@ -400,12 +452,6 @@ html {
 .music-title {
   font-size: 20px;
 }
-
-/* Music Player */
-/* .container-music {
-  top: 92%;
-  left: 25%;
-} */
 
 .my-bg-transparent {
   background-color: #0000009a;
@@ -518,12 +564,7 @@ td {
   z-index: -1;
 }
 
-.video-event {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.5) contrast(1.2) saturate(1.2);
-}
+
 
 .video-item {
   width: 100%;
@@ -799,6 +840,11 @@ td {
 }
 
 /** CARD NEWS **/
+
+/* #news .card {
+  height: 100% !important;
+} */
+
 
 .card__body {
   position: relative;
@@ -1241,10 +1287,7 @@ td {
   font-family: "Montserrat", sans-serif;
 }
 
-#photo-gallery img {
-  width: 100% !important;
-  height: 350px !important;
-}
+
 
 .cursor-pointer:hover {
   cursor: pointer;
