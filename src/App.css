@@ -22,7 +22,7 @@
   }
   .container-music {
     position: absolute;
-    top: 970px !important;
+    top: 980px !important;
     left: 23% !important;
   }
 
@@ -398,9 +398,9 @@
     padding: 100px !important;
   }
 
-  #carouselExampleAutoplaying .carousel-inner {
+  /* #carouselExampleAutoplaying .carousel-inner {
     height: 100% !important;
-  }
+  } */
 
   .control-player-icon {
     font-size: 16px !important;

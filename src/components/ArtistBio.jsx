@@ -10,7 +10,7 @@ export default function ArtistBio() {
       setIndex((prevIndex) =>
         prevIndex === artistData.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000);
+    }, 4000);
     return () => clearInterval(interval);
   }, [artistData.length]);
 
@@ -32,7 +32,7 @@ export default function ArtistBio() {
         id="carouselArtistBio"
         className="carousel slide"
         data-bs-ride="carousel"
-        data-bs-interval="1000" // Disabilita l'autoplay gestito da Bootstrap
+        data-bs-interval="1000" 
       >
         <div className="carousel-inner">
           {artistData.map((artist, idx) => (

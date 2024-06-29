@@ -1,25 +1,35 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
-import Navbar from "./Navbar";
-import MusicPlayer from "../hook/MusicPlayer";
+import React, { useState, useEffect } from 'react';
+import Navbar from './Navbar';
+import MusicPlayer from '../hook/MusicPlayer';
 
 export default function Carousel() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1)); 
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const handlePrev = () => {
+    setIndex((prevIndex) => (prevIndex === 0 ? 2 : prevIndex - 1)); 
+  };
+
+  const handleNext = () => {
+    setIndex((prevIndex) => (prevIndex === 2 ? 0 : prevIndex + 1)); 
+  };
+
   const isMobile = window.innerWidth < 576;
 
   return (
-    <div
-      id="carouselExampleInterval"
-      className="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-interval="1000"
-    >
-      {/* <!-- Navbar --> */}
+    <div id="carouselExampleInterval" className="carousel slide home" data-bs-ride="carousel">
+      {/* Navbar */}
       <Navbar />
 
       <div className="carousel-inner">
-        {/* <!-- CAROUSEL - 1 --> */}
-        <div className="carousel-item active">
+        {/* CAROUSEL - 1 */}
+        <div className={`carousel-item ${index === 0 ? 'active' : ''}`}>
           {isMobile ? (
             <img src="/img/carousel/1-mobile.png" className="carousel-img" alt="carousel" />
           ) : (
@@ -44,10 +54,10 @@ export default function Carousel() {
           </div>
         </div>
 
-        {/* <!-- CAROUSEL - 2 --> */}
-        <div className="carousel-item">
+        {/* CAROUSEL - 2 */}
+        <div className={`carousel-item ${index === 1 ? 'active' : ''}`}>
           {isMobile ? (
-            <img src="/img/carousel/2-mobile.png" className="carousel-img" alt="carousel" />
+            <img src="/img/artist/XXCZ/cover/cover.png" className="carousel-img" alt="carousel" />
           ) : (
             <img src="/img/artist/XXCZ/cover/cover-1.png" className="carousel-img" alt="carousel" />
           )}
@@ -60,7 +70,7 @@ export default function Carousel() {
                 </div>
                 <div data-aos="fade-right" data-aos-duration="2000">
                   <h3 className="carousel-intestation text-wrap lh-base">
-                    Ricopiate....con cura Mescolate....con calma Ritagliate<br />
+                    Ricopiate....con cura Mescolate....con calma Ritagliate
                     In Every Dream Home a Heartache <br />
                     <span className="fw-bold">TURQUOISE 7" VINYL - OUT ON 28/08/2024</span>
                   </h3>
@@ -70,10 +80,10 @@ export default function Carousel() {
           </div>
         </div>
 
-        {/* <!-- CAROUSEL - 3 --> */}
-        <div className="carousel-item">
+        {/* CAROUSEL - 3 */}
+        <div className={`carousel-item ${index === 2 ? 'active' : ''}`}>
           {isMobile ? (
-            <img src="/img/carousel/3-mobile.jpeg" className="carousel-img" alt="carousel" />
+            <img src="/img/artist/ELFDEK/cover/cover.png" className="carousel-img" alt="carousel" />
           ) : (
             <img src="/img/artist/ELFDEK/cover/cover-1.png" className="carousel-img" alt="carousel" />
           )}
@@ -99,12 +109,11 @@ export default function Carousel() {
         </div>
       </div>
 
-      {/* <!-- Controlli del Carousel --> */}
+      {/* Controlli del Carousel */}
       <button
         className="carousel-control-prev d-none d-lg-block"
         type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="prev"
+        onClick={handlePrev}
       >
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Previous</span>
@@ -112,8 +121,7 @@ export default function Carousel() {
       <button
         className="carousel-control-next d-none d-lg-block"
         type="button"
-        data-bs-target="#carouselExampleInterval"
-        data-bs-slide="next"
+        onClick={handleNext}
       >
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
