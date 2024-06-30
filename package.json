@@ -13,10 +13,13 @@
     "@fortawesome/fontawesome-free": "^6.5.1",
     "aos": "^2.3.4",
     "bootstrap": "^5.3.3",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.2.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.1",
-    "react-youtube": "^10.1.0"
+    "react-youtube": "^10.1.0",
+    "tailwind-merge": "^2.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
