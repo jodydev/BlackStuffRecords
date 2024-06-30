@@ -219,7 +219,7 @@ const MusicPlayer = () => {
   }, [isSeeking, isPlaying]);
 
   return (
-    <div className="container px-0 py-0 container-music">
+    <div className="container px-0 py-0 container-music bg-black">
       <div className="row px-0 py-0">
         {/* Sezione dell'album */}
         <div className="col-3 col-lg-1 px-0 py-0 my-bg-transparent">          

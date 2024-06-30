@@ -48,7 +48,7 @@
     width: 100%;
     height: 100vh !important;
     box-shadow: 0 0 0 transparent;
-    filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px);
+    /* filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px); */
   }
 
 
@@ -129,7 +129,7 @@
     width: 100%;
     height: 100vh !important;
     box-shadow: 0 0 0 transparent;
-    filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px);
+    /* filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px); */
   }
 
 
@@ -163,14 +163,14 @@
 @media screen and (max-width: 1500px) {
   .container-music {
     position: absolute;
-    top: 705px !important;
+    top: 84.7% !important;
     left: 12% !important;
   }
   .carousel-img {
     width: 100%;
     height: 100vh !important;
     box-shadow: 0 0 0 transparent;
-    filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px);
+    /* filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px); */
   }
     .video-event {
     width: 100%;
@@ -180,6 +180,10 @@
     max-height: 90vh !important;
   }
 
+  #photo-gallery img {
+    width: 100% !important;
+    height: 350px !important;
+  }
   .home{
     height: 100vh !important;
   }
@@ -200,7 +204,7 @@
   }
 
   .carousel-img-bio {
-    height: 700px !important;
+    height: 650px !important;
   }
   #social img {
     width: 300px !important;
@@ -217,9 +221,10 @@
   }
 
   .carousel-title {
-    font-size: 70px !important;
+    font-size: 60px !important;
     margin-bottom: 30px !important;
   }
+  
   .container-artist-bio-1 {
     top: 20%;
     left: 40%;
@@ -242,6 +247,14 @@
   #carouselExampleAutoplaying .carousel-inner {
     height: 100% !important;
   }
+
+  .carousel-text-bio {
+    position: absolute;
+    top: 10% !important;
+    left: 20% !important;
+    width: 60% !important;
+    text-align: center !important;
+  }
 }
 
 /* (MOBILE) = 480px */
@@ -249,6 +262,17 @@
   .carousel-control-next-icon,
   .carousel-control-prev-icon {
     width: 15px !important;
+  }
+  .carousel-text-bio {
+    position: absolute;
+    top: 3% !important;
+    left: 5% !important;
+    width: 90% !important;
+    text-align: center !important;
+  }
+  .vertical-hr {
+    border-right: 1px solid #ffffff;
+    height: 100px !important;
   }
   .card__thumb img {
     width: 100%;
@@ -312,7 +336,7 @@
   }
 
   .carousel-title {
-    font-size: 45px !important;
+    font-size: 35px !important;
     margin-bottom: 10% !important;
   }
 
@@ -323,12 +347,12 @@
   }
   .carousel-text-container {
     top: 20% !important;
-    left: 10% !important;
-    width: 80% !important;
+    width: 60% !important;
     text-align: center !important;
   }
   .container-music {
-    top: 548px !important;
+    background-color: #0000009a !important;
+    top: 86% !important;
     left: 0% !important;
   }
   .carousel-item {
@@ -343,7 +367,7 @@
 
   .music-cover {
     width: 100% !important;
-    height: 120px !important;
+    height: 100px !important;
   }
 
   .cover-album {
@@ -363,7 +387,7 @@
     width: 100%;
     height: 90vh !important;
     box-shadow: 0 0 0 transparent;
-    filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px);
+    /* filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px); */
   }
 
   .container-countdown {
@@ -544,22 +568,23 @@ html {
   color: #fff;
   font-style: italic;
   margin-top: 10%;
-  background-color: #ffffff3a;
+  background-color: #0000009f;
   padding: 25px;
   border-radius: 15px;
+  border: 1px solid #fff;
 }
 
 .carousel-img {
   width: 100%;
   height: 100%;
   box-shadow: 0 0 0 transparent;
-  filter: brightness(0.7) contrast(1.1) saturate(1.2) blur(4px);
+  filter: brightness(0.5) contrast(1.2) saturate(1.2 );
 }
 .carousel-img-bio {
   width: 100%;
   height: 1000px;
-  box-shadow: 0 0 0 transparent;
-  filter: brightness(0.5) contrast(1.2) saturate(1.2);
+  box-shadow: 0 0 0 black;
+  filter: brightness(0.5) contrast(1.2) saturate(1.2 );
 }
 .music-author {
   font-size: 16px;
@@ -584,6 +609,7 @@ html {
 
 .music-cover {
   width: 100%;
+  height: 100%;
 }
 
 /* Album Info Section */
@@ -1406,4 +1432,37 @@ td {
 
 .cursor-pointer:hover {
   cursor: pointer;
+}
+
+
+.carousel-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-text-container {
+  position: absolute;
+  top: 50%;
+  left: 20% !important;
+  width: 60%;
+  color: #fff;
+  z-index: 1;
+}
+
+.carousel-text-content {
+  border-radius: 10px;
+}
+
+.carousel-title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.carousel-intestation {
+  font-size: 1.2rem;
 }

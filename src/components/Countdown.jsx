@@ -35,7 +35,7 @@ const Countdown = () => {
   };
 
   return (
-    <div className="my-5 py-0 py-lg-5">
+    <div className="mt-3 py-0 py-lg-5">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-md-3 col-sm-6 my-1 my-lg-0">

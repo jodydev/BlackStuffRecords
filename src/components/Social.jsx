@@ -23,7 +23,7 @@ export default function Social({ socialLinks }) {
                   : "bg-darkk"
               }  col-12 col-lg-2 d-flex justify-content-center align-items-center`}
             >
-              <a href={link}>
+              <a className="cursor-pointer" href={link}>
                 <span className="position-relative">
                   <img
                     src={`/img/logo-social/${getSocialIcon(index)}.png`}

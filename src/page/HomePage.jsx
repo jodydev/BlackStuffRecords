@@ -8,12 +8,12 @@ import Video from "../components/Video";
 // import Shop from "../components/Shop";
 import ArtistBio from "../components/ArtistBio";
 import Footer from "../components/Footer";
-
+import NewCarousel from "../components/NewCarousel";
 export default function HomePage() {
   return (
     <section id="home">
       {/* <!-- Carousel con Navbar --> */}
-      <Carousel />
+      <NewCarousel />
 
       {/* <!-- Sezione Discografia --> */}
       <Discografia />
